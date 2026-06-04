@@ -41,6 +41,10 @@
         <button id="saveTokenButton" class="primary-button" type="button">Apply</button>
       </div>
     </main.>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      window.LGEO_MAPBOX_TOKEN = params.get("mbtoken") || "";
+    </script>
     <script src="../data/processed/app-data.generated.js"></script>
     <script src="./src/config.js?v=20260604-dark-polys"></script>
     <script src="./src/main.js?v=20260604-opacity-fix"></script>
