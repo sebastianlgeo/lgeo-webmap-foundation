@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-06-04T23:00:57.667928+00:00",
+  "sourceFiles": [
+    "data/source/README.md",
+    "data/source/all_geography_legacy.csv",
+    "data/source/contractsList_legacy_20221002.js",
+    "data/source/projectListOnly_20250125.csv",
+    "data/source/project_links.csv",
+    "data/source/projects.csv",
+    "data/source/projects_legacy_20250123.csv"
+  ],
+  "rawGeojsonFiles": [
+    "data/geojson/raw/MunicipalLevelPoints.geojson",
+    "data/geojson/raw/MunicipalLevelPolygons.geojson",
+    "data/geojson/raw/NationalLevelPoints.geojson",
+    "data/geojson/raw/ProvincialLevelPoints.geojson",
+    "data/geojson/raw/ProvincialLevelPolygons.geojson",
+    "data/geojson/raw/RegionalLevelPoints.geojson",
+    "data/geojson/raw/RegionalLevelPolygons.geojson"
+  ],
+  "processedFiles": [
+    "data/processed/app-data.generated.js",
+    "data/processed/contractsList.generated.js",
+    "data/processed/geography-index.json",
+    "data/processed/geojson/MunicipalLevelPoints.geojson",
+    "data/processed/geojson/MunicipalLevelPolygons.geojson",
+    "data/processed/geojson/NationalLevelPoints.geojson",
+    "data/processed/geojson/ProvincialLevelPoints.geojson",
+    "data/processed/geojson/ProvincialLevelPolygons.geojson",
+    "data/processed/geojson/RegionalLevelPoints.geojson",
+    "data/processed/geojson/RegionalLevelPolygons.geojson",
+    "data/processed/manifest.json",
+    "data/processed/projects.json",
+    "data/processed/update-report.json",
+    "data/processed/update-report.md"
+  ],
+  "projectCount": 245,
+  "geographyLookupCount": 159
+}

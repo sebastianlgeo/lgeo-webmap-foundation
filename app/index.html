@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LGeo Projects Webmap</title>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" />
+    <link rel="stylesheet" href="./styles.css?v=20260604-office-games" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+  </head>
+  <body>
+    <main class="map-stage">
+      <div id="map" class="map"></div>
+
+      <img class="brand-logo" src="./assets/LGeo-logo-rgb_vert.jpg" alt="LGeo" role="button" tabindex="0" title="Zoom to LGeo office" />
+
+      <section class="region-search" aria-label="Search regions">
+        <input id="regionSearchInput" class="text-input" type="search" placeholder="Search region" autocomplete="off" />
+        <div id="regionSearchResults" class="search-results" aria-live="polite"></div>
+      </section>
+
+      <nav class="map-tools" aria-label="Map controls">
+        <button id="resetViewButton" class="icon-button" type="button" title="Reset map view" aria-label="Reset map view">↺</button>
+        <button id="themeButton" class="icon-button" type="button" title="Toggle day or dark map" aria-label="Toggle day or dark map">◐</button>
+        <button id="filterButton" class="icon-button" type="button" title="Project type filters" aria-label="Project type filters">☰</button>
+      </nav>
+
+      <section id="filterPanel" class="filter-panel" aria-label="Project type filters">
+        <div class="filter-header">
+          <h2>Project Types</h2>
+          <button id="selectAllTypesButton" class="text-button" type="button">All</button>
+        </div>
+        <div id="projectTypeToggles" class="type-toggles"></div>
+      </section>
+
+      <div id="mapStatus" class="map-status">Loading map data</div>
+      <div id="tokenPanel" class="token-panel" hidden>
+        <h2>Mapbox Token</h2>
+        <p>Paste a public <code>pk...</code> token to preview the map.</p>
+        <input id="tokenInput" class="text-input" type="password" placeholder="pk..." />
+        <button id="saveTokenButton" class="primary-button" type="button">Apply</button>
+      </div>
+    </main.>
+    <script src="../data/processed/app-data.generated.js"></script>
+    <script src="./src/config.js?v=20260604-dark-polys"></script>
+    <script src="./src/main.js?v=20260604-opacity-fix"></script>
+  </body>
+</html>

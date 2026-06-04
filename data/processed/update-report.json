@@ -1,0 +1,251 @@
+{
+  "generatedAt": "2026-06-04T23:00:57.667928+00:00",
+  "sourceCsv": "data/source/projects.csv",
+  "projectCount": 245,
+  "suppressedProjectCount": 37,
+  "geographyLookupCount": 159,
+  "projectTypes": [
+    [
+      "Urban Simulation",
+      68
+    ],
+    [
+      "Uncategorized",
+      65
+    ],
+    [
+      "Webmaps, Cartography & Visual Storytelling",
+      29
+    ],
+    [
+      "Additional GIS Support Services",
+      23
+    ],
+    [
+      "Carbon and Energy Modelling",
+      22
+    ],
+    [
+      "Site Selection, Logistics & Routing",
+      17
+    ],
+    [
+      "Remote Sensing",
+      13
+    ],
+    [
+      "Additional GIS Services",
+      5
+    ],
+    [
+      "Carbon & Energy Modelling",
+      3
+    ]
+  ],
+  "geojson": {
+    "layers": [
+      {
+        "layer": "MunicipalLevelPoints.geojson",
+        "featureCount": 53,
+        "matchedFeatureCount": 53,
+        "output": "data/processed/geojson/MunicipalLevelPoints.geojson"
+      },
+      {
+        "layer": "MunicipalLevelPolygons.geojson",
+        "featureCount": 47,
+        "matchedFeatureCount": 47,
+        "output": "data/processed/geojson/MunicipalLevelPolygons.geojson"
+      },
+      {
+        "layer": "NationalLevelPoints.geojson",
+        "featureCount": 3,
+        "matchedFeatureCount": 3,
+        "output": "data/processed/geojson/NationalLevelPoints.geojson"
+      },
+      {
+        "layer": "ProvincialLevelPoints.geojson",
+        "featureCount": 10,
+        "matchedFeatureCount": 10,
+        "output": "data/processed/geojson/ProvincialLevelPoints.geojson"
+      },
+      {
+        "layer": "ProvincialLevelPolygons.geojson",
+        "featureCount": 8,
+        "matchedFeatureCount": 8,
+        "output": "data/processed/geojson/ProvincialLevelPolygons.geojson"
+      },
+      {
+        "layer": "RegionalLevelPoints.geojson",
+        "featureCount": 28,
+        "matchedFeatureCount": 26,
+        "output": "data/processed/geojson/RegionalLevelPoints.geojson"
+      },
+      {
+        "layer": "RegionalLevelPolygons.geojson",
+        "featureCount": 39,
+        "matchedFeatureCount": 26,
+        "output": "data/processed/geojson/RegionalLevelPolygons.geojson"
+      }
+    ],
+    "geojsonKeyCount": 155,
+    "missingGeojsonKeys": [
+      "Babbitt - Minnesota",
+      "Capital Regional District",
+      "Ladysmith - British Columbia",
+      "Mazatl?n",
+      "Nanaimo Regional District - British Columbia",
+      "Squamish Lillouet Regional District",
+      "Victoria - British Columnbia"
+    ]
+  },
+  "missingPolygons": {
+    "Regional": [
+      {
+        "polygonKey": "",
+        "displayName": "Capital Regional District",
+        "missingFrom": "RegionalLevelPolygons.geojson",
+        "issue": "missing polygon key",
+        "projectNumbers": [
+          "23047"
+        ]
+      },
+      {
+        "polygonKey": "",
+        "displayName": "Ciudad de Mexico",
+        "missingFrom": "RegionalLevelPolygons.geojson",
+        "issue": "missing polygon key",
+        "projectNumbers": [
+          "18014"
+        ]
+      },
+      {
+        "polygonKey": "",
+        "displayName": "Mazatl?n",
+        "missingFrom": "RegionalLevelPolygons.geojson",
+        "issue": "missing polygon key",
+        "projectNumbers": [
+          "21002"
+        ]
+      },
+      {
+        "polygonKey": "",
+        "displayName": "Metro Vancouver Regional District - British Columbia",
+        "missingFrom": "RegionalLevelPolygons.geojson",
+        "issue": "missing polygon key",
+        "projectNumbers": [
+          "21009"
+        ]
+      },
+      {
+        "polygonKey": "",
+        "displayName": "North Slave Region - Northwest Territories",
+        "missingFrom": "RegionalLevelPolygons.geojson",
+        "issue": "missing polygon key",
+        "projectNumbers": [
+          "18030"
+        ]
+      },
+      {
+        "polygonKey": "",
+        "displayName": "St. Louis - Minnesota",
+        "missingFrom": "RegionalLevelPolygons.geojson",
+        "issue": "missing polygon key",
+        "projectNumbers": [
+          "19013"
+        ]
+      }
+    ],
+    "Municipal": [
+      {
+        "polygonKey": "",
+        "displayName": "Babbitt - Minnesota",
+        "missingFrom": "MunicipalLevelPolygons.geojson",
+        "issue": "missing polygon key",
+        "projectNumbers": [
+          "19013"
+        ]
+      },
+      {
+        "polygonKey": "",
+        "displayName": "Calgary - Alberta",
+        "missingFrom": "MunicipalLevelPolygons.geojson",
+        "issue": "missing polygon key",
+        "projectNumbers": [
+          "21038"
+        ]
+      },
+      {
+        "polygonKey": "",
+        "displayName": "Duluth - Saint Louis - MN",
+        "missingFrom": "MunicipalLevelPolygons.geojson",
+        "issue": "missing polygon key",
+        "projectNumbers": [
+          "18032"
+        ]
+      },
+      {
+        "polygonKey": "",
+        "displayName": "Fredericton - New Brunswick",
+        "missingFrom": "MunicipalLevelPolygons.geojson",
+        "issue": "missing polygon key",
+        "projectNumbers": [
+          "23045"
+        ]
+      },
+      {
+        "polygonKey": "",
+        "displayName": "Halifax - Nova Scotia",
+        "missingFrom": "MunicipalLevelPolygons.geojson",
+        "issue": "missing polygon key",
+        "projectNumbers": [
+          "23008"
+        ]
+      },
+      {
+        "polygonKey": "",
+        "displayName": "Idaho Springs - Clear Creek - CO",
+        "missingFrom": "MunicipalLevelPolygons.geojson",
+        "issue": "missing polygon key",
+        "projectNumbers": [
+          "17059"
+        ]
+      },
+      {
+        "polygonKey": "Mazatl?n",
+        "displayName": "Mazatl?n",
+        "missingFrom": "MunicipalLevelPolygons.geojson",
+        "issue": "polygon key not found",
+        "projectNumbers": [
+          "21002"
+        ]
+      },
+      {
+        "polygonKey": "",
+        "displayName": "Okotoks - Alberta",
+        "missingFrom": "MunicipalLevelPolygons.geojson",
+        "issue": "missing polygon key",
+        "projectNumbers": [
+          "18007"
+        ]
+      },
+      {
+        "polygonKey": "",
+        "displayName": "Superior - Boulder - CO",
+        "missingFrom": "MunicipalLevelPolygons.geojson",
+        "issue": "missing polygon key",
+        "projectNumbers": [
+          "19059"
+        ]
+      },
+      {
+        "polygonKey": "",
+        "displayName": "Yellowknife - Northwest Territories",
+        "missingFrom": "MunicipalLevelPolygons.geojson",
+        "issue": "missing polygon key",
+        "projectNumbers": [
+          "18030"
+        ]
+      }
+    ]
+  }
+}
