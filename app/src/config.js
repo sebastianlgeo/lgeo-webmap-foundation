@@ -8,7 +8,7 @@ window.WEBMAP_CONFIG = {
     // publish it, then replace this URL with the duplicated style URL.
     darkStyleUrl: "mapbox://styles/lickergeospatial/cmpzy564w00ew01sy5ebt4274",
     center: [-116.3, 52.2],
-    zoom: 3.75,
+    zoom: 3.5,
     boundsPadding: 70,
     zoomTransition: 0.2,
     startupBounds: [[-142, 7], [-47, 74]],
@@ -19,9 +19,9 @@ window.WEBMAP_CONFIG = {
       "United States": [[-125, 24], [-66, 50]]
     },
     countryMinZoom: {
-      Canada: 3.70,
-      Mexico: 3.70,
-      "United States": 3.70
+      Canada: 3.75,
+      Mexico: 3.75,
+      "United States": 3.75
     }
   },
   data: {
