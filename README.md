@@ -1,7 +1,5 @@
 # LGeo Webmap Foundation
 
-This folder is a clean starting point for the next version of the LGeo projects webmap. It separates project entry, generated map data, map styling, and Wix/Mapbox handoff decisions so future updates are less tangled.
-
 ## Folder Map
 
 - `app/` - local preview webmap. Open this through a local server at `/app/`.
