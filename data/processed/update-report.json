@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T18:36:00.134398+00:00",
+  "generatedAt": "2026-06-08T20:30:14.688074+00:00",
   "sourceCsv": "data/source/projects.csv",
   "projectCount": 244,
   "suppressedProjectCount": 38,
@@ -42,15 +42,15 @@
     "layers": [
       {
         "layer": "MunicipalLevelPoints.geojson",
-        "featureCount": 61,
+        "featureCount": 60,
         "matchedFeatureCount": 54,
         "output": "data/processed/geojson/MunicipalLevelPoints.geojson",
-        "generatedPointCount": 8
+        "generatedPointCount": 7
       },
       {
         "layer": "MunicipalLevelPolygons.geojson",
         "featureCount": 47,
-        "matchedFeatureCount": 47,
+        "matchedFeatureCount": 46,
         "output": "data/processed/geojson/MunicipalLevelPolygons.geojson"
       },
       {
@@ -190,6 +190,19 @@
         "issue": "missing polygon key",
         "projectNumbers": [
           "19059"
+        ]
+      },
+      {
+        "polygonKey": "UBC",
+        "displayName": "UBC",
+        "missingFrom": "MunicipalLevelPolygons.geojson",
+        "issue": "polygon key not found",
+        "projectNumbers": [
+          "17031",
+          "19053",
+          "21073",
+          "21075",
+          "22005"
         ]
       },
       {

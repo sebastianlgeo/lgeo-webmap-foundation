@@ -7,14 +7,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -92.10657870014683,
-          46.78327309923213
+          -92.10657870015,
+          46.78327309923
         ]
       },
       "properties": {
         "FID": 0,
         "NameKey": "Duluth - Saint Louis - MN",
         "FREQUENCY": 1,
+        "DisplayName": "Duluth - Saint Louis - MN",
         "ProjectCount": 1,
         "LinkedProjectCount": 1,
         "Interactive": false,
@@ -28,14 +29,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -105.51360819985842,
-          39.74248809941804
+          -105.51360819986,
+          39.74248809942
         ]
       },
       "properties": {
         "FID": 1,
         "NameKey": "Idaho Springs - Clear Creek - CO",
         "FREQUENCY": 1,
+        "DisplayName": "Idaho Springs - Clear Creek - CO",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -49,14 +51,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -105.16859770042345,
-          39.95276339928205
+          -105.16859770042,
+          39.95276339928
         ]
       },
       "properties": {
         "FID": 2,
         "NameKey": "Superior - Boulder - CO",
         "FREQUENCY": 1,
+        "DisplayName": "Superior - Boulder - CO",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -70,14 +73,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.38321696907235,
-          43.654857142571984
+          -79.38321696907,
+          43.65485714257
         ]
       },
       "properties": {
         "FID": 3,
         "NameKey": "City Of Toronto - Ontario",
         "FREQUENCY": 5,
+        "DisplayName": "City Of Toronto - Ontario",
         "ProjectCount": 5,
         "LinkedProjectCount": 1,
         "Interactive": false,
@@ -91,14 +95,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -63.60187606738725,
-          44.64875616028547
+          -63.60187606739,
+          44.64875616029
         ]
       },
       "properties": {
         "FID": 4,
         "NameKey": "Halifax - Nova Scotia",
         "FREQUENCY": 1,
+        "DisplayName": "Halifax - Nova Scotia",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -112,14 +117,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -66.64558559575585,
-          45.95539095580983
+          -66.64558559576,
+          45.95539095581
         ]
       },
       "properties": {
         "FID": 5,
         "NameKey": "Fredericton - New Brunswick",
         "FREQUENCY": 1,
+        "DisplayName": "Fredericton - New Brunswick",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -133,14 +139,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -115.75889647576497,
-          49.515485795171344
+          -115.75889647576,
+          49.51548579517
         ]
       },
       "properties": {
         "FID": 6,
         "NameKey": "Cranbrook",
         "FREQUENCY": 3,
+        "DisplayName": "Cranbrook",
         "ProjectCount": 3,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -154,14 +161,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -117.27678507437429,
-          49.19161500158668
+          -117.27678507437,
+          49.19161500159
         ]
       },
       "properties": {
         "FID": 7,
         "NameKey": "Salmo",
         "FREQUENCY": 1,
+        "DisplayName": "Salmo",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -175,14 +183,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -113.97749989991792,
-          50.726111100355695
+          -113.97749989992,
+          50.72611110036
         ]
       },
       "properties": {
         "FID": 8,
         "NameKey": "Okotoks - Alberta",
         "FREQUENCY": 1,
+        "DisplayName": "Okotoks - Alberta",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -196,14 +205,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.36170690412484,
-          48.433438430623426
+          -123.3641101634,
+          48.42717378913
         ]
       },
       "properties": {
         "FID": 9,
         "NameKey": "Victoria",
         "FREQUENCY": 10,
+        "DisplayName": "Victoria",
         "ProjectCount": 10,
         "LinkedProjectCount": 2,
         "Interactive": false,
@@ -217,14 +227,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.49651928544279,
-          48.43207754835129
+          -123.49651928544,
+          48.43207754835
         ]
       },
       "properties": {
         "FID": 10,
         "NameKey": "Colwood",
         "FREQUENCY": 1,
+        "DisplayName": "Colwood",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -238,14 +249,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.38796882548525,
-          48.48784862238887
+          -123.38796882549,
+          48.48784862239
         ]
       },
       "properties": {
         "FID": 11,
         "NameKey": "Saanich",
         "FREQUENCY": 1,
+        "DisplayName": "Saanich",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -259,14 +271,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.72791585605137,
-          48.38227961337873
+          -123.72791585605,
+          48.38227961338
         ]
       },
       "properties": {
         "FID": 12,
         "NameKey": "Sooke",
         "FREQUENCY": 1,
+        "DisplayName": "Sooke",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -280,14 +293,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.49741875208974,
-          48.45660201345021
+          -123.49741875209,
+          48.45660201345
         ]
       },
       "properties": {
         "FID": 13,
         "NameKey": "Langford",
         "FREQUENCY": 1,
+        "DisplayName": "Langford",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -301,14 +315,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.39705385795577,
-          48.566903524425925
+          -123.39705385796,
+          48.56690352443
         ]
       },
       "properties": {
         "FID": 14,
         "NameKey": "Central Saanich",
         "FREQUENCY": 2,
+        "DisplayName": "Central Saanich",
         "ProjectCount": 2,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -322,14 +337,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.41669990007557,
-          48.599999999921465
+          -123.41669990008,
+          48.59999999992
         ]
       },
       "properties": {
         "FID": 15,
         "NameKey": "Saanichton - British Columbia",
         "FREQUENCY": 1,
+        "DisplayName": "Saanichton - British Columbia",
         "ProjectCount": 0,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -343,14 +359,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.42146294565583,
-          48.62172342727047
+          -123.42146294566,
+          48.62172342727
         ]
       },
       "properties": {
         "FID": 16,
         "NameKey": "North Saanich",
         "FREQUENCY": 1,
+        "DisplayName": "North Saanich",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -364,14 +381,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.39999989923956,
-          48.64999999998298
+          -123.39999989924,
+          48.64999999998
         ]
       },
       "properties": {
         "FID": 17,
         "NameKey": "Sidney",
         "FREQUENCY": 1,
+        "DisplayName": "Sidney",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -385,14 +403,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -114.05749989962692,
-          51.045833299990704
+          -114.05749989963,
+          51.04583329999
         ]
       },
       "properties": {
         "FID": 18,
         "NameKey": "Calgary - Alberta",
         "FREQUENCY": 1,
+        "DisplayName": "Calgary - Alberta",
         "ProjectCount": 1,
         "LinkedProjectCount": 1,
         "Interactive": false,
@@ -406,14 +425,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.32131459357959,
-          49.056399362778336
+          -122.32131459358,
+          49.05639936278
         ]
       },
       "properties": {
         "FID": 19,
         "NameKey": "Abbotsford",
         "FREQUENCY": 3,
+        "DisplayName": "Abbotsford",
         "ProjectCount": 3,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -427,14 +447,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.94162731154495,
-          49.17499846134922
+          -121.94162731154,
+          49.17499846135
         ]
       },
       "properties": {
         "FID": 20,
         "NameKey": "Chilliwack",
         "FREQUENCY": 5,
+        "DisplayName": "Chilliwack",
         "ProjectCount": 5,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -448,14 +469,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -119.63138167921295,
-          49.82856416052721
+          -119.63138167921,
+          49.82856416053
         ]
       },
       "properties": {
         "FID": 21,
         "NameKey": "Westbank - British Columbia",
         "FREQUENCY": 2,
+        "DisplayName": "Westbank - British Columbia",
         "ProjectCount": 0,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -469,14 +491,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.30369532633341,
-          49.1376107966567
+          -122.30369532633,
+          49.13761079666
         ]
       },
       "properties": {
         "FID": 22,
         "NameKey": "Mission",
         "FREQUENCY": 1,
+        "DisplayName": "Mission",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -490,14 +513,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.79616310769012,
-          49.025168300930716
+          -122.79616310769,
+          49.02516830093
         ]
       },
       "properties": {
         "FID": 23,
         "NameKey": "White Rock",
         "FREQUENCY": 1,
+        "DisplayName": "White Rock",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -511,14 +535,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.65883665274742,
-          49.10378007452505
+          -122.65883665275,
+          49.10378007453
         ]
       },
       "properties": {
         "FID": 24,
         "NameKey": "Langley - City",
         "FREQUENCY": 2,
+        "DisplayName": "Langley - City",
         "ProjectCount": 2,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -532,14 +557,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.09365831440266,
-          49.03571418620652
+          -123.0936583144,
+          49.03571418621
         ]
       },
       "properties": {
         "FID": 25,
         "NameKey": "Tsawwassen",
         "FREQUENCY": 1,
+        "DisplayName": "Tsawwassen",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -553,14 +579,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.70178259782841,
-          48.851062673646936
+          -123.70178259783,
+          48.85106267365
         ]
       },
       "properties": {
         "FID": 26,
         "NameKey": "Westholme - British Columbia",
         "FREQUENCY": 1,
+        "DisplayName": "Westholme - British Columbia",
         "ProjectCount": 0,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -574,14 +601,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.59794609192335,
-          49.2174074791763
+          -122.59794609192,
+          49.21740747918
         ]
       },
       "properties": {
         "FID": 27,
         "NameKey": "Maple Ridge",
         "FREQUENCY": 2,
+        "DisplayName": "Maple Ridge",
         "ProjectCount": 2,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -595,14 +623,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.07777770050507,
-          49.09166660001824
+          -123.07777770051,
+          49.09166660002
         ]
       },
       "properties": {
         "FID": 28,
         "NameKey": "Ladner - British Columbia",
         "FREQUENCY": 2,
+        "DisplayName": "Ladner - British Columbia",
         "ProjectCount": 0,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -616,14 +645,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.68629553605138,
-          49.2171522722885
+          -122.68629553605,
+          49.21715227229
         ]
       },
       "properties": {
         "FID": 29,
         "NameKey": "Pitt Meadows",
         "FREQUENCY": 1,
+        "DisplayName": "Pitt Meadows",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -637,14 +667,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.82777119635642,
-          49.17447915728371
+          -122.82777119636,
+          49.17447915728
         ]
       },
       "properties": {
         "FID": 30,
         "NameKey": "Surrey",
         "FREQUENCY": 10,
+        "DisplayName": "Surrey",
         "ProjectCount": 10,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -658,14 +689,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.91669999941479,
-          49.216699900170795
+          -122.91669999941,
+          49.21669990017
         ]
       },
       "properties": {
         "FID": 31,
         "NameKey": "New Westminster",
         "FREQUENCY": 2,
+        "DisplayName": "New Westminster",
         "ProjectCount": 2,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -679,14 +711,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.15820457067832,
-          49.15385688548537
+          -123.15820457068,
+          49.15385688549
         ]
       },
       "properties": {
         "FID": 32,
         "NameKey": "Richmond",
         "FREQUENCY": 3,
+        "DisplayName": "Richmond",
         "ProjectCount": 3,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -700,14 +733,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -119.26888710140867,
-          50.26422417198552
+          -119.26888710141,
+          50.26422417199
         ]
       },
       "properties": {
         "FID": 33,
         "NameKey": "Vernon",
         "FREQUENCY": 1,
+        "DisplayName": "Vernon",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -721,14 +755,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.86762527294326,
-          49.27864655267189
+          -122.86762527294,
+          49.27864655267
         ]
       },
       "properties": {
         "FID": 34,
         "NameKey": "Port Moody",
         "FREQUENCY": 1,
+        "DisplayName": "Port Moody",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -742,14 +777,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.96170710959518,
-          49.25208704481361
+          -122.9617071096,
+          49.25208704481
         ]
       },
       "properties": {
         "FID": 35,
         "NameKey": "Burnaby",
         "FREQUENCY": 5,
+        "DisplayName": "Burnaby",
         "ProjectCount": 5,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -763,14 +799,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.11538738462491,
-          49.244798659559194
+          -123.11538738462,
+          49.24479865956
         ]
       },
       "properties": {
         "FID": 36,
         "NameKey": "Vancouver",
         "FREQUENCY": 28,
+        "DisplayName": "Vancouver",
         "ProjectCount": 28,
         "LinkedProjectCount": 5,
         "Interactive": false,
@@ -784,14 +821,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.93914729916094,
-          49.16592363738977
+          -123.93914729916,
+          49.16592363739
         ]
       },
       "properties": {
         "FID": 37,
         "NameKey": "Nanaimo",
         "FREQUENCY": 4,
+        "DisplayName": "Nanaimo",
         "ProjectCount": 4,
         "LinkedProjectCount": 1,
         "Interactive": false,
@@ -805,14 +843,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.76223497742961,
-          49.47939455121559
+          -123.76223497743,
+          49.47939455122
         ]
       },
       "properties": {
         "FID": 38,
         "NameKey": "Sechelt",
         "FREQUENCY": 1,
+        "DisplayName": "Sechelt",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -826,14 +865,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -118.98023112708785,
-          50.835017567422085
+          -118.98023112709,
+          50.83501756742
         ]
       },
       "properties": {
         "FID": 39,
         "NameKey": "Sicamous",
         "FREQUENCY": 1,
+        "DisplayName": "Sicamous",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -847,14 +887,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -120.34772932663827,
-          50.6782505411947
+          -120.34772932664,
+          50.67825054119
         ]
       },
       "properties": {
         "FID": 40,
         "NameKey": "Kamloops",
         "FREQUENCY": 6,
+        "DisplayName": "Kamloops",
         "ProjectCount": 6,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -868,14 +909,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.95544037450105,
-          50.11747372380552
+          -122.9554403745,
+          50.11747372381
         ]
       },
       "properties": {
         "FID": 41,
         "NameKey": "Whistler",
         "FREQUENCY": 2,
+        "DisplayName": "Whistler",
         "ProjectCount": 2,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -889,14 +931,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -124.92779453920161,
-          49.673857627335224
+          -124.9277945392,
+          49.67385762734
         ]
       },
       "properties": {
         "FID": 42,
         "NameKey": "Comox",
         "FREQUENCY": 2,
+        "DisplayName": "Comox",
         "ProjectCount": 2,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -910,14 +953,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -124.99897439668553,
-          49.68891553218765
+          -124.99897439669,
+          49.68891553219
         ]
       },
       "properties": {
         "FID": 43,
         "NameKey": "Courtenay",
         "FREQUENCY": 1,
+        "DisplayName": "Courtenay",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -931,14 +975,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -124.54649650107467,
-          49.871999555655464
+          -124.54649650107,
+          49.87199955566
         ]
       },
       "properties": {
         "FID": 44,
         "NameKey": "Powell River",
         "FREQUENCY": 1,
+        "DisplayName": "Powell River",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -952,14 +997,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.94406886423877,
-          50.680259166173755
+          -121.94406886424,
+          50.68025916617
         ]
       },
       "properties": {
         "FID": 45,
         "NameKey": "Lillooet 1 - British Columbia",
         "FREQUENCY": 1,
+        "DisplayName": "Lillooet 1 - British Columbia",
         "ProjectCount": 0,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -973,14 +1019,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -125.24166660033308,
-          50.01666660035164
+          -125.24166660033,
+          50.01666660035
         ]
       },
       "properties": {
         "FID": 46,
         "NameKey": "Campbell River",
         "FREQUENCY": 1,
+        "DisplayName": "Campbell River",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -994,14 +1041,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -114.36911062062023,
-          62.45358486340825
+          -114.36911062062,
+          62.45358486341
         ]
       },
       "properties": {
         "FID": 47,
         "NameKey": "Yellowknife - Northwest Territories",
         "FREQUENCY": 1,
+        "DisplayName": "Yellowknife - Northwest Territories",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -1023,6 +1071,7 @@
         "FID": 48,
         "NameKey": "North Vancouver - British Columbia",
         "FREQUENCY": 2,
+        "DisplayName": "North Vancouver - British Columbia",
         "ProjectCount": 0,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -1036,14 +1085,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.54816180780625,
-          49.08447261901085
+          -122.54816180781,
+          49.08447261901
         ]
       },
       "properties": {
         "FID": 49,
         "NameKey": "Langley - District",
         "FREQUENCY": 2,
+        "DisplayName": "Langley - Township",
         "ProjectCount": 2,
         "LinkedProjectCount": 1,
         "Interactive": false,
@@ -1057,19 +1107,20 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.24976859575617,
-          49.266734750489775
+          -123.24976859576,
+          49.26673475049
         ]
       },
       "properties": {
         "FID": 50,
-        "NameKey": "UBC - British Columbia",
+        "NameKey": "UBC",
         "FREQUENCY": 5,
-        "ProjectCount": 0,
+        "DisplayName": "UBC",
+        "ProjectCount": 5,
         "LinkedProjectCount": 0,
         "Interactive": false,
-        "TopProjectType": "",
-        "ProjectTypes": ""
+        "TopProjectType": "Additional GIS Support Services",
+        "ProjectTypes": "Additional GIS Support Services, Webmaps, Cartography & Visual Storytelling"
       }
     },
     {
@@ -1078,14 +1129,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.07011884899697,
-          49.31739753708308
+          -123.070118849,
+          49.31739753708
         ]
       },
       "properties": {
         "FID": 51,
         "NameKey": "North Vancouver - City",
         "FREQUENCY": 1,
+        "DisplayName": "North Vancouver - City",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -1099,14 +1151,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -124.08429824673493,
-          49.25085417318627
+          -124.08429824673,
+          49.25085417319
         ]
       },
       "properties": {
         "FID": 52,
         "NameKey": "Lantzville",
         "FREQUENCY": 1,
+        "DisplayName": "Lantzville",
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
@@ -1119,6 +1172,7 @@
       "properties": {
         "FID": 53,
         "NameKey": "Delta",
+        "DisplayName": "Delta",
         "FREQUENCY": 2,
         "ProjectCount": 2,
         "LinkedProjectCount": 0,
@@ -1140,6 +1194,7 @@
       "properties": {
         "FID": 54,
         "NameKey": "West Kelowna",
+        "DisplayName": "West Kelowna",
         "FREQUENCY": 2,
         "ProjectCount": 2,
         "LinkedProjectCount": 0,
@@ -1161,6 +1216,7 @@
       "properties": {
         "FID": 55,
         "NameKey": "SLRD - EA B",
+        "DisplayName": "SLRD - EA B",
         "FREQUENCY": 1,
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
@@ -1182,6 +1238,7 @@
       "properties": {
         "FID": 56,
         "NameKey": "North Vancouver - District",
+        "DisplayName": "North Vancouver - District",
         "FREQUENCY": 2,
         "ProjectCount": 2,
         "LinkedProjectCount": 0,
@@ -1202,28 +1259,8 @@
       "type": "Feature",
       "properties": {
         "FID": 57,
-        "NameKey": "MVRD - EA A",
-        "FREQUENCY": 5,
-        "ProjectCount": 5,
-        "LinkedProjectCount": 0,
-        "Interactive": false,
-        "TopProjectType": "Additional GIS Support Services",
-        "ProjectTypes": "Additional GIS Support Services, Webmaps, Cartography & Visual Storytelling",
-        "GeneratedPoint": true
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -123.12082522190411,
-          49.28608703180253
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 58,
         "NameKey": "Squamish",
+        "DisplayName": "Squamish",
         "FREQUENCY": 1,
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
@@ -1243,8 +1280,9 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 59,
+        "FID": 58,
         "NameKey": "Ladysmith",
+        "DisplayName": "Ladysmith",
         "FREQUENCY": 2,
         "ProjectCount": 2,
         "LinkedProjectCount": 0,
@@ -1264,8 +1302,9 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 60,
+        "FID": 59,
         "NameKey": "North Cowichan",
+        "DisplayName": "North Cowichan",
         "FREQUENCY": 2,
         "ProjectCount": 2,
         "LinkedProjectCount": 0,

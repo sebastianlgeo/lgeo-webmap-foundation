@@ -253,20 +253,20 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "MVRD - EA A",
+    "primaryGeography": "UBC",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "MVRD - EA A"
+      "Municipal": "UBC"
     },
     "polygonKeys": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "MVRD",
-      "Municipal": "MVRD - EA A"
+      "Municipal": "UBC"
     }
   },
   {
@@ -1678,7 +1678,7 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Langley - District",
+    "primaryGeography": "Langley - Township",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
@@ -1918,20 +1918,20 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "MVRD - EA A",
+    "primaryGeography": "UBC",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "MVRD - EA A"
+      "Municipal": "UBC"
     },
     "polygonKeys": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "MVRD",
-      "Municipal": "MVRD - EA A"
+      "Municipal": "UBC"
     }
   },
   {
@@ -3501,20 +3501,20 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "MVRD - EA A",
+    "primaryGeography": "UBC",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "MVRD - EA A"
+      "Municipal": "UBC"
     },
     "polygonKeys": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "MVRD",
-      "Municipal": "MVRD - EA A"
+      "Municipal": "UBC"
     }
   },
   {
@@ -3561,20 +3561,20 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "MVRD - EA A",
+    "primaryGeography": "UBC",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "MVRD - EA A"
+      "Municipal": "UBC"
     },
     "polygonKeys": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "MVRD",
-      "Municipal": "MVRD - EA A"
+      "Municipal": "UBC"
     }
   },
   {
@@ -3735,20 +3735,20 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "MVRD - EA A",
+    "primaryGeography": "UBC",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "MVRD - EA A"
+      "Municipal": "UBC"
     },
     "polygonKeys": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "MVRD",
-      "Municipal": "MVRD - EA A"
+      "Municipal": "UBC"
     }
   },
   {

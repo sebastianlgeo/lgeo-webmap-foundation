@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T18:36:00.134398+00:00",
+  "generatedAt": "2026-06-08T20:30:14.688074+00:00",
   "sourceFilesPrivate": true,
   "rawGeojsonFiles": [
     "data/geojson/raw/MunicipalLevelPoints.geojson",
@@ -23,6 +23,13 @@
     "data/processed/geojson/RegionalLevelPoints.geojson",
     "data/processed/geojson/RegionalLevelPolygons.geojson",
     "data/processed/manifest.json",
+    "data/processed/mapbox-recipes/lgeo-municipal-points.recipe.json",
+    "data/processed/mapbox-recipes/lgeo-municipal-polygons.recipe.json",
+    "data/processed/mapbox-recipes/lgeo-national-points.recipe.json",
+    "data/processed/mapbox-recipes/lgeo-provincial-points.recipe.json",
+    "data/processed/mapbox-recipes/lgeo-provincial-polygons.recipe.json",
+    "data/processed/mapbox-recipes/lgeo-regional-points.recipe.json",
+    "data/processed/mapbox-recipes/lgeo-regional-polygons.recipe.json",
     "data/processed/projects.json",
     "data/processed/update-report.json",
     "data/processed/update-report.md"

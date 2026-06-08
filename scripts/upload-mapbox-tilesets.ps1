@@ -95,6 +95,11 @@ foreach ($layer in $layers) {
     if ($LASTEXITCODE -ne 0) {
       throw "create/update-recipe failed for $tilesetId"
     }
+  } else {
+    & $TilesetsExe update-recipe $tilesetId $recipePath
+    if ($LASTEXITCODE -ne 0) {
+      throw "update-recipe failed for $tilesetId"
+    }
   }
 
   Write-Host "Publishing $tilesetId"

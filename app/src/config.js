@@ -57,7 +57,10 @@ window.WEBMAP_CONFIG = {
     "City Of Toronto - Ontario": "Toronto",
     "Regional District of Nanaimo - British Columbia": "Regional District of Nanaimo",
     "Nanaimo Regional District - British Columbia": "Regional District of Nanaimo",
-    "Nanaimo - British Columbia": "Nanaimo"
+    "Nanaimo - British Columbia": "Nanaimo",
+    "Langley - District": "Langley - Township",
+    "Langley - District - British Columbia": "Langley - Township",
+    "UBC - British Columbia": "UBC"
   },
   hiddenPointGeographies: {
     Municipal: ["Halifax - Nova Scotia"]

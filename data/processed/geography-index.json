@@ -7861,90 +7861,6 @@
       }
     ]
   },
-  "MVRD - EA A": {
-    "geographyName": "MVRD - EA A",
-    "scales": [
-      "Municipal"
-    ],
-    "keyKinds": [
-      "point-name",
-      "polygon-key"
-    ],
-    "projectCount": 5,
-    "linkedProjectCount": 0,
-    "projectTypes": [
-      "Additional GIS Support Services",
-      "Webmaps, Cartography & Visual Storytelling"
-    ],
-    "projectLevels": [
-      "Academic",
-      "Uncategorized"
-    ],
-    "topProjectType": "Additional GIS Support Services",
-    "topProjectLevel": "Academic",
-    "projects": [
-      {
-        "projectNumber": "22005",
-        "projectYear": "2022",
-        "projectName": "Housing Needs Assessment",
-        "projectType": "Webmaps, Cartography & Visual Storytelling",
-        "projectLevel": "",
-        "projectUrl": "",
-        "thumbnailUrl": "",
-        "featured": false,
-        "interactive": false,
-        "description": ""
-      },
-      {
-        "projectNumber": "21075",
-        "projectYear": "2021",
-        "projectName": "UBC Wayfinding",
-        "projectType": "Additional GIS Support Services",
-        "projectLevel": "",
-        "projectUrl": "",
-        "thumbnailUrl": "",
-        "featured": false,
-        "interactive": false,
-        "description": ""
-      },
-      {
-        "projectNumber": "21073",
-        "projectYear": "2021",
-        "projectName": "UBC Neighbourhoods Association Landscape Assett Mapping",
-        "projectType": "Additional GIS Support Services",
-        "projectLevel": "Academic",
-        "projectUrl": "",
-        "thumbnailUrl": "",
-        "featured": false,
-        "interactive": false,
-        "description": ""
-      },
-      {
-        "projectNumber": "19053",
-        "projectYear": "2019",
-        "projectName": "UBC Wayfinding Web Application - Phase 1",
-        "projectType": "Webmaps, Cartography & Visual Storytelling",
-        "projectLevel": "Academic",
-        "projectUrl": "",
-        "thumbnailUrl": "",
-        "featured": false,
-        "interactive": false,
-        "description": ""
-      },
-      {
-        "projectNumber": "17031",
-        "projectYear": "2017",
-        "projectName": "UBC Capacity Building",
-        "projectType": "Additional GIS Support Services",
-        "projectLevel": "Academic",
-        "projectUrl": "",
-        "thumbnailUrl": "",
-        "featured": false,
-        "interactive": false,
-        "description": ""
-      }
-    ]
-  },
   "Maple Ridge": {
     "geographyName": "Maple Ridge",
     "scales": [
@@ -11642,6 +11558,90 @@
         "projectName": "Tempest GIS Integration",
         "projectType": "Additional GIS Support Services",
         "projectLevel": "Municipal Government",
+        "projectUrl": "",
+        "thumbnailUrl": "",
+        "featured": false,
+        "interactive": false,
+        "description": ""
+      }
+    ]
+  },
+  "UBC": {
+    "geographyName": "UBC",
+    "scales": [
+      "Municipal"
+    ],
+    "keyKinds": [
+      "point-name",
+      "polygon-key"
+    ],
+    "projectCount": 5,
+    "linkedProjectCount": 0,
+    "projectTypes": [
+      "Additional GIS Support Services",
+      "Webmaps, Cartography & Visual Storytelling"
+    ],
+    "projectLevels": [
+      "Academic",
+      "Uncategorized"
+    ],
+    "topProjectType": "Additional GIS Support Services",
+    "topProjectLevel": "Academic",
+    "projects": [
+      {
+        "projectNumber": "22005",
+        "projectYear": "2022",
+        "projectName": "Housing Needs Assessment",
+        "projectType": "Webmaps, Cartography & Visual Storytelling",
+        "projectLevel": "",
+        "projectUrl": "",
+        "thumbnailUrl": "",
+        "featured": false,
+        "interactive": false,
+        "description": ""
+      },
+      {
+        "projectNumber": "21075",
+        "projectYear": "2021",
+        "projectName": "UBC Wayfinding",
+        "projectType": "Additional GIS Support Services",
+        "projectLevel": "",
+        "projectUrl": "",
+        "thumbnailUrl": "",
+        "featured": false,
+        "interactive": false,
+        "description": ""
+      },
+      {
+        "projectNumber": "21073",
+        "projectYear": "2021",
+        "projectName": "UBC Neighbourhoods Association Landscape Assett Mapping",
+        "projectType": "Additional GIS Support Services",
+        "projectLevel": "Academic",
+        "projectUrl": "",
+        "thumbnailUrl": "",
+        "featured": false,
+        "interactive": false,
+        "description": ""
+      },
+      {
+        "projectNumber": "19053",
+        "projectYear": "2019",
+        "projectName": "UBC Wayfinding Web Application - Phase 1",
+        "projectType": "Webmaps, Cartography & Visual Storytelling",
+        "projectLevel": "Academic",
+        "projectUrl": "",
+        "thumbnailUrl": "",
+        "featured": false,
+        "interactive": false,
+        "description": ""
+      },
+      {
+        "projectNumber": "17031",
+        "projectYear": "2017",
+        "projectName": "UBC Capacity Building",
+        "projectType": "Additional GIS Support Services",
+        "projectLevel": "Academic",
         "projectUrl": "",
         "thumbnailUrl": "",
         "featured": false,

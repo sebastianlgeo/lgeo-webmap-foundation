@@ -92,6 +92,11 @@ POINT_COORDINATE_OVERRIDES = {
     "Alberta": [-114.6, 54.65],
 }
 
+DISPLAY_NAME_OVERRIDES = {
+    "Langley - District": "Langley - Township",
+    "UBC - British Columbia": "UBC",
+}
+
 POINT_POLYGON_LAYER_PAIRS = [
     ("ProvincialLevelPoints.geojson", "ProvincialLevelPolygons.geojson"),
     ("RegionalLevelPoints.geojson", "RegionalLevelPolygons.geojson"),
@@ -179,6 +184,11 @@ def build_geography_normalizations() -> dict[str, str]:
 def normalize_geography_key(value: object) -> str:
     text = clean(value)
     return GEOGRAPHY_NORMALIZATIONS.get(text, text)
+
+
+def display_name_for_geography_key(value: object) -> str:
+    key = clean(value)
+    return DISPLAY_NAME_OVERRIDES.get(key, key)
 
 
 def slug_to_relative_url(slug: str) -> str:
@@ -394,6 +404,7 @@ def update_geojson_layers(lookup: dict[str, dict[str, object]]) -> dict[str, obj
             properties = feature.setdefault("properties", {})
             name_key = normalize_geography_key(properties.get("NameKey"))
             properties["NameKey"] = name_key
+            properties["DisplayName"] = display_name_for_geography_key(name_key)
             properties.pop("Frequency", None)
             if (
                 name_key in POINT_COORDINATE_OVERRIDES
@@ -498,6 +509,7 @@ def synthesize_missing_point_features(
                     "properties": {
                         "FID": max_fid,
                         "NameKey": name_key,
+                        "DisplayName": display_name_for_geography_key(name_key),
                         "FREQUENCY": project_count,
                         "ProjectCount": project_count,
                         "LinkedProjectCount": int(properties.get("LinkedProjectCount") or 0),
