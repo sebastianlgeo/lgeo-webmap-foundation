@@ -91,7 +91,11 @@ PROVINCE_SUFFIXES = [
 GEOGRAPHY_NORMALIZATIONS: dict[str, str] = {}
 
 POINT_COORDINATE_OVERRIDES = {
-    "Alberta": [-114.6, 54.65],
+    "Alberta": [-114.25, 51.85],
+    "British Columbia": [-122.85, 49.7],
+    "Northwest Territories": [-114.38, 62.45],
+    "Ontario": [-79.65, 44.05],
+    "North Vancouver - District": [-123.0865500564, 49.3376773634],
 }
 
 DISPLAY_NAME_OVERRIDES = {
@@ -408,12 +412,7 @@ def update_geojson_layers(lookup: dict[str, dict[str, object]]) -> dict[str, obj
             properties["NameKey"] = name_key
             properties["DisplayName"] = display_name_for_geography_key(name_key)
             properties.pop("Frequency", None)
-            if (
-                name_key in POINT_COORDINATE_OVERRIDES
-                and isinstance(feature.get("geometry"), dict)
-                and feature["geometry"].get("type") == "Point"
-            ):
-                feature["geometry"]["coordinates"] = POINT_COORDINATE_OVERRIDES[name_key]
+            apply_point_coordinate_override(feature, name_key)
             geojson_keys.add(name_key)
             entry = lookup.get(name_key)
 
@@ -522,7 +521,7 @@ def synthesize_missing_point_features(
                     },
                     "geometry": {
                         "type": "Point",
-                        "coordinates": bounds["center"],
+                        "coordinates": point_coordinates_for_name(name_key, bounds["center"]),
                     },
                 }
             )
@@ -537,6 +536,17 @@ def synthesize_missing_point_features(
                 layer_report["matchedFeatureCount"] = int(layer_report["matchedFeatureCount"]) + generated_count
                 layer_report["generatedPointCount"] = generated_count
                 break
+
+
+def point_coordinates_for_name(name_key: str, fallback: list[float]) -> list[float]:
+    return POINT_COORDINATE_OVERRIDES.get(name_key, fallback)
+
+
+def apply_point_coordinate_override(feature: dict[str, object], name_key: str) -> None:
+    geometry = feature.get("geometry")
+    if not isinstance(geometry, dict) or geometry.get("type") != "Point":
+        return
+    geometry["coordinates"] = point_coordinates_for_name(name_key, geometry.get("coordinates"))
 
 
 def project_number_set(entry: dict[str, object] | None) -> frozenset[str]:
