@@ -6,3 +6,9 @@ Thumbs.db
 
 # Private source tables can include suppressed/non-public projects.
 data/source/
+
+# Local deployment secrets. Keep real Mapbox secret tokens out of GitHub.
+.env
+.env.local
+secrets/*.env
+secrets/*.secret

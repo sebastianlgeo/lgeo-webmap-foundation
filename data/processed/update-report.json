@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T01:48:13.142418+00:00",
+  "generatedAt": "2026-06-08T18:21:46.082004+00:00",
   "sourceCsv": "data/source/projects.csv",
   "projectCount": 244,
   "suppressedProjectCount": 38,
@@ -42,9 +42,10 @@
     "layers": [
       {
         "layer": "MunicipalLevelPoints.geojson",
-        "featureCount": 53,
-        "matchedFeatureCount": 46,
-        "output": "data/processed/geojson/MunicipalLevelPoints.geojson"
+        "featureCount": 61,
+        "matchedFeatureCount": 54,
+        "output": "data/processed/geojson/MunicipalLevelPoints.geojson",
+        "generatedPointCount": 8
       },
       {
         "layer": "MunicipalLevelPolygons.geojson",
@@ -72,9 +73,10 @@
       },
       {
         "layer": "RegionalLevelPoints.geojson",
-        "featureCount": 28,
-        "matchedFeatureCount": 27,
-        "output": "data/processed/geojson/RegionalLevelPoints.geojson"
+        "featureCount": 44,
+        "matchedFeatureCount": 43,
+        "output": "data/processed/geojson/RegionalLevelPoints.geojson",
+        "generatedPointCount": 16
       },
       {
         "layer": "RegionalLevelPolygons.geojson",

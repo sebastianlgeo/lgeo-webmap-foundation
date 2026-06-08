@@ -90,6 +90,20 @@ Use a new value after small CSS/JS edits if Chrome is stubborn.
 
 Goal: move heavy generated map layers out of local GeoJSON and into Mapbox vector tiles, while keeping project and popup data easy to regenerate locally.
 
+Before uploading, put the real Mapbox secret token in the local-only file:
+
+```text
+secrets/mapbox.env
+```
+
+That file is ignored by Git. Use `secrets/mapbox.env.example` as the template. In PowerShell, load it into the current session with:
+
+```powershell
+.\scripts\load-mapbox-env.ps1
+```
+
+The loader sets both `MAPBOX_SECRET_TOKEN` and `MAPBOX_ACCESS_TOKEN` for tools that expect the standard Mapbox environment variable.
+
 Recommended tileset candidates:
 
 - `data/processed/geojson/ProvincialLevelPolygons.geojson`

@@ -81,11 +81,11 @@ window.WEBMAP_CONFIG = {
     "Halifax Regional Municipality - Nova Scotia": 5.82
   },
   geographyMaxZoom: {
-    "British Columbia": 5.76,
-    "Alberta": 5.76,
-    "Ontario": 5.76,
-    "New Brunswick": 5.76,
-    "Nova Scotia": 5.76,
+    "British Columbia": 5.36,
+    "Alberta": 5.36,
+    "Ontario": 5.36,
+    "New Brunswick": 5.36,
+    "Nova Scotia": 5.36,
     "Halifax - Nova Scotia": 7.76,
     "Halifax Regional Municipality - Nova Scotia": 7.76
   },
@@ -137,7 +137,7 @@ window.WEBMAP_CONFIG = {
     sourceLayer: "f68f0768d09cd87b59e5",
     color: "#e78f4c",
     minzoom: 3.7,
-    maxzoom: 5.8,
+    maxzoom: 5.4,
     defaultVisible: true
   },
   {
@@ -149,7 +149,7 @@ window.WEBMAP_CONFIG = {
     tilesetUrl: "mapbox://lickergeospatial.qhkc2phuz4v9",
     sourceLayer: "5051ce6d9c09cc253353",
     color: "#e78f4c",
-    minzoom: 5.8,
+    minzoom: 5.4,
     maxzoom: 7.8,
     defaultVisible: true
   },
@@ -176,7 +176,7 @@ window.WEBMAP_CONFIG = {
     sourceLayer: "8510206a6a5c98b7e457",
     color: "#89b8b7",
     minzoom: 3.7,
-    maxzoom: 5.8,
+    maxzoom: 5.4,
     defaultVisible: true
   },
   {
@@ -188,7 +188,7 @@ window.WEBMAP_CONFIG = {
     tilesetUrl: "mapbox://lickergeospatial.vafm6j9xvy1j",
     sourceLayer: "b2f6b023e0f85a1e50db",
     color: "#86b4b3",
-    minzoom: 5.8,
+    minzoom: 5.4,
     maxzoom: 7.8,
     defaultVisible: true
   },
@@ -212,6 +212,8 @@ window.WEBMAP_CONFIG = {
     coordinates: [-123.06922543541361, 49.27105291070608],
     logoUrl: "./assets/LGeo-logo-rgb_vert.jpg",
     minzoom: 10.8,
+    iconSize: 0.11,
+    iconOpacity: 0.72,
     games: [
       { label: "WhenTaken", url: "https://whentaken.com/" },
       { label: "MapTap", url: "https://maptap.gg/" },

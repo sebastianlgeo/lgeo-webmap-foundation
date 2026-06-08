@@ -92,6 +92,12 @@ POINT_COORDINATE_OVERRIDES = {
     "Alberta": [-114.6, 54.65],
 }
 
+POINT_POLYGON_LAYER_PAIRS = [
+    ("ProvincialLevelPoints.geojson", "ProvincialLevelPolygons.geojson"),
+    ("RegionalLevelPoints.geojson", "RegionalLevelPolygons.geojson"),
+    ("MunicipalLevelPoints.geojson", "MunicipalLevelPolygons.geojson"),
+]
+
 
 def read_csv(path: Path) -> list[dict[str, str]]:
     with path.open("r", encoding="utf-8-sig", newline="") as handle:
@@ -426,12 +432,87 @@ def update_geojson_layers(lookup: dict[str, dict[str, object]]) -> dict[str, obj
             }
         )
 
+    synthesize_missing_point_features(report_layers, geojson_keys)
+
     missing_geojson_keys = sorted(key for key in lookup if key and key not in geojson_keys)
     return {
         "layers": report_layers,
         "geojsonKeyCount": len(geojson_keys),
         "missingGeojsonKeys": missing_geojson_keys,
     }
+
+
+def synthesize_missing_point_features(report_layers: list[dict[str, object]], geojson_keys: set[str]) -> None:
+    for point_layer_name, polygon_layer_name in POINT_POLYGON_LAYER_PAIRS:
+        point_path = PROCESSED_GEOJSON_DIR / point_layer_name
+        polygon_path = PROCESSED_GEOJSON_DIR / polygon_layer_name
+        if not point_path.exists() or not polygon_path.exists():
+            continue
+
+        point_data = json.loads(point_path.read_text(encoding="utf-8"))
+        polygon_data = json.loads(polygon_path.read_text(encoding="utf-8"))
+        point_features = point_data.get("features", [])
+        polygon_features = polygon_data.get("features", [])
+
+        existing_point_keys = {
+            clean(feature.get("properties", {}).get("NameKey"))
+            for feature in point_features
+            if clean(feature.get("properties", {}).get("NameKey"))
+        }
+        max_fid = max(
+            [int(feature.get("properties", {}).get("FID") or 0) for feature in point_features]
+            or [0]
+        )
+        generated_count = 0
+
+        for polygon_feature in polygon_features:
+            properties = polygon_feature.get("properties", {})
+            name_key = clean(properties.get("NameKey"))
+            project_count = int(properties.get("ProjectCount") or 0)
+            if not name_key or project_count <= 0 or name_key in existing_point_keys:
+                continue
+
+            bounds = bounds_for_geometry(polygon_feature.get("geometry", {}))
+            if not bounds:
+                continue
+
+            max_fid += 1
+            generated_count += 1
+            existing_point_keys.add(name_key)
+            geojson_keys.add(name_key)
+
+            point_features.append(
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "FID": max_fid,
+                        "NameKey": name_key,
+                        "FREQUENCY": project_count,
+                        "ProjectCount": project_count,
+                        "LinkedProjectCount": int(properties.get("LinkedProjectCount") or 0),
+                        "Interactive": properties.get("Interactive") is True,
+                        "TopProjectType": clean(properties.get("TopProjectType")),
+                        "ProjectTypes": clean(properties.get("ProjectTypes")),
+                        "GeneratedPoint": True,
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": bounds["center"],
+                    },
+                }
+            )
+
+        if not generated_count:
+            continue
+
+        write_json(point_path, point_data)
+        for layer_report in report_layers:
+            if layer_report.get("layer") == point_layer_name:
+                layer_report["featureCount"] = len(point_features)
+                layer_report["matchedFeatureCount"] = int(layer_report["matchedFeatureCount"]) + generated_count
+                layer_report["generatedPointCount"] = generated_count
+                break
+
 
 def collect_geometry_coordinates(value: object, output: list[list[float]]) -> None:
     if not isinstance(value, list):

@@ -5,7 +5,7 @@
     map: null,
     hoverPopup: null,
     activePopup: null,
-    officeOverlayMarker: null,
+    officeLayerEventsBound: false,
     lastPopupClick: "",
     activePopupMeta: null,
     theme: "day",
@@ -80,6 +80,8 @@
 
     els.resetViewButton.addEventListener("click", () => {
       if (!state.map) return;
+      closeActivePopup();
+      hideHoverLabel();
       fitStartupBounds(false);
     });
 
@@ -403,17 +405,10 @@
         paint: {
           "fill-color": polygonFillColor(layer),
           "fill-opacity": [
-            "interpolate",
-            ["linear"],
-            metricMatchExpression("projectCount", 0),
-            0,
-            0,
-            1,
-            0.24,
-            8,
+            "case",
+            hasProjectsFilter(),
             0.38,
-            25,
-            0.5
+            0
           ]
         },
         filter: visibleFeatureFilter(layer)
@@ -1755,57 +1750,117 @@
 
   function addOfficeMarker() {
     if (!config.office || !config.office.enabled || !state.map) return;
-    addOfficeOverlayMarker();
-  }
+    if (!config.office.coordinates || !config.office.logoUrl) return;
 
-  function addOfficeOverlayMarker() {
-    if (state.officeOverlayMarker) {
-      updateOfficeOverlayMarker();
+    const imageId = officeImageId();
+    if (state.map.hasImage(imageId)) {
+      addOfficeSymbolLayer(imageId);
       return;
     }
 
-    const marker = document.createElement("button");
-    marker.className = "office-overlay-marker";
-    marker.type = "button";
-    marker.title = config.office.name || "LGeo HQ";
-    marker.setAttribute("aria-label", config.office.name || "LGeo HQ");
+    state.map.loadImage(config.office.logoUrl, (error, image) => {
+      if (error || !image || !state.map || !state.styleReady) return;
+      if (!state.map.hasImage(imageId)) {
+        state.map.addImage(imageId, image);
+      }
+      addOfficeSymbolLayer(imageId);
+    });
+  }
 
-    const image = document.createElement("img");
-    image.src = config.office.logoUrl;
-    image.alt = "";
+  function officeImageId() {
+    return "lgeo-office-logo";
+  }
 
-    marker.append(image);
+  function officeSourceId() {
+    return "lgeo-office-source";
+  }
 
-    marker.addEventListener("click", (event) => {
-      event.stopPropagation();
+  function officeLayerId() {
+    return "lgeo-office-symbol";
+  }
+
+  function addOfficeSymbolLayer(imageId) {
+    const sourceId = officeSourceId();
+    const layerId = officeLayerId();
+
+    if (!state.map.getSource(sourceId)) {
+      state.map.addSource(sourceId, {
+        type: "geojson",
+        data: officeFeatureCollection()
+      });
+    }
+
+    if (!state.map.getLayer(layerId)) {
+      state.map.addLayer(
+        {
+          id: layerId,
+          type: "symbol",
+          source: sourceId,
+          minzoom: Number(config.office.minzoom || 9),
+          layout: {
+            "icon-image": imageId,
+            "icon-size": Number(config.office.iconSize || 0.26),
+            "icon-anchor": "bottom",
+            "icon-allow-overlap": true,
+            "icon-ignore-placement": true
+          },
+          paint: {
+            "icon-opacity": Number(config.office.iconOpacity || 0.78)
+          }
+        },
+        firstMapLabelLayerId()
+      );
+    }
+
+    bindOfficeLayerEvents(layerId);
+  }
+
+  function officeFeatureCollection() {
+    return {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          properties: {
+            NameKey: config.office.name || "LGeo HQ"
+          },
+          geometry: {
+            type: "Point",
+            coordinates: config.office.coordinates
+          }
+        }
+      ]
+    };
+  }
+
+  function firstMapLabelLayerId() {
+    const layers = state.map.getStyle().layers || [];
+    const labelLayer = layers.find((layer) => {
+      const layout = layer.layout || {};
+      return layer.type === "symbol" && layout["text-field"];
+    });
+    return labelLayer && labelLayer.id;
+  }
+
+  function bindOfficeLayerEvents(layerId) {
+    if (state.officeLayerEventsBound) return;
+    state.officeLayerEventsBound = true;
+
+    state.map.on("click", layerId, (event) => {
       showOfficePopup();
     });
 
-    document.querySelector(".map-stage").append(marker);
-    state.officeOverlayMarker = marker;
+    state.map.on("mouseenter", layerId, () => {
+      state.map.getCanvas().style.cursor = "pointer";
+      showOfficeHoverLabel();
+    });
 
-    state.map.on("move", updateOfficeOverlayMarker);
-    state.map.on("zoom", updateOfficeOverlayMarker);
+    state.map.on("mousemove", layerId, showOfficeHoverLabel);
 
-    updateOfficeOverlayMarker();
-  }
-
-  function updateOfficeOverlayMarker() {
-    if (!state.map || !state.officeOverlayMarker || !config.office || !config.office.coordinates) return;
-
-    const point = state.map.project(config.office.coordinates);
-    const canvas = state.map.getCanvas();
-    const minzoom = Number(config.office.minzoom || 9);
-
-    const visible =
-      state.map.getZoom() >= minzoom &&
-      point.x >= 0 &&
-      point.y >= 0 &&
-      point.x <= canvas.clientWidth &&
-      point.y <= canvas.clientHeight;
-
-    state.officeOverlayMarker.style.transform = `translate(${point.x}px, ${point.y}px) translate(-50%, -100%)`;
-    state.officeOverlayMarker.hidden = !visible;
+    state.map.on("mouseleave", layerId, () => {
+      state.map.getCanvas().style.cursor = "";
+      hideHoverLabel();
+    });
   }
 
   function zoomToOffice() {
@@ -1828,12 +1883,25 @@
   }
 
   function officePopupLngLat() {
-    if (!state.officeOverlayMarker) return config.office.coordinates;
+    return config.office.coordinates;
+  }
 
-    const point = state.map.project(config.office.coordinates);
-    const markerHeight = state.officeOverlayMarker.getBoundingClientRect().height || 44;
+  function showOfficeHoverLabel() {
+    if (!state.map || !config.office || !config.office.coordinates) return;
 
-    return state.map.unproject([point.x, point.y - markerHeight - 10]);
+    if (!state.hoverPopup) {
+      state.hoverPopup = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false,
+        className: "hover-popup",
+        offset: 14
+      });
+    }
+
+    state.hoverPopup
+      .setLngLat(config.office.coordinates)
+      .setHTML(`<span>${escapeHtml(config.office.name || "LGeo HQ")}</span>`)
+      .addTo(state.map);
   }
 
   function officePopupHtml() {

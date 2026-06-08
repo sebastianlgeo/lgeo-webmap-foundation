@@ -1113,6 +1113,174 @@
         "TopProjectType": "Additional GIS Support Services",
         "ProjectTypes": "Additional GIS Support Services"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FID": 53,
+        "NameKey": "Delta",
+        "FREQUENCY": 2,
+        "ProjectCount": 2,
+        "LinkedProjectCount": 0,
+        "Interactive": false,
+        "TopProjectType": "Remote Sensing",
+        "ProjectTypes": "Remote Sensing",
+        "GeneratedPoint": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.09977818303156,
+          49.09803703484987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FID": 54,
+        "NameKey": "West Kelowna",
+        "FREQUENCY": 2,
+        "ProjectCount": 2,
+        "LinkedProjectCount": 0,
+        "Interactive": false,
+        "TopProjectType": "Webmaps, Cartography & Visual Storytelling",
+        "ProjectTypes": "Webmaps, Cartography & Visual Storytelling, Urban Simulation",
+        "GeneratedPoint": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.6167858980594,
+          49.866125722196685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FID": 55,
+        "NameKey": "SLRD - EA B",
+        "FREQUENCY": 1,
+        "ProjectCount": 1,
+        "LinkedProjectCount": 0,
+        "Interactive": false,
+        "TopProjectType": "Webmaps, Cartography & Visual Storytelling",
+        "ProjectTypes": "Webmaps, Cartography & Visual Storytelling",
+        "GeneratedPoint": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.12342593891432,
+          50.718982037483165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FID": 56,
+        "NameKey": "North Vancouver - District",
+        "FREQUENCY": 2,
+        "ProjectCount": 2,
+        "LinkedProjectCount": 0,
+        "Interactive": false,
+        "TopProjectType": "Carbon and Energy Modelling",
+        "ProjectTypes": "Carbon and Energy Modelling, Additional GIS Support Services",
+        "GeneratedPoint": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.00209265893773,
+          49.35422904607297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FID": 57,
+        "NameKey": "MVRD - EA A",
+        "FREQUENCY": 5,
+        "ProjectCount": 5,
+        "LinkedProjectCount": 0,
+        "Interactive": false,
+        "TopProjectType": "Additional GIS Support Services",
+        "ProjectTypes": "Additional GIS Support Services, Webmaps, Cartography & Visual Storytelling",
+        "GeneratedPoint": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.12082522190411,
+          49.28608703180253
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FID": 58,
+        "NameKey": "Squamish",
+        "FREQUENCY": 1,
+        "ProjectCount": 1,
+        "LinkedProjectCount": 0,
+        "Interactive": false,
+        "TopProjectType": "Urban Simulation",
+        "ProjectTypes": "Urban Simulation",
+        "GeneratedPoint": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.13862393474301,
+          49.75577651684571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FID": 59,
+        "NameKey": "Ladysmith",
+        "FREQUENCY": 2,
+        "ProjectCount": 2,
+        "LinkedProjectCount": 0,
+        "Interactive": false,
+        "TopProjectType": "Urban Simulation",
+        "ProjectTypes": "Urban Simulation, Webmaps, Cartography & Visual Storytelling",
+        "GeneratedPoint": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.80891077596263,
+          48.973875578470725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FID": 60,
+        "NameKey": "North Cowichan",
+        "FREQUENCY": 2,
+        "ProjectCount": 2,
+        "LinkedProjectCount": 0,
+        "Interactive": false,
+        "TopProjectType": "Urban Simulation",
+        "ProjectTypes": "Urban Simulation, Additional GIS Support Services",
+        "GeneratedPoint": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.66909655035766,
+          48.84482237641538
+        ]
+      }
     }
   ]
 }
