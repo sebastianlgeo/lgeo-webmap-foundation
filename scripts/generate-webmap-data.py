@@ -75,7 +75,9 @@ EXPLICIT_GEOGRAPHY_NORMALIZATIONS = {
     "Nanaimo Regional District - British Columbia": "Regional District of Nanaimo - British Columbia",
     "Squamish Lillouet Regional District": "Squamish-Lillooet Regional District - British Columbia",
     "Mazatl?n": "Mazatlan",
-    "Langley - Township": "Langley - District",
+    "Langley - District": "Langley - Township",
+    "Langley - District - British Columbia": "Langley - Township",
+    "Langley - Township - British Columbia": "Langley - Township",
 }
 
 PROVINCE_SUFFIXES = [
@@ -93,7 +95,7 @@ POINT_COORDINATE_OVERRIDES = {
 }
 
 DISPLAY_NAME_OVERRIDES = {
-    "Langley - District": "Langley - Township",
+    "Langley - Township": "Langley - Township",
     "UBC - British Columbia": "UBC",
 }
 

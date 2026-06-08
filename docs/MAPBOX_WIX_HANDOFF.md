@@ -122,7 +122,7 @@ The script publishes these tilesets:
 
 The source layer names are the app layer IDs, such as `RegionalLevelPoints` and `MunicipalLevelPolygons`.
 
-Recommended tileset candidates:
+The GeoJSON files used for upload are local working files and are ignored by Git:
 
 - `data/processed/geojson/ProvincialLevelPolygons.geojson`
 - `data/processed/geojson/RegionalLevelPolygons.geojson`
@@ -132,7 +132,7 @@ Recommended tileset candidates:
 - `data/processed/geojson/RegionalLevelPoints.geojson`
 - `data/processed/geojson/MunicipalLevelPoints.geojson`
 
-Keep these local at first:
+GitHub Pages should serve these non-geometry app data files:
 
 - `data/processed/projects.json`
 - `data/processed/geography-index.json`
@@ -148,18 +148,13 @@ Steps:
 
 2. Inspect the processed polygons in `data/processed/geojson/`. Confirm each feature has the fields the app needs, especially `NameKey`, `ProjectCount`, `HasLowerScaleReplacement`, and `PromoteFromProvince`.
 
-3. In Mapbox Studio, open `Tilesets` and upload each polygon GeoJSON as a separate tileset. Start with Studio upload if the files are under Mapbox upload limits and upload frequency is low.
-
-4. If Studio upload becomes limiting, switch to Mapbox Tiling Service/Tilesets CLI. The CLI flow is better for repeatable production updates:
+3. Publish the generated local GeoJSONs with the upload script. This avoids Mapbox Studio manual upload drift and updates the source plus recipe before publishing:
 
    ```powershell
-   tilesets upload-source lickergeospatial municipal-polygons .\data\processed\geojson\MunicipalLevelPolygons.geojson
-   tilesets publish lickergeospatial.lgeo-municipal-polygons
+   powershell -ExecutionPolicy Bypass -File .\scripts\upload-mapbox-tilesets.ps1
    ```
 
-   Use a Mapbox secret token with tileset write/read/list scopes for this step.
-
-5. After publishing, note each tileset ID and source-layer name from Mapbox. The existing `layers` array in `app/src/config.js` already has this shape:
+4. After publishing, confirm each tileset ID and source-layer name from Mapbox. The existing `layers` array in `app/src/config.js` already has this shape:
 
    ```js
    {
@@ -170,9 +165,9 @@ Steps:
    }
    ```
 
-6. Add the real tileset IDs and source-layer names to the matching layer objects in `app/src/config.js`.
+5. Add the real tileset IDs and source-layer names to the matching layer objects in `app/src/config.js`.
 
-7. After all tilesets are published and the IDs are correct, set:
+6. After all tilesets are published and the IDs are correct, set:
 
    ```js
    data: {
@@ -180,18 +175,18 @@ Steps:
    }
    ```
 
-   Keep `useLocalGeojson: true` while testing source CSV changes locally. If you switch too early, the browser will show stale Mapbox tiles until those tilesets are republished.
+   Keep `useLocalGeojson: true` only for local debugging with checked-out GeoJSON files. Production should use `false`; otherwise GitHub Pages would need to serve large geometry files.
 
-8. Confirm visual order. In dark mode, the app polygon overlay should use the warm orange palette from `darkTheme`; light mode should keep the current teal palette. If the polygons appear buried under the basemap, make sure the app adds polygon layers after the Mapbox style loads.
+7. Confirm visual order. In dark mode, the app polygon overlay should use the warm orange palette from `darkTheme`; light mode should keep the current teal palette. If the polygons appear buried under the basemap, make sure the app adds polygon layers after the Mapbox style loads.
 
-9. Test these zoom handoffs after the tileset swap:
+8. Test these zoom handoffs after the tileset swap:
 
    - New Brunswick disappears and Fredericton appears with no blank range.
    - Nova Scotia hands off to HRM.
    - HRM persists at high zoom because it is the smallest polygon available.
    - Metro Vancouver regional polygons disappear when municipal polygons are visible.
 
-10. Keep the original GeoJSON exports in `data/geojson/raw/` and generated outputs in `data/processed/geojson/`. Mapbox tilesets should be treated as deployment artifacts, not the only source of truth.
+9. Keep the original GeoJSON exports in `data/geojson/raw/` and generated outputs in `data/processed/geojson/` locally. They are ignored by Git, so back them up in a private/internal location if they become authoritative geometry edits. Mapbox tilesets should be treated as deployment artifacts, not the only source of truth.
 
 Count icon placement comes from the point layers, not the polygon layers. For production, adjust awkward count locations such as British Columbia or Alberta by moving the corresponding point features in the point source data before uploading the Mapbox tilesets. Avoid runtime pixel offsets unless they are absolutely necessary, because offsets can be harder to keep consistent across zoom levels and devices.
 

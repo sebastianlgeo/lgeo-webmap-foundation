@@ -60,6 +60,7 @@ window.WEBMAP_CONFIG = {
     "Nanaimo - British Columbia": "Nanaimo",
     "Langley - District": "Langley - Township",
     "Langley - District - British Columbia": "Langley - Township",
+    "Langley - Township - British Columbia": "Langley - Township",
     "UBC - British Columbia": "UBC"
   },
   hiddenPointGeographies: {

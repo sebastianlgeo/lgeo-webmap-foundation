@@ -1,13 +1,13 @@
 # Webmap Data Update Report
 
-Generated: 2026-06-08T20:30:14.688074+00:00
+Generated: 2026-06-08T20:49:08.418632+00:00
 Public projects: 244
 Suppressed projects skipped: 38
 Geography lookup keys: 109
 
 ## Layer Matches
 
-- MunicipalLevelPoints.geojson: 54 matched / 60 features
+- MunicipalLevelPoints.geojson: 54 matched / 59 features
 - MunicipalLevelPolygons.geojson: 46 matched / 47 features
 - NationalLevelPoints.geojson: 3 matched / 3 features
 - ProvincialLevelPoints.geojson: 10 matched / 10 features
@@ -36,6 +36,7 @@ Geography lookup keys: 109
 - Fredericton - New Brunswick (`(blank)`): missing polygon key in `MunicipalLevelPolygons.geojson`; projects: 23045
 - Halifax - Nova Scotia (`(blank)`): missing polygon key in `MunicipalLevelPolygons.geojson`; projects: 23008
 - Idaho Springs - Clear Creek - CO (`(blank)`): missing polygon key in `MunicipalLevelPolygons.geojson`; projects: 17059
+- Langley - Township (`Langley - Township`): polygon key not found in `MunicipalLevelPolygons.geojson`; projects: 19019, 22066
 - Okotoks - Alberta (`(blank)`): missing polygon key in `MunicipalLevelPolygons.geojson`; projects: 18007
 - Superior - Boulder - CO (`(blank)`): missing polygon key in `MunicipalLevelPolygons.geojson`; projects: 19059
 - UBC (`UBC`): polygon key not found in `MunicipalLevelPolygons.geojson`; projects: 17031, 19053, 21073, 21075, 22005

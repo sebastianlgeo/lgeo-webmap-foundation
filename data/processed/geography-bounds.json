@@ -1,23 +1,23 @@
 {
   "entries": {
-    "Duluth - Saint Louis - MN": {
-      "name": "Duluth - Saint Louis - MN",
+    "Colwood": {
+      "name": "Colwood",
       "bounds": [
         [
-          -92.10657870015,
-          46.78327309923
+          -123.51837267864002,
+          48.398228048832415
         ],
         [
-          -92.10657870015,
-          46.78327309923
+          -123.4423069291503,
+          48.45562762799313
         ]
       ],
       "center": [
-        -92.10657870015,
-        46.78327309923
+        -123.48033980389516,
+        48.42692783841277
       ],
-      "preferredLayerId": "MunicipalLevelPoints",
-      "preferredKind": "point",
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
       "preferredScale": "municipal",
       "features": [
         {
@@ -26,58 +26,36 @@
           "scale": "municipal",
           "bounds": [
             [
-              -92.10657870015,
-              46.78327309923
+              -123.49651928544,
+              48.43207754835
             ],
             [
-              -92.10657870015,
-              46.78327309923
+              -123.49651928544,
+              48.43207754835
             ]
           ],
           "center": [
-            -92.10657870015,
-            46.78327309923
+            -123.49651928544,
+            48.43207754835
           ]
-        }
-      ]
-    },
-    "Idaho Springs - Clear Creek - CO": {
-      "name": "Idaho Springs - Clear Creek - CO",
-      "bounds": [
-        [
-          -105.51360819986,
-          39.74248809942
-        ],
-        [
-          -105.51360819986,
-          39.74248809942
-        ]
-      ],
-      "center": [
-        -105.51360819986,
-        39.74248809942
-      ],
-      "preferredLayerId": "MunicipalLevelPoints",
-      "preferredKind": "point",
-      "preferredScale": "municipal",
-      "features": [
+        },
         {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
           "scale": "municipal",
           "bounds": [
             [
-              -105.51360819986,
-              39.74248809942
+              -123.51837267864002,
+              48.398228048832415
             ],
             [
-              -105.51360819986,
-              39.74248809942
+              -123.4423069291503,
+              48.45562762799313
             ]
           ],
           "center": [
-            -105.51360819986,
-            39.74248809942
+            -123.48033980389516,
+            48.42692783841277
           ]
         }
       ]
@@ -119,6 +97,1812 @@
           "center": [
             -105.16859770042,
             39.95276339928
+          ]
+        }
+      ]
+    },
+    "Port Moody": {
+      "name": "Port Moody",
+      "bounds": [
+        [
+          -122.94406194523282,
+          49.27043465296028
+        ],
+        [
+          -122.82111409124545,
+          49.32994144183134
+        ]
+      ],
+      "center": [
+        -122.88258801823913,
+        49.30018804739581
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -122.86762527294,
+              49.27864655267
+            ],
+            [
+              -122.86762527294,
+              49.27864655267
+            ]
+          ],
+          "center": [
+            -122.86762527294,
+            49.27864655267
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -122.94406194523282,
+              49.27043465296028
+            ],
+            [
+              -122.82111409124545,
+              49.32994144183134
+            ]
+          ],
+          "center": [
+            -122.88258801823913,
+            49.30018804739581
+          ]
+        }
+      ]
+    },
+    "Westholme - British Columbia": {
+      "name": "Westholme - British Columbia",
+      "bounds": [
+        [
+          -123.70178259783,
+          48.85106267365
+        ],
+        [
+          -123.70178259783,
+          48.85106267365
+        ]
+      ],
+      "center": [
+        -123.70178259783,
+        48.85106267365
+      ],
+      "preferredLayerId": "MunicipalLevelPoints",
+      "preferredKind": "point",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.70178259783,
+              48.85106267365
+            ],
+            [
+              -123.70178259783,
+              48.85106267365
+            ]
+          ],
+          "center": [
+            -123.70178259783,
+            48.85106267365
+          ]
+        }
+      ]
+    },
+    "Ladysmith": {
+      "name": "Ladysmith",
+      "bounds": [
+        [
+          -123.84711936387198,
+          48.9360988183443
+        ],
+        [
+          -123.77070218805326,
+          49.011652338597145
+        ]
+      ],
+      "center": [
+        -123.80891077596263,
+        48.973875578470725
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.80891077596,
+              48.97387557847
+            ],
+            [
+              -123.80891077596,
+              48.97387557847
+            ]
+          ],
+          "center": [
+            -123.80891077596,
+            48.97387557847
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.84711936387198,
+              48.9360988183443
+            ],
+            [
+              -123.77070218805326,
+              49.011652338597145
+            ]
+          ],
+          "center": [
+            -123.80891077596263,
+            48.973875578470725
+          ]
+        }
+      ]
+    },
+    "Lillooet 1 - British Columbia": {
+      "name": "Lillooet 1 - British Columbia",
+      "bounds": [
+        [
+          -121.94406886424,
+          50.68025916617
+        ],
+        [
+          -121.94406886424,
+          50.68025916617
+        ]
+      ],
+      "center": [
+        -121.94406886424,
+        50.68025916617
+      ],
+      "preferredLayerId": "MunicipalLevelPoints",
+      "preferredKind": "point",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -121.94406886424,
+              50.68025916617
+            ],
+            [
+              -121.94406886424,
+              50.68025916617
+            ]
+          ],
+          "center": [
+            -121.94406886424,
+            50.68025916617
+          ]
+        }
+      ]
+    },
+    "Calgary - Alberta": {
+      "name": "Calgary - Alberta",
+      "bounds": [
+        [
+          -114.05749989963,
+          51.04583329999
+        ],
+        [
+          -114.05749989963,
+          51.04583329999
+        ]
+      ],
+      "center": [
+        -114.05749989963,
+        51.04583329999
+      ],
+      "preferredLayerId": "MunicipalLevelPoints",
+      "preferredKind": "point",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -114.05749989963,
+              51.04583329999
+            ],
+            [
+              -114.05749989963,
+              51.04583329999
+            ]
+          ],
+          "center": [
+            -114.05749989963,
+            51.04583329999
+          ]
+        }
+      ]
+    },
+    "SLRD - EA B": {
+      "name": "SLRD - EA B",
+      "bounds": [
+        [
+          -122.6195614211774,
+          50.22826178664134
+        ],
+        [
+          -121.62729045665125,
+          51.20970228832499
+        ]
+      ],
+      "center": [
+        -122.12342593891432,
+        50.718982037483165
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -122.12342593891,
+              50.71898203748
+            ],
+            [
+              -122.12342593891,
+              50.71898203748
+            ]
+          ],
+          "center": [
+            -122.12342593891,
+            50.71898203748
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -122.6195614211774,
+              50.22826178664134
+            ],
+            [
+              -121.62729045665125,
+              51.20970228832499
+            ]
+          ],
+          "center": [
+            -122.12342593891432,
+            50.718982037483165
+          ]
+        }
+      ]
+    },
+    "Comox": {
+      "name": "Comox",
+      "bounds": [
+        [
+          -124.9573910630978,
+          49.66338298537425
+        ],
+        [
+          -124.85463538555663,
+          49.72921926356648
+        ]
+      ],
+      "center": [
+        -124.90601322432721,
+        49.69630112447037
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -124.9277945392,
+              49.67385762734
+            ],
+            [
+              -124.9277945392,
+              49.67385762734
+            ]
+          ],
+          "center": [
+            -124.9277945392,
+            49.67385762734
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -124.9573910630978,
+              49.66338298537425
+            ],
+            [
+              -124.85463538555663,
+              49.72921926356648
+            ]
+          ],
+          "center": [
+            -124.90601322432721,
+            49.69630112447037
+          ]
+        }
+      ]
+    },
+    "Victoria": {
+      "name": "Victoria",
+      "bounds": [
+        [
+          -123.39609049154953,
+          48.4028468476287
+        ],
+        [
+          -123.32243149399602,
+          48.450501394594454
+        ]
+      ],
+      "center": [
+        -123.35926099277278,
+        48.426674121111574
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.3641101634,
+              48.42717378913
+            ],
+            [
+              -123.3641101634,
+              48.42717378913
+            ]
+          ],
+          "center": [
+            -123.3641101634,
+            48.42717378913
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.39609049154953,
+              48.4028468476287
+            ],
+            [
+              -123.32243149399602,
+              48.450501394594454
+            ]
+          ],
+          "center": [
+            -123.35926099277278,
+            48.426674121111574
+          ]
+        }
+      ]
+    },
+    "Salmo": {
+      "name": "Salmo",
+      "bounds": [
+        [
+          -117.29404822061018,
+          49.17883505500651
+        ],
+        [
+          -117.27196634813228,
+          49.198735233040225
+        ]
+      ],
+      "center": [
+        -117.28300728437122,
+        49.18878514402337
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -117.27678507437,
+              49.19161500159
+            ],
+            [
+              -117.27678507437,
+              49.19161500159
+            ]
+          ],
+          "center": [
+            -117.27678507437,
+            49.19161500159
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -117.29404822061018,
+              49.17883505500651
+            ],
+            [
+              -117.27196634813228,
+              49.198735233040225
+            ]
+          ],
+          "center": [
+            -117.28300728437122,
+            49.18878514402337
+          ]
+        }
+      ]
+    },
+    "Vernon": {
+      "name": "Vernon",
+      "bounds": [
+        [
+          -119.45398912302156,
+          50.15142474517598
+        ],
+        [
+          -119.2052068082387,
+          50.32151556482038
+        ]
+      ],
+      "center": [
+        -119.32959796563013,
+        50.23647015499818
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -119.26888710141,
+              50.26422417199
+            ],
+            [
+              -119.26888710141,
+              50.26422417199
+            ]
+          ],
+          "center": [
+            -119.26888710141,
+            50.26422417199
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -119.45398912302156,
+              50.15142474517598
+            ],
+            [
+              -119.2052068082387,
+              50.32151556482038
+            ]
+          ],
+          "center": [
+            -119.32959796563013,
+            50.23647015499818
+          ]
+        }
+      ]
+    },
+    "Cranbrook": {
+      "name": "Cranbrook",
+      "bounds": [
+        [
+          -115.81952458930088,
+          49.483173943394064
+        ],
+        [
+          -115.72766207333778,
+          49.626397262823964
+        ]
+      ],
+      "center": [
+        -115.77359333131933,
+        49.55478560310901
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -115.75889647576,
+              49.51548579517
+            ],
+            [
+              -115.75889647576,
+              49.51548579517
+            ]
+          ],
+          "center": [
+            -115.75889647576,
+            49.51548579517
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -115.81952458930088,
+              49.483173943394064
+            ],
+            [
+              -115.72766207333778,
+              49.626397262823964
+            ]
+          ],
+          "center": [
+            -115.77359333131933,
+            49.55478560310901
+          ]
+        }
+      ]
+    },
+    "North Cowichan": {
+      "name": "North Cowichan",
+      "bounds": [
+        [
+          -123.78436305902171,
+          48.75303313353955
+        ],
+        [
+          -123.55383004169362,
+          48.936611619291206
+        ]
+      ],
+      "center": [
+        -123.66909655035766,
+        48.84482237641538
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.66909655036,
+              48.84482237642
+            ],
+            [
+              -123.66909655036,
+              48.84482237642
+            ]
+          ],
+          "center": [
+            -123.66909655036,
+            48.84482237642
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.78436305902171,
+              48.75303313353955
+            ],
+            [
+              -123.55383004169362,
+              48.936611619291206
+            ]
+          ],
+          "center": [
+            -123.66909655035766,
+            48.84482237641538
+          ]
+        }
+      ]
+    },
+    "Lantzville": {
+      "name": "Lantzville",
+      "bounds": [
+        [
+          -124.14828414607763,
+          49.199256533250285
+        ],
+        [
+          -124.05398652555137,
+          49.26014456443317
+        ]
+      ],
+      "center": [
+        -124.10113533581449,
+        49.22970054884173
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -124.08429824673,
+              49.25085417319
+            ],
+            [
+              -124.08429824673,
+              49.25085417319
+            ]
+          ],
+          "center": [
+            -124.08429824673,
+            49.25085417319
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -124.14828414607763,
+              49.199256533250285
+            ],
+            [
+              -124.05398652555137,
+              49.26014456443317
+            ]
+          ],
+          "center": [
+            -124.10113533581449,
+            49.22970054884173
+          ]
+        }
+      ]
+    },
+    "Abbotsford": {
+      "name": "Abbotsford",
+      "bounds": [
+        [
+          -122.46237825877421,
+          49.00223465846572
+        ],
+        [
+          -122.07299033675706,
+          49.17194132952576
+        ]
+      ],
+      "center": [
+        -122.26768429776564,
+        49.08708799399574
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -122.32131459358,
+              49.05639936278
+            ],
+            [
+              -122.32131459358,
+              49.05639936278
+            ]
+          ],
+          "center": [
+            -122.32131459358,
+            49.05639936278
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -122.46237825877421,
+              49.00223465846572
+            ],
+            [
+              -122.07299033675706,
+              49.17194132952576
+            ]
+          ],
+          "center": [
+            -122.26768429776564,
+            49.08708799399574
+          ]
+        }
+      ]
+    },
+    "Langley - Township": {
+      "name": "Langley - Township",
+      "bounds": [
+        [
+          -122.68054520624166,
+          49.002121236359294
+        ],
+        [
+          -122.45937729104051,
+          49.21047016727809
+        ]
+      ],
+      "center": [
+        -122.56996124864108,
+        49.106295701818695
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -122.54816180781,
+              49.08447261901
+            ],
+            [
+              -122.54816180781,
+              49.08447261901
+            ]
+          ],
+          "center": [
+            -122.54816180781,
+            49.08447261901
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -122.68054520624166,
+              49.002121236359294
+            ],
+            [
+              -122.45937729104051,
+              49.21047016727809
+            ]
+          ],
+          "center": [
+            -122.56996124864108,
+            49.106295701818695
+          ]
+        }
+      ]
+    },
+    "Whistler": {
+      "name": "Whistler",
+      "bounds": [
+        [
+          -123.15340781390265,
+          50.02676010428912
+        ],
+        [
+          -122.85884260105152,
+          50.17612883824261
+        ]
+      ],
+      "center": [
+        -123.00612520747708,
+        50.101444471265864
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -122.9554403745,
+              50.11747372381
+            ],
+            [
+              -122.9554403745,
+              50.11747372381
+            ]
+          ],
+          "center": [
+            -122.9554403745,
+            50.11747372381
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.15340781390265,
+              50.02676010428912
+            ],
+            [
+              -122.85884260105152,
+              50.17612883824261
+            ]
+          ],
+          "center": [
+            -123.00612520747708,
+            50.101444471265864
+          ]
+        }
+      ]
+    },
+    "White Rock": {
+      "name": "White Rock",
+      "bounds": [
+        [
+          -122.84545903731633,
+          49.00212067827064
+        ],
+        [
+          -122.77919760953367,
+          49.03123014438581
+        ]
+      ],
+      "center": [
+        -122.81232832342499,
+        49.01667541132822
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -122.79616310769,
+              49.02516830093
+            ],
+            [
+              -122.79616310769,
+              49.02516830093
+            ]
+          ],
+          "center": [
+            -122.79616310769,
+            49.02516830093
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -122.84545903731633,
+              49.00212067827064
+            ],
+            [
+              -122.77919760953367,
+              49.03123014438581
+            ]
+          ],
+          "center": [
+            -122.81232832342499,
+            49.01667541132822
+          ]
+        }
+      ]
+    },
+    "Halifax - Nova Scotia": {
+      "name": "Halifax - Nova Scotia",
+      "bounds": [
+        [
+          -64.24085220332422,
+          43.925127910215664
+        ],
+        [
+          -59.66196779891588,
+          45.2755641555379
+        ]
+      ],
+      "center": [
+        -61.95141000112005,
+        44.600346032876786
+      ],
+      "preferredLayerId": "RegionalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "regional",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -63.60187606739,
+              44.64875616029
+            ],
+            [
+              -63.60187606739,
+              44.64875616029
+            ]
+          ],
+          "center": [
+            -63.60187606739,
+            44.64875616029
+          ]
+        },
+        {
+          "layerId": "RegionalLevelPoints",
+          "kind": "point",
+          "scale": "regional",
+          "bounds": [
+            [
+              -63.14801554067126,
+              44.86741812639343
+            ],
+            [
+              -63.14801554067126,
+              44.86741812639343
+            ]
+          ],
+          "center": [
+            -63.14801554067126,
+            44.86741812639343
+          ]
+        },
+        {
+          "layerId": "RegionalLevelPolygons",
+          "kind": "polygon",
+          "scale": "regional",
+          "bounds": [
+            [
+              -64.24085220332422,
+              43.925127910215664
+            ],
+            [
+              -59.66196779891588,
+              45.2755641555379
+            ]
+          ],
+          "center": [
+            -61.95141000112005,
+            44.600346032876786
+          ]
+        }
+      ]
+    },
+    "UBC": {
+      "name": "UBC",
+      "bounds": [
+        [
+          -123.24976859576,
+          49.26673475049
+        ],
+        [
+          -123.24976859576,
+          49.26673475049
+        ]
+      ],
+      "center": [
+        -123.24976859576,
+        49.26673475049
+      ],
+      "preferredLayerId": "MunicipalLevelPoints",
+      "preferredKind": "point",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.24976859576,
+              49.26673475049
+            ],
+            [
+              -123.24976859576,
+              49.26673475049
+            ]
+          ],
+          "center": [
+            -123.24976859576,
+            49.26673475049
+          ]
+        }
+      ]
+    },
+    "Ladner - British Columbia": {
+      "name": "Ladner - British Columbia",
+      "bounds": [
+        [
+          -123.07777770051,
+          49.09166660002
+        ],
+        [
+          -123.07777770051,
+          49.09166660002
+        ]
+      ],
+      "center": [
+        -123.07777770051,
+        49.09166660002
+      ],
+      "preferredLayerId": "MunicipalLevelPoints",
+      "preferredKind": "point",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.07777770051,
+              49.09166660002
+            ],
+            [
+              -123.07777770051,
+              49.09166660002
+            ]
+          ],
+          "center": [
+            -123.07777770051,
+            49.09166660002
+          ]
+        }
+      ]
+    },
+    "West Kelowna": {
+      "name": "West Kelowna",
+      "bounds": [
+        [
+          -119.72660185223675,
+          49.78701200800583
+        ],
+        [
+          -119.50696994388205,
+          49.94523943638754
+        ]
+      ],
+      "center": [
+        -119.6167858980594,
+        49.866125722196685
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -119.61678589806,
+              49.8661257222
+            ],
+            [
+              -119.61678589806,
+              49.8661257222
+            ]
+          ],
+          "center": [
+            -119.61678589806,
+            49.8661257222
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -119.72660185223675,
+              49.78701200800583
+            ],
+            [
+              -119.50696994388205,
+              49.94523943638754
+            ]
+          ],
+          "center": [
+            -119.6167858980594,
+            49.866125722196685
+          ]
+        }
+      ]
+    },
+    "Central Saanich": {
+      "name": "Central Saanich",
+      "bounds": [
+        [
+          -123.485358974806,
+          48.55030210230003
+        ],
+        [
+          -123.35693382034184,
+          48.61376312916406
+        ]
+      ],
+      "center": [
+        -123.42114639757392,
+        48.58203261573205
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.39705385796,
+              48.56690352443
+            ],
+            [
+              -123.39705385796,
+              48.56690352443
+            ]
+          ],
+          "center": [
+            -123.39705385796,
+            48.56690352443
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.485358974806,
+              48.55030210230003
+            ],
+            [
+              -123.35693382034184,
+              48.61376312916406
+            ]
+          ],
+          "center": [
+            -123.42114639757392,
+            48.58203261573205
+          ]
+        }
+      ]
+    },
+    "Campbell River": {
+      "name": "Campbell River",
+      "bounds": [
+        [
+          -125.49149865266999,
+          49.90161893002979
+        ],
+        [
+          -125.19381250567224,
+          50.118774596158254
+        ]
+      ],
+      "center": [
+        -125.34265557917112,
+        50.01019676309402
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -125.24166660033,
+              50.01666660035
+            ],
+            [
+              -125.24166660033,
+              50.01666660035
+            ]
+          ],
+          "center": [
+            -125.24166660033,
+            50.01666660035
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -125.49149865266999,
+              49.90161893002979
+            ],
+            [
+              -125.19381250567224,
+              50.118774596158254
+            ]
+          ],
+          "center": [
+            -125.34265557917112,
+            50.01019676309402
+          ]
+        }
+      ]
+    },
+    "Sechelt": {
+      "name": "Sechelt",
+      "bounds": [
+        [
+          -123.85109320077015,
+          49.431876803837774
+        ],
+        [
+          -123.67535210223845,
+          49.55032334063351
+        ]
+      ],
+      "center": [
+        -123.7632226515043,
+        49.49110007223564
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.76223497743,
+              49.47939455122
+            ],
+            [
+              -123.76223497743,
+              49.47939455122
+            ]
+          ],
+          "center": [
+            -123.76223497743,
+            49.47939455122
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.85109320077015,
+              49.431876803837774
+            ],
+            [
+              -123.67535210223845,
+              49.55032334063351
+            ]
+          ],
+          "center": [
+            -123.7632226515043,
+            49.49110007223564
+          ]
+        }
+      ]
+    },
+    "Fredericton - New Brunswick": {
+      "name": "Fredericton - New Brunswick",
+      "bounds": [
+        [
+          -66.78395888286992,
+          45.87206231875946
+        ],
+        [
+          -66.54718511026125,
+          46.02210488158954
+        ]
+      ],
+      "center": [
+        -66.66557199656559,
+        45.9470836001745
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -66.64558559576,
+              45.95539095581
+            ],
+            [
+              -66.64558559576,
+              45.95539095581
+            ]
+          ],
+          "center": [
+            -66.64558559576,
+            45.95539095581
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -66.78395888286992,
+              45.87206231875946
+            ],
+            [
+              -66.54718511026125,
+              46.02210488158954
+            ]
+          ],
+          "center": [
+            -66.66557199656559,
+            45.9470836001745
+          ]
+        }
+      ]
+    },
+    "Courtenay": {
+      "name": "Courtenay",
+      "bounds": [
+        [
+          -125.03201341755526,
+          49.64689156600866
+        ],
+        [
+          -124.93314553088446,
+          49.74098776411367
+        ]
+      ],
+      "center": [
+        -124.98257947421986,
+        49.693939665061166
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -124.99897439669,
+              49.68891553219
+            ],
+            [
+              -124.99897439669,
+              49.68891553219
+            ]
+          ],
+          "center": [
+            -124.99897439669,
+            49.68891553219
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -125.03201341755526,
+              49.64689156600866
+            ],
+            [
+              -124.93314553088446,
+              49.74098776411367
+            ]
+          ],
+          "center": [
+            -124.98257947421986,
+            49.693939665061166
+          ]
+        }
+      ]
+    },
+    "Burnaby": {
+      "name": "Burnaby",
+      "bounds": [
+        [
+          -123.02357786770895,
+          49.18002911590453
+        ],
+        [
+          -122.89257308682038,
+          49.29933171765555
+        ]
+      ],
+      "center": [
+        -122.95807547726466,
+        49.23968041678004
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -122.9617071096,
+              49.25208704481
+            ],
+            [
+              -122.9617071096,
+              49.25208704481
+            ]
+          ],
+          "center": [
+            -122.9617071096,
+            49.25208704481
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.02357786770895,
+              49.18002911590453
+            ],
+            [
+              -122.89257308682038,
+              49.29933171765555
+            ]
+          ],
+          "center": [
+            -122.95807547726466,
+            49.23968041678004
+          ]
+        }
+      ]
+    },
+    "Sooke": {
+      "name": "Sooke",
+      "bounds": [
+        [
+          -123.78493418631977,
+          48.33635545920809
+        ],
+        [
+          -123.59557228886784,
+          48.474375152877215
+        ]
+      ],
+      "center": [
+        -123.69025323759381,
+        48.405365306042654
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.72791585605,
+              48.38227961338
+            ],
+            [
+              -123.72791585605,
+              48.38227961338
+            ]
+          ],
+          "center": [
+            -123.72791585605,
+            48.38227961338
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.78493418631977,
+              48.33635545920809
+            ],
+            [
+              -123.59557228886784,
+              48.474375152877215
+            ]
+          ],
+          "center": [
+            -123.69025323759381,
+            48.405365306042654
+          ]
+        }
+      ]
+    },
+    "Duluth - Saint Louis - MN": {
+      "name": "Duluth - Saint Louis - MN",
+      "bounds": [
+        [
+          -92.10657870015,
+          46.78327309923
+        ],
+        [
+          -92.10657870015,
+          46.78327309923
+        ]
+      ],
+      "center": [
+        -92.10657870015,
+        46.78327309923
+      ],
+      "preferredLayerId": "MunicipalLevelPoints",
+      "preferredKind": "point",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -92.10657870015,
+              46.78327309923
+            ],
+            [
+              -92.10657870015,
+              46.78327309923
+            ]
+          ],
+          "center": [
+            -92.10657870015,
+            46.78327309923
+          ]
+        }
+      ]
+    },
+    "Vancouver": {
+      "name": "Vancouver",
+      "bounds": [
+        [
+          -123.22479045357674,
+          49.19878689776505
+        ],
+        [
+          -123.0232489280081,
+          49.31618208313226
+        ]
+      ],
+      "center": [
+        -123.12401969079242,
+        49.25748449044866
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.11538738462,
+              49.24479865956
+            ],
+            [
+              -123.11538738462,
+              49.24479865956
+            ]
+          ],
+          "center": [
+            -123.11538738462,
+            49.24479865956
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.22479045357674,
+              49.19878689776505
+            ],
+            [
+              -123.0232489280081,
+              49.31618208313226
+            ]
+          ],
+          "center": [
+            -123.12401969079242,
+            49.25748449044866
+          ]
+        }
+      ]
+    },
+    "Saanich": {
+      "name": "Saanich",
+      "bounds": [
+        [
+          -123.47796085796114,
+          48.43338852012383
+        ],
+        [
+          -123.2606563794047,
+          48.55800595799154
+        ]
+      ],
+      "center": [
+        -123.36930861868291,
+        48.495697239057684
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.38796882549,
+              48.48784862239
+            ],
+            [
+              -123.38796882549,
+              48.48784862239
+            ]
+          ],
+          "center": [
+            -123.38796882549,
+            48.48784862239
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.47796085796114,
+              48.43338852012383
+            ],
+            [
+              -123.2606563794047,
+              48.55800595799154
+            ]
+          ],
+          "center": [
+            -123.36930861868291,
+            48.495697239057684
+          ]
+        }
+      ]
+    },
+    "Idaho Springs - Clear Creek - CO": {
+      "name": "Idaho Springs - Clear Creek - CO",
+      "bounds": [
+        [
+          -105.51360819986,
+          39.74248809942
+        ],
+        [
+          -105.51360819986,
+          39.74248809942
+        ]
+      ],
+      "center": [
+        -105.51360819986,
+        39.74248809942
+      ],
+      "preferredLayerId": "MunicipalLevelPoints",
+      "preferredKind": "point",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -105.51360819986,
+              39.74248809942
+            ],
+            [
+              -105.51360819986,
+              39.74248809942
+            ]
+          ],
+          "center": [
+            -105.51360819986,
+            39.74248809942
           ]
         }
       ]
@@ -221,265 +2005,6 @@
         }
       ]
     },
-    "Halifax - Nova Scotia": {
-      "name": "Halifax - Nova Scotia",
-      "bounds": [
-        [
-          -64.24085220332422,
-          43.925127910215664
-        ],
-        [
-          -59.66196779891588,
-          45.2755641555379
-        ]
-      ],
-      "center": [
-        -61.95141000112005,
-        44.600346032876786
-      ],
-      "preferredLayerId": "RegionalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "regional",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -63.60187606739,
-              44.64875616029
-            ],
-            [
-              -63.60187606739,
-              44.64875616029
-            ]
-          ],
-          "center": [
-            -63.60187606739,
-            44.64875616029
-          ]
-        },
-        {
-          "layerId": "RegionalLevelPoints",
-          "kind": "point",
-          "scale": "regional",
-          "bounds": [
-            [
-              -63.14801554067126,
-              44.86741812639343
-            ],
-            [
-              -63.14801554067126,
-              44.86741812639343
-            ]
-          ],
-          "center": [
-            -63.14801554067126,
-            44.86741812639343
-          ]
-        },
-        {
-          "layerId": "RegionalLevelPolygons",
-          "kind": "polygon",
-          "scale": "regional",
-          "bounds": [
-            [
-              -64.24085220332422,
-              43.925127910215664
-            ],
-            [
-              -59.66196779891588,
-              45.2755641555379
-            ]
-          ],
-          "center": [
-            -61.95141000112005,
-            44.600346032876786
-          ]
-        }
-      ]
-    },
-    "Fredericton - New Brunswick": {
-      "name": "Fredericton - New Brunswick",
-      "bounds": [
-        [
-          -66.78395888286992,
-          45.87206231875946
-        ],
-        [
-          -66.54718511026125,
-          46.02210488158954
-        ]
-      ],
-      "center": [
-        -66.66557199656559,
-        45.9470836001745
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -66.64558559576,
-              45.95539095581
-            ],
-            [
-              -66.64558559576,
-              45.95539095581
-            ]
-          ],
-          "center": [
-            -66.64558559576,
-            45.95539095581
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -66.78395888286992,
-              45.87206231875946
-            ],
-            [
-              -66.54718511026125,
-              46.02210488158954
-            ]
-          ],
-          "center": [
-            -66.66557199656559,
-            45.9470836001745
-          ]
-        }
-      ]
-    },
-    "Cranbrook": {
-      "name": "Cranbrook",
-      "bounds": [
-        [
-          -115.81952458930088,
-          49.483173943394064
-        ],
-        [
-          -115.72766207333778,
-          49.626397262823964
-        ]
-      ],
-      "center": [
-        -115.77359333131933,
-        49.55478560310901
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -115.75889647576,
-              49.51548579517
-            ],
-            [
-              -115.75889647576,
-              49.51548579517
-            ]
-          ],
-          "center": [
-            -115.75889647576,
-            49.51548579517
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -115.81952458930088,
-              49.483173943394064
-            ],
-            [
-              -115.72766207333778,
-              49.626397262823964
-            ]
-          ],
-          "center": [
-            -115.77359333131933,
-            49.55478560310901
-          ]
-        }
-      ]
-    },
-    "Salmo": {
-      "name": "Salmo",
-      "bounds": [
-        [
-          -117.29404822061018,
-          49.17883505500651
-        ],
-        [
-          -117.27196634813228,
-          49.198735233040225
-        ]
-      ],
-      "center": [
-        -117.28300728437122,
-        49.18878514402337
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -117.27678507437,
-              49.19161500159
-            ],
-            [
-              -117.27678507437,
-              49.19161500159
-            ]
-          ],
-          "center": [
-            -117.27678507437,
-            49.19161500159
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -117.29404822061018,
-              49.17883505500651
-            ],
-            [
-              -117.27196634813228,
-              49.198735233040225
-            ]
-          ],
-          "center": [
-            -117.28300728437122,
-            49.18878514402337
-          ]
-        }
-      ]
-    },
     "Okotoks - Alberta": {
       "name": "Okotoks - Alberta",
       "bounds": [
@@ -517,1010 +2042,6 @@
           "center": [
             -113.97749989992,
             50.72611110036
-          ]
-        }
-      ]
-    },
-    "Victoria": {
-      "name": "Victoria",
-      "bounds": [
-        [
-          -123.39609049154953,
-          48.4028468476287
-        ],
-        [
-          -123.32243149399602,
-          48.450501394594454
-        ]
-      ],
-      "center": [
-        -123.35926099277278,
-        48.426674121111574
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.3641101634,
-              48.42717378913
-            ],
-            [
-              -123.3641101634,
-              48.42717378913
-            ]
-          ],
-          "center": [
-            -123.3641101634,
-            48.42717378913
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.39609049154953,
-              48.4028468476287
-            ],
-            [
-              -123.32243149399602,
-              48.450501394594454
-            ]
-          ],
-          "center": [
-            -123.35926099277278,
-            48.426674121111574
-          ]
-        }
-      ]
-    },
-    "Colwood": {
-      "name": "Colwood",
-      "bounds": [
-        [
-          -123.51837267864002,
-          48.398228048832415
-        ],
-        [
-          -123.4423069291503,
-          48.45562762799313
-        ]
-      ],
-      "center": [
-        -123.48033980389516,
-        48.42692783841277
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.49651928544,
-              48.43207754835
-            ],
-            [
-              -123.49651928544,
-              48.43207754835
-            ]
-          ],
-          "center": [
-            -123.49651928544,
-            48.43207754835
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.51837267864002,
-              48.398228048832415
-            ],
-            [
-              -123.4423069291503,
-              48.45562762799313
-            ]
-          ],
-          "center": [
-            -123.48033980389516,
-            48.42692783841277
-          ]
-        }
-      ]
-    },
-    "Saanich": {
-      "name": "Saanich",
-      "bounds": [
-        [
-          -123.47796085796114,
-          48.43338852012383
-        ],
-        [
-          -123.2606563794047,
-          48.55800595799154
-        ]
-      ],
-      "center": [
-        -123.36930861868291,
-        48.495697239057684
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.38796882549,
-              48.48784862239
-            ],
-            [
-              -123.38796882549,
-              48.48784862239
-            ]
-          ],
-          "center": [
-            -123.38796882549,
-            48.48784862239
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.47796085796114,
-              48.43338852012383
-            ],
-            [
-              -123.2606563794047,
-              48.55800595799154
-            ]
-          ],
-          "center": [
-            -123.36930861868291,
-            48.495697239057684
-          ]
-        }
-      ]
-    },
-    "Sooke": {
-      "name": "Sooke",
-      "bounds": [
-        [
-          -123.78493418631977,
-          48.33635545920809
-        ],
-        [
-          -123.59557228886784,
-          48.474375152877215
-        ]
-      ],
-      "center": [
-        -123.69025323759381,
-        48.405365306042654
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.72791585605,
-              48.38227961338
-            ],
-            [
-              -123.72791585605,
-              48.38227961338
-            ]
-          ],
-          "center": [
-            -123.72791585605,
-            48.38227961338
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.78493418631977,
-              48.33635545920809
-            ],
-            [
-              -123.59557228886784,
-              48.474375152877215
-            ]
-          ],
-          "center": [
-            -123.69025323759381,
-            48.405365306042654
-          ]
-        }
-      ]
-    },
-    "Langford": {
-      "name": "Langford",
-      "bounds": [
-        [
-          -123.57538017889694,
-          48.402880346376975
-        ],
-        [
-          -123.46784199115739,
-          48.509325359927146
-        ]
-      ],
-      "center": [
-        -123.52161108502716,
-        48.45610285315206
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.49741875209,
-              48.45660201345
-            ],
-            [
-              -123.49741875209,
-              48.45660201345
-            ]
-          ],
-          "center": [
-            -123.49741875209,
-            48.45660201345
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.57538017889694,
-              48.402880346376975
-            ],
-            [
-              -123.46784199115739,
-              48.509325359927146
-            ]
-          ],
-          "center": [
-            -123.52161108502716,
-            48.45610285315206
-          ]
-        }
-      ]
-    },
-    "Central Saanich": {
-      "name": "Central Saanich",
-      "bounds": [
-        [
-          -123.485358974806,
-          48.55030210230003
-        ],
-        [
-          -123.35693382034184,
-          48.61376312916406
-        ]
-      ],
-      "center": [
-        -123.42114639757392,
-        48.58203261573205
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.39705385796,
-              48.56690352443
-            ],
-            [
-              -123.39705385796,
-              48.56690352443
-            ]
-          ],
-          "center": [
-            -123.39705385796,
-            48.56690352443
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.485358974806,
-              48.55030210230003
-            ],
-            [
-              -123.35693382034184,
-              48.61376312916406
-            ]
-          ],
-          "center": [
-            -123.42114639757392,
-            48.58203261573205
-          ]
-        }
-      ]
-    },
-    "Saanichton - British Columbia": {
-      "name": "Saanichton - British Columbia",
-      "bounds": [
-        [
-          -123.41669990008,
-          48.59999999992
-        ],
-        [
-          -123.41669990008,
-          48.59999999992
-        ]
-      ],
-      "center": [
-        -123.41669990008,
-        48.59999999992
-      ],
-      "preferredLayerId": "MunicipalLevelPoints",
-      "preferredKind": "point",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.41669990008,
-              48.59999999992
-            ],
-            [
-              -123.41669990008,
-              48.59999999992
-            ]
-          ],
-          "center": [
-            -123.41669990008,
-            48.59999999992
-          ]
-        }
-      ]
-    },
-    "North Saanich": {
-      "name": "North Saanich",
-      "bounds": [
-        [
-          -123.49302026299483,
-          48.61198683415471
-        ],
-        [
-          -123.39210190880597,
-          48.702173118362566
-        ]
-      ],
-      "center": [
-        -123.4425610859004,
-        48.65707997625864
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.42146294566,
-              48.62172342727
-            ],
-            [
-              -123.42146294566,
-              48.62172342727
-            ]
-          ],
-          "center": [
-            -123.42146294566,
-            48.62172342727
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.49302026299483,
-              48.61198683415471
-            ],
-            [
-              -123.39210190880597,
-              48.702173118362566
-            ]
-          ],
-          "center": [
-            -123.4425610859004,
-            48.65707997625864
-          ]
-        }
-      ]
-    },
-    "Sidney": {
-      "name": "Sidney",
-      "bounds": [
-        [
-          -123.41799936557169,
-          48.6340854964084
-        ],
-        [
-          -123.38833646488403,
-          48.672328596290285
-        ]
-      ],
-      "center": [
-        -123.40316791522787,
-        48.653207046349344
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.39999989924,
-              48.64999999998
-            ],
-            [
-              -123.39999989924,
-              48.64999999998
-            ]
-          ],
-          "center": [
-            -123.39999989924,
-            48.64999999998
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.41799936557169,
-              48.6340854964084
-            ],
-            [
-              -123.38833646488403,
-              48.672328596290285
-            ]
-          ],
-          "center": [
-            -123.40316791522787,
-            48.653207046349344
-          ]
-        }
-      ]
-    },
-    "Calgary - Alberta": {
-      "name": "Calgary - Alberta",
-      "bounds": [
-        [
-          -114.05749989963,
-          51.04583329999
-        ],
-        [
-          -114.05749989963,
-          51.04583329999
-        ]
-      ],
-      "center": [
-        -114.05749989963,
-        51.04583329999
-      ],
-      "preferredLayerId": "MunicipalLevelPoints",
-      "preferredKind": "point",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -114.05749989963,
-              51.04583329999
-            ],
-            [
-              -114.05749989963,
-              51.04583329999
-            ]
-          ],
-          "center": [
-            -114.05749989963,
-            51.04583329999
-          ]
-        }
-      ]
-    },
-    "Abbotsford": {
-      "name": "Abbotsford",
-      "bounds": [
-        [
-          -122.46237825877421,
-          49.00223465846572
-        ],
-        [
-          -122.07299033675706,
-          49.17194132952576
-        ]
-      ],
-      "center": [
-        -122.26768429776564,
-        49.08708799399574
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -122.32131459358,
-              49.05639936278
-            ],
-            [
-              -122.32131459358,
-              49.05639936278
-            ]
-          ],
-          "center": [
-            -122.32131459358,
-            49.05639936278
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -122.46237825877421,
-              49.00223465846572
-            ],
-            [
-              -122.07299033675706,
-              49.17194132952576
-            ]
-          ],
-          "center": [
-            -122.26768429776564,
-            49.08708799399574
-          ]
-        }
-      ]
-    },
-    "Chilliwack": {
-      "name": "Chilliwack",
-      "bounds": [
-        [
-          -122.12437029600085,
-          49.045917551030605
-        ],
-        [
-          -121.77709312985039,
-          49.22560710468275
-        ]
-      ],
-      "center": [
-        -121.95073171292562,
-        49.13576232785668
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -121.94162731154,
-              49.17499846135
-            ],
-            [
-              -121.94162731154,
-              49.17499846135
-            ]
-          ],
-          "center": [
-            -121.94162731154,
-            49.17499846135
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -122.12437029600085,
-              49.045917551030605
-            ],
-            [
-              -121.77709312985039,
-              49.22560710468275
-            ]
-          ],
-          "center": [
-            -121.95073171292562,
-            49.13576232785668
-          ]
-        }
-      ]
-    },
-    "Westbank - British Columbia": {
-      "name": "Westbank - British Columbia",
-      "bounds": [
-        [
-          -119.63138167921,
-          49.82856416053
-        ],
-        [
-          -119.63138167921,
-          49.82856416053
-        ]
-      ],
-      "center": [
-        -119.63138167921,
-        49.82856416053
-      ],
-      "preferredLayerId": "MunicipalLevelPoints",
-      "preferredKind": "point",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -119.63138167921,
-              49.82856416053
-            ],
-            [
-              -119.63138167921,
-              49.82856416053
-            ]
-          ],
-          "center": [
-            -119.63138167921,
-            49.82856416053
-          ]
-        }
-      ]
-    },
-    "Mission": {
-      "name": "Mission",
-      "bounds": [
-        [
-          -122.42463935276535,
-          49.11973309038717
-        ],
-        [
-          -122.22490206380047,
-          49.360076026974724
-        ]
-      ],
-      "center": [
-        -122.32477070828291,
-        49.23990455868095
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -122.30369532633,
-              49.13761079666
-            ],
-            [
-              -122.30369532633,
-              49.13761079666
-            ]
-          ],
-          "center": [
-            -122.30369532633,
-            49.13761079666
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -122.42463935276535,
-              49.11973309038717
-            ],
-            [
-              -122.22490206380047,
-              49.360076026974724
-            ]
-          ],
-          "center": [
-            -122.32477070828291,
-            49.23990455868095
-          ]
-        }
-      ]
-    },
-    "White Rock": {
-      "name": "White Rock",
-      "bounds": [
-        [
-          -122.84545903731633,
-          49.00212067827064
-        ],
-        [
-          -122.77919760953367,
-          49.03123014438581
-        ]
-      ],
-      "center": [
-        -122.81232832342499,
-        49.01667541132822
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -122.79616310769,
-              49.02516830093
-            ],
-            [
-              -122.79616310769,
-              49.02516830093
-            ]
-          ],
-          "center": [
-            -122.79616310769,
-            49.02516830093
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -122.84545903731633,
-              49.00212067827064
-            ],
-            [
-              -122.77919760953367,
-              49.03123014438581
-            ]
-          ],
-          "center": [
-            -122.81232832342499,
-            49.01667541132822
-          ]
-        }
-      ]
-    },
-    "Langley - City": {
-      "name": "Langley - City",
-      "bounds": [
-        [
-          -122.67997213139606,
-          49.08196981237351
-        ],
-        [
-          -122.6378726691491,
-          49.11543023832266
-        ]
-      ],
-      "center": [
-        -122.65892240027259,
-        49.09870002534808
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -122.65883665275,
-              49.10378007453
-            ],
-            [
-              -122.65883665275,
-              49.10378007453
-            ]
-          ],
-          "center": [
-            -122.65883665275,
-            49.10378007453
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -122.67997213139606,
-              49.08196981237351
-            ],
-            [
-              -122.6378726691491,
-              49.11543023832266
-            ]
-          ],
-          "center": [
-            -122.65892240027259,
-            49.09870002534808
-          ]
-        }
-      ]
-    },
-    "Tsawwassen": {
-      "name": "Tsawwassen",
-      "bounds": [
-        [
-          -123.13054486975994,
-          49.01786144130057
-        ],
-        [
-          -123.07968530186528,
-          49.05787526241299
-        ]
-      ],
-      "center": [
-        -123.10511508581261,
-        49.03786835185678
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.0936583144,
-              49.03571418621
-            ],
-            [
-              -123.0936583144,
-              49.03571418621
-            ]
-          ],
-          "center": [
-            -123.0936583144,
-            49.03571418621
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.13054486975994,
-              49.01786144130057
-            ],
-            [
-              -123.07968530186528,
-              49.05787526241299
-            ]
-          ],
-          "center": [
-            -123.10511508581261,
-            49.03786835185678
-          ]
-        }
-      ]
-    },
-    "Westholme - British Columbia": {
-      "name": "Westholme - British Columbia",
-      "bounds": [
-        [
-          -123.70178259783,
-          48.85106267365
-        ],
-        [
-          -123.70178259783,
-          48.85106267365
-        ]
-      ],
-      "center": [
-        -123.70178259783,
-        48.85106267365
-      ],
-      "preferredLayerId": "MunicipalLevelPoints",
-      "preferredKind": "point",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.70178259783,
-              48.85106267365
-            ],
-            [
-              -123.70178259783,
-              48.85106267365
-            ]
-          ],
-          "center": [
-            -123.70178259783,
-            48.85106267365
           ]
         }
       ]
@@ -1585,227 +2106,6 @@
         }
       ]
     },
-    "Ladner - British Columbia": {
-      "name": "Ladner - British Columbia",
-      "bounds": [
-        [
-          -123.07777770051,
-          49.09166660002
-        ],
-        [
-          -123.07777770051,
-          49.09166660002
-        ]
-      ],
-      "center": [
-        -123.07777770051,
-        49.09166660002
-      ],
-      "preferredLayerId": "MunicipalLevelPoints",
-      "preferredKind": "point",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.07777770051,
-              49.09166660002
-            ],
-            [
-              -123.07777770051,
-              49.09166660002
-            ]
-          ],
-          "center": [
-            -123.07777770051,
-            49.09166660002
-          ]
-        }
-      ]
-    },
-    "Pitt Meadows": {
-      "name": "Pitt Meadows",
-      "bounds": [
-        [
-          -122.76812863687469,
-          49.19638066875257
-        ],
-        [
-          -122.5790093159905,
-          49.353261340833754
-        ]
-      ],
-      "center": [
-        -122.67356897643259,
-        49.27482100479316
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -122.68629553605,
-              49.21715227229
-            ],
-            [
-              -122.68629553605,
-              49.21715227229
-            ]
-          ],
-          "center": [
-            -122.68629553605,
-            49.21715227229
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -122.76812863687469,
-              49.19638066875257
-            ],
-            [
-              -122.5790093159905,
-              49.353261340833754
-            ]
-          ],
-          "center": [
-            -122.67356897643259,
-            49.27482100479316
-          ]
-        }
-      ]
-    },
-    "Surrey": {
-      "name": "Surrey",
-      "bounds": [
-        [
-          -122.95694215686318,
-          49.002083266869185
-        ],
-        [
-          -122.67911061469923,
-          49.22083033523625
-        ]
-      ],
-      "center": [
-        -122.8180263857812,
-        49.11145680105272
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -122.82777119636,
-              49.17447915728
-            ],
-            [
-              -122.82777119636,
-              49.17447915728
-            ]
-          ],
-          "center": [
-            -122.82777119636,
-            49.17447915728
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -122.95694215686318,
-              49.002083266869185
-            ],
-            [
-              -122.67911061469923,
-              49.22083033523625
-            ]
-          ],
-          "center": [
-            -122.8180263857812,
-            49.11145680105272
-          ]
-        }
-      ]
-    },
-    "New Westminster": {
-      "name": "New Westminster",
-      "bounds": [
-        [
-          -122.96007258260906,
-          49.175028099363956
-        ],
-        [
-          -122.87503319164043,
-          49.23806586603172
-        ]
-      ],
-      "center": [
-        -122.91755288712474,
-        49.20654698269784
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -122.91669999941,
-              49.21669990017
-            ],
-            [
-              -122.91669999941,
-              49.21669990017
-            ]
-          ],
-          "center": [
-            -122.91669999941,
-            49.21669990017
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -122.96007258260906,
-              49.175028099363956
-            ],
-            [
-              -122.87503319164043,
-              49.23806586603172
-            ]
-          ],
-          "center": [
-            -122.91755288712474,
-            49.20654698269784
-          ]
-        }
-      ]
-    },
     "Richmond": {
       "name": "Richmond",
       "bounds": [
@@ -1866,21 +2166,21 @@
         }
       ]
     },
-    "Vernon": {
-      "name": "Vernon",
+    "Langley - City": {
+      "name": "Langley - City",
       "bounds": [
         [
-          -119.45398912302156,
-          50.15142474517598
+          -122.67997213139606,
+          49.08196981237351
         ],
         [
-          -119.2052068082387,
-          50.32151556482038
+          -122.6378726691491,
+          49.11543023832266
         ]
       ],
       "center": [
-        -119.32959796563013,
-        50.23647015499818
+        -122.65892240027259,
+        49.09870002534808
       ],
       "preferredLayerId": "MunicipalLevelPolygons",
       "preferredKind": "polygon",
@@ -1892,17 +2192,17 @@
           "scale": "municipal",
           "bounds": [
             [
-              -119.26888710141,
-              50.26422417199
+              -122.65883665275,
+              49.10378007453
             ],
             [
-              -119.26888710141,
-              50.26422417199
+              -122.65883665275,
+              49.10378007453
             ]
           ],
           "center": [
-            -119.26888710141,
-            50.26422417199
+            -122.65883665275,
+            49.10378007453
           ]
         },
         {
@@ -1911,961 +2211,17 @@
           "scale": "municipal",
           "bounds": [
             [
-              -119.45398912302156,
-              50.15142474517598
+              -122.67997213139606,
+              49.08196981237351
             ],
             [
-              -119.2052068082387,
-              50.32151556482038
+              -122.6378726691491,
+              49.11543023832266
             ]
           ],
           "center": [
-            -119.32959796563013,
-            50.23647015499818
-          ]
-        }
-      ]
-    },
-    "Port Moody": {
-      "name": "Port Moody",
-      "bounds": [
-        [
-          -122.94406194523282,
-          49.27043465296028
-        ],
-        [
-          -122.82111409124545,
-          49.32994144183134
-        ]
-      ],
-      "center": [
-        -122.88258801823913,
-        49.30018804739581
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -122.86762527294,
-              49.27864655267
-            ],
-            [
-              -122.86762527294,
-              49.27864655267
-            ]
-          ],
-          "center": [
-            -122.86762527294,
-            49.27864655267
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -122.94406194523282,
-              49.27043465296028
-            ],
-            [
-              -122.82111409124545,
-              49.32994144183134
-            ]
-          ],
-          "center": [
-            -122.88258801823913,
-            49.30018804739581
-          ]
-        }
-      ]
-    },
-    "Burnaby": {
-      "name": "Burnaby",
-      "bounds": [
-        [
-          -123.02357786770895,
-          49.18002911590453
-        ],
-        [
-          -122.89257308682038,
-          49.29933171765555
-        ]
-      ],
-      "center": [
-        -122.95807547726466,
-        49.23968041678004
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -122.9617071096,
-              49.25208704481
-            ],
-            [
-              -122.9617071096,
-              49.25208704481
-            ]
-          ],
-          "center": [
-            -122.9617071096,
-            49.25208704481
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.02357786770895,
-              49.18002911590453
-            ],
-            [
-              -122.89257308682038,
-              49.29933171765555
-            ]
-          ],
-          "center": [
-            -122.95807547726466,
-            49.23968041678004
-          ]
-        }
-      ]
-    },
-    "Vancouver": {
-      "name": "Vancouver",
-      "bounds": [
-        [
-          -123.22479045357674,
-          49.19878689776505
-        ],
-        [
-          -123.0232489280081,
-          49.31618208313226
-        ]
-      ],
-      "center": [
-        -123.12401969079242,
-        49.25748449044866
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.11538738462,
-              49.24479865956
-            ],
-            [
-              -123.11538738462,
-              49.24479865956
-            ]
-          ],
-          "center": [
-            -123.11538738462,
-            49.24479865956
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.22479045357674,
-              49.19878689776505
-            ],
-            [
-              -123.0232489280081,
-              49.31618208313226
-            ]
-          ],
-          "center": [
-            -123.12401969079242,
-            49.25748449044866
-          ]
-        }
-      ]
-    },
-    "Nanaimo": {
-      "name": "Nanaimo",
-      "bounds": [
-        [
-          -124.06503688242269,
-          49.097297302163305
-        ],
-        [
-          -123.8007379776187,
-          49.251632654867954
-        ]
-      ],
-      "center": [
-        -123.93288743002068,
-        49.17446497851563
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.93914729916,
-              49.16592363739
-            ],
-            [
-              -123.93914729916,
-              49.16592363739
-            ]
-          ],
-          "center": [
-            -123.93914729916,
-            49.16592363739
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -124.06503688242269,
-              49.097297302163305
-            ],
-            [
-              -123.8007379776187,
-              49.251632654867954
-            ]
-          ],
-          "center": [
-            -123.93288743002068,
-            49.17446497851563
-          ]
-        }
-      ]
-    },
-    "Sechelt": {
-      "name": "Sechelt",
-      "bounds": [
-        [
-          -123.85109320077015,
-          49.431876803837774
-        ],
-        [
-          -123.67535210223845,
-          49.55032334063351
-        ]
-      ],
-      "center": [
-        -123.7632226515043,
-        49.49110007223564
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.76223497743,
-              49.47939455122
-            ],
-            [
-              -123.76223497743,
-              49.47939455122
-            ]
-          ],
-          "center": [
-            -123.76223497743,
-            49.47939455122
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.85109320077015,
-              49.431876803837774
-            ],
-            [
-              -123.67535210223845,
-              49.55032334063351
-            ]
-          ],
-          "center": [
-            -123.7632226515043,
-            49.49110007223564
-          ]
-        }
-      ]
-    },
-    "Sicamous": {
-      "name": "Sicamous",
-      "bounds": [
-        [
-          -119.01856171085332,
-          50.801471941871654
-        ],
-        [
-          -118.93950640672566,
-          50.856070167812355
-        ]
-      ],
-      "center": [
-        -118.9790340587895,
-        50.82877105484201
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -118.98023112709,
-              50.83501756742
-            ],
-            [
-              -118.98023112709,
-              50.83501756742
-            ]
-          ],
-          "center": [
-            -118.98023112709,
-            50.83501756742
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -119.01856171085332,
-              50.801471941871654
-            ],
-            [
-              -118.93950640672566,
-              50.856070167812355
-            ]
-          ],
-          "center": [
-            -118.9790340587895,
-            50.82877105484201
-          ]
-        }
-      ]
-    },
-    "Kamloops": {
-      "name": "Kamloops",
-      "bounds": [
-        [
-          -120.54243913331682,
-          50.61550844562378
-        ],
-        [
-          -120.04182238235187,
-          50.86642845105351
-        ]
-      ],
-      "center": [
-        -120.29213075783434,
-        50.74096844833865
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -120.34772932664,
-              50.67825054119
-            ],
-            [
-              -120.34772932664,
-              50.67825054119
-            ]
-          ],
-          "center": [
-            -120.34772932664,
-            50.67825054119
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -120.54243913331682,
-              50.61550844562378
-            ],
-            [
-              -120.04182238235187,
-              50.86642845105351
-            ]
-          ],
-          "center": [
-            -120.29213075783434,
-            50.74096844833865
-          ]
-        }
-      ]
-    },
-    "Whistler": {
-      "name": "Whistler",
-      "bounds": [
-        [
-          -123.15340781390265,
-          50.02676010428912
-        ],
-        [
-          -122.85884260105152,
-          50.17612883824261
-        ]
-      ],
-      "center": [
-        -123.00612520747708,
-        50.101444471265864
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -122.9554403745,
-              50.11747372381
-            ],
-            [
-              -122.9554403745,
-              50.11747372381
-            ]
-          ],
-          "center": [
-            -122.9554403745,
-            50.11747372381
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.15340781390265,
-              50.02676010428912
-            ],
-            [
-              -122.85884260105152,
-              50.17612883824261
-            ]
-          ],
-          "center": [
-            -123.00612520747708,
-            50.101444471265864
-          ]
-        }
-      ]
-    },
-    "Comox": {
-      "name": "Comox",
-      "bounds": [
-        [
-          -124.9573910630978,
-          49.66338298537425
-        ],
-        [
-          -124.85463538555663,
-          49.72921926356648
-        ]
-      ],
-      "center": [
-        -124.90601322432721,
-        49.69630112447037
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -124.9277945392,
-              49.67385762734
-            ],
-            [
-              -124.9277945392,
-              49.67385762734
-            ]
-          ],
-          "center": [
-            -124.9277945392,
-            49.67385762734
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -124.9573910630978,
-              49.66338298537425
-            ],
-            [
-              -124.85463538555663,
-              49.72921926356648
-            ]
-          ],
-          "center": [
-            -124.90601322432721,
-            49.69630112447037
-          ]
-        }
-      ]
-    },
-    "Courtenay": {
-      "name": "Courtenay",
-      "bounds": [
-        [
-          -125.03201341755526,
-          49.64689156600866
-        ],
-        [
-          -124.93314553088446,
-          49.74098776411367
-        ]
-      ],
-      "center": [
-        -124.98257947421986,
-        49.693939665061166
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -124.99897439669,
-              49.68891553219
-            ],
-            [
-              -124.99897439669,
-              49.68891553219
-            ]
-          ],
-          "center": [
-            -124.99897439669,
-            49.68891553219
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -125.03201341755526,
-              49.64689156600866
-            ],
-            [
-              -124.93314553088446,
-              49.74098776411367
-            ]
-          ],
-          "center": [
-            -124.98257947421986,
-            49.693939665061166
-          ]
-        }
-      ]
-    },
-    "Powell River": {
-      "name": "Powell River",
-      "bounds": [
-        [
-          -124.60799846596286,
-          49.79382432113816
-        ],
-        [
-          -124.48706177550493,
-          49.9077231191897
-        ]
-      ],
-      "center": [
-        -124.5475301207339,
-        49.85077372016393
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -124.54649650107,
-              49.87199955566
-            ],
-            [
-              -124.54649650107,
-              49.87199955566
-            ]
-          ],
-          "center": [
-            -124.54649650107,
-            49.87199955566
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -124.60799846596286,
-              49.79382432113816
-            ],
-            [
-              -124.48706177550493,
-              49.9077231191897
-            ]
-          ],
-          "center": [
-            -124.5475301207339,
-            49.85077372016393
-          ]
-        }
-      ]
-    },
-    "Lillooet 1 - British Columbia": {
-      "name": "Lillooet 1 - British Columbia",
-      "bounds": [
-        [
-          -121.94406886424,
-          50.68025916617
-        ],
-        [
-          -121.94406886424,
-          50.68025916617
-        ]
-      ],
-      "center": [
-        -121.94406886424,
-        50.68025916617
-      ],
-      "preferredLayerId": "MunicipalLevelPoints",
-      "preferredKind": "point",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -121.94406886424,
-              50.68025916617
-            ],
-            [
-              -121.94406886424,
-              50.68025916617
-            ]
-          ],
-          "center": [
-            -121.94406886424,
-            50.68025916617
-          ]
-        }
-      ]
-    },
-    "Campbell River": {
-      "name": "Campbell River",
-      "bounds": [
-        [
-          -125.49149865266999,
-          49.90161893002979
-        ],
-        [
-          -125.19381250567224,
-          50.118774596158254
-        ]
-      ],
-      "center": [
-        -125.34265557917112,
-        50.01019676309402
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -125.24166660033,
-              50.01666660035
-            ],
-            [
-              -125.24166660033,
-              50.01666660035
-            ]
-          ],
-          "center": [
-            -125.24166660033,
-            50.01666660035
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -125.49149865266999,
-              49.90161893002979
-            ],
-            [
-              -125.19381250567224,
-              50.118774596158254
-            ]
-          ],
-          "center": [
-            -125.34265557917112,
-            50.01019676309402
-          ]
-        }
-      ]
-    },
-    "Yellowknife - Northwest Territories": {
-      "name": "Yellowknife - Northwest Territories",
-      "bounds": [
-        [
-          -114.36911062062,
-          62.45358486341
-        ],
-        [
-          -114.36911062062,
-          62.45358486341
-        ]
-      ],
-      "center": [
-        -114.36911062062,
-        62.45358486341
-      ],
-      "preferredLayerId": "MunicipalLevelPoints",
-      "preferredKind": "point",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -114.36911062062,
-              62.45358486341
-            ],
-            [
-              -114.36911062062,
-              62.45358486341
-            ]
-          ],
-          "center": [
-            -114.36911062062,
-            62.45358486341
-          ]
-        }
-      ]
-    },
-    "North Vancouver - British Columbia": {
-      "name": "North Vancouver - British Columbia",
-      "bounds": [
-        [
-          -123.00466137665194,
-          49.36380620901514
-        ],
-        [
-          -123.00466137665194,
-          49.36380620901514
-        ]
-      ],
-      "center": [
-        -123.00466137665194,
-        49.36380620901514
-      ],
-      "preferredLayerId": "MunicipalLevelPoints",
-      "preferredKind": "point",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.00466137665194,
-              49.36380620901514
-            ],
-            [
-              -123.00466137665194,
-              49.36380620901514
-            ]
-          ],
-          "center": [
-            -123.00466137665194,
-            49.36380620901514
-          ]
-        }
-      ]
-    },
-    "Langley - District": {
-      "name": "Langley - District",
-      "bounds": [
-        [
-          -122.68054520624166,
-          49.002121236359294
-        ],
-        [
-          -122.45937729104051,
-          49.21047016727809
-        ]
-      ],
-      "center": [
-        -122.56996124864108,
-        49.106295701818695
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -122.54816180781,
-              49.08447261901
-            ],
-            [
-              -122.54816180781,
-              49.08447261901
-            ]
-          ],
-          "center": [
-            -122.54816180781,
-            49.08447261901
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -122.68054520624166,
-              49.002121236359294
-            ],
-            [
-              -122.45937729104051,
-              49.21047016727809
-            ]
-          ],
-          "center": [
-            -122.56996124864108,
-            49.106295701818695
-          ]
-        }
-      ]
-    },
-    "UBC": {
-      "name": "UBC",
-      "bounds": [
-        [
-          -123.24976859576,
-          49.26673475049
-        ],
-        [
-          -123.24976859576,
-          49.26673475049
-        ]
-      ],
-      "center": [
-        -123.24976859576,
-        49.26673475049
-      ],
-      "preferredLayerId": "MunicipalLevelPoints",
-      "preferredKind": "point",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.24976859576,
-              49.26673475049
-            ],
-            [
-              -123.24976859576,
-              49.26673475049
-            ]
-          ],
-          "center": [
-            -123.24976859576,
-            49.26673475049
+            -122.65892240027259,
+            49.09870002534808
           ]
         }
       ]
@@ -2930,21 +2286,21 @@
         }
       ]
     },
-    "Lantzville": {
-      "name": "Lantzville",
+    "North Saanich": {
+      "name": "North Saanich",
       "bounds": [
         [
-          -124.14828414607763,
-          49.199256533250285
+          -123.49302026299483,
+          48.61198683415471
         ],
         [
-          -124.05398652555137,
-          49.26014456443317
+          -123.39210190880597,
+          48.702173118362566
         ]
       ],
       "center": [
-        -124.10113533581449,
-        49.22970054884173
+        -123.4425610859004,
+        48.65707997625864
       ],
       "preferredLayerId": "MunicipalLevelPolygons",
       "preferredKind": "polygon",
@@ -2956,17 +2312,17 @@
           "scale": "municipal",
           "bounds": [
             [
-              -124.08429824673,
-              49.25085417319
+              -123.42146294566,
+              48.62172342727
             ],
             [
-              -124.08429824673,
-              49.25085417319
+              -123.42146294566,
+              48.62172342727
             ]
           ],
           "center": [
-            -124.08429824673,
-            49.25085417319
+            -123.42146294566,
+            48.62172342727
           ]
         },
         {
@@ -2975,17 +2331,358 @@
           "scale": "municipal",
           "bounds": [
             [
-              -124.14828414607763,
-              49.199256533250285
+              -123.49302026299483,
+              48.61198683415471
             ],
             [
-              -124.05398652555137,
-              49.26014456443317
+              -123.39210190880597,
+              48.702173118362566
             ]
           ],
           "center": [
-            -124.10113533581449,
-            49.22970054884173
+            -123.4425610859004,
+            48.65707997625864
+          ]
+        }
+      ]
+    },
+    "New Westminster": {
+      "name": "New Westminster",
+      "bounds": [
+        [
+          -122.96007258260906,
+          49.175028099363956
+        ],
+        [
+          -122.87503319164043,
+          49.23806586603172
+        ]
+      ],
+      "center": [
+        -122.91755288712474,
+        49.20654698269784
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -122.91669999941,
+              49.21669990017
+            ],
+            [
+              -122.91669999941,
+              49.21669990017
+            ]
+          ],
+          "center": [
+            -122.91669999941,
+            49.21669990017
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -122.96007258260906,
+              49.175028099363956
+            ],
+            [
+              -122.87503319164043,
+              49.23806586603172
+            ]
+          ],
+          "center": [
+            -122.91755288712474,
+            49.20654698269784
+          ]
+        }
+      ]
+    },
+    "Kamloops": {
+      "name": "Kamloops",
+      "bounds": [
+        [
+          -120.54243913331682,
+          50.61550844562378
+        ],
+        [
+          -120.04182238235187,
+          50.86642845105351
+        ]
+      ],
+      "center": [
+        -120.29213075783434,
+        50.74096844833865
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -120.34772932664,
+              50.67825054119
+            ],
+            [
+              -120.34772932664,
+              50.67825054119
+            ]
+          ],
+          "center": [
+            -120.34772932664,
+            50.67825054119
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -120.54243913331682,
+              50.61550844562378
+            ],
+            [
+              -120.04182238235187,
+              50.86642845105351
+            ]
+          ],
+          "center": [
+            -120.29213075783434,
+            50.74096844833865
+          ]
+        }
+      ]
+    },
+    "Powell River": {
+      "name": "Powell River",
+      "bounds": [
+        [
+          -124.60799846596286,
+          49.79382432113816
+        ],
+        [
+          -124.48706177550493,
+          49.9077231191897
+        ]
+      ],
+      "center": [
+        -124.5475301207339,
+        49.85077372016393
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -124.54649650107,
+              49.87199955566
+            ],
+            [
+              -124.54649650107,
+              49.87199955566
+            ]
+          ],
+          "center": [
+            -124.54649650107,
+            49.87199955566
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -124.60799846596286,
+              49.79382432113816
+            ],
+            [
+              -124.48706177550493,
+              49.9077231191897
+            ]
+          ],
+          "center": [
+            -124.5475301207339,
+            49.85077372016393
+          ]
+        }
+      ]
+    },
+    "Surrey": {
+      "name": "Surrey",
+      "bounds": [
+        [
+          -122.95694215686318,
+          49.002083266869185
+        ],
+        [
+          -122.67911061469923,
+          49.22083033523625
+        ]
+      ],
+      "center": [
+        -122.8180263857812,
+        49.11145680105272
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -122.82777119636,
+              49.17447915728
+            ],
+            [
+              -122.82777119636,
+              49.17447915728
+            ]
+          ],
+          "center": [
+            -122.82777119636,
+            49.17447915728
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -122.95694215686318,
+              49.002083266869185
+            ],
+            [
+              -122.67911061469923,
+              49.22083033523625
+            ]
+          ],
+          "center": [
+            -122.8180263857812,
+            49.11145680105272
+          ]
+        }
+      ]
+    },
+    "Westbank - British Columbia": {
+      "name": "Westbank - British Columbia",
+      "bounds": [
+        [
+          -119.63138167921,
+          49.82856416053
+        ],
+        [
+          -119.63138167921,
+          49.82856416053
+        ]
+      ],
+      "center": [
+        -119.63138167921,
+        49.82856416053
+      ],
+      "preferredLayerId": "MunicipalLevelPoints",
+      "preferredKind": "point",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -119.63138167921,
+              49.82856416053
+            ],
+            [
+              -119.63138167921,
+              49.82856416053
+            ]
+          ],
+          "center": [
+            -119.63138167921,
+            49.82856416053
+          ]
+        }
+      ]
+    },
+    "Sicamous": {
+      "name": "Sicamous",
+      "bounds": [
+        [
+          -119.01856171085332,
+          50.801471941871654
+        ],
+        [
+          -118.93950640672566,
+          50.856070167812355
+        ]
+      ],
+      "center": [
+        -118.9790340587895,
+        50.82877105484201
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -118.98023112709,
+              50.83501756742
+            ],
+            [
+              -118.98023112709,
+              50.83501756742
+            ]
+          ],
+          "center": [
+            -118.98023112709,
+            50.83501756742
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -119.01856171085332,
+              50.801471941871654
+            ],
+            [
+              -118.93950640672566,
+              50.856070167812355
+            ]
+          ],
+          "center": [
+            -118.9790340587895,
+            50.82877105484201
           ]
         }
       ]
@@ -3016,17 +2713,17 @@
           "scale": "municipal",
           "bounds": [
             [
-              -123.09977818303156,
-              49.09803703484987
+              -123.09977818303,
+              49.09803703485
             ],
             [
-              -123.09977818303156,
-              49.09803703484987
+              -123.09977818303,
+              49.09803703485
             ]
           ],
           "center": [
-            -123.09977818303156,
-            49.09803703484987
+            -123.09977818303,
+            49.09803703485
           ]
         },
         {
@@ -3046,186 +2743,6 @@
           "center": [
             -123.09977818303156,
             49.09803703484987
-          ]
-        }
-      ]
-    },
-    "West Kelowna": {
-      "name": "West Kelowna",
-      "bounds": [
-        [
-          -119.72660185223675,
-          49.78701200800583
-        ],
-        [
-          -119.50696994388205,
-          49.94523943638754
-        ]
-      ],
-      "center": [
-        -119.6167858980594,
-        49.866125722196685
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -119.6167858980594,
-              49.866125722196685
-            ],
-            [
-              -119.6167858980594,
-              49.866125722196685
-            ]
-          ],
-          "center": [
-            -119.6167858980594,
-            49.866125722196685
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -119.72660185223675,
-              49.78701200800583
-            ],
-            [
-              -119.50696994388205,
-              49.94523943638754
-            ]
-          ],
-          "center": [
-            -119.6167858980594,
-            49.866125722196685
-          ]
-        }
-      ]
-    },
-    "SLRD - EA B": {
-      "name": "SLRD - EA B",
-      "bounds": [
-        [
-          -122.6195614211774,
-          50.22826178664134
-        ],
-        [
-          -121.62729045665125,
-          51.20970228832499
-        ]
-      ],
-      "center": [
-        -122.12342593891432,
-        50.718982037483165
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -122.12342593891432,
-              50.718982037483165
-            ],
-            [
-              -122.12342593891432,
-              50.718982037483165
-            ]
-          ],
-          "center": [
-            -122.12342593891432,
-            50.718982037483165
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -122.6195614211774,
-              50.22826178664134
-            ],
-            [
-              -121.62729045665125,
-              51.20970228832499
-            ]
-          ],
-          "center": [
-            -122.12342593891432,
-            50.718982037483165
-          ]
-        }
-      ]
-    },
-    "North Vancouver - District": {
-      "name": "North Vancouver - District",
-      "bounds": [
-        [
-          -123.12778231849595,
-          49.2946524687361
-        ],
-        [
-          -122.87640299937951,
-          49.413805623409836
-        ]
-      ],
-      "center": [
-        -123.00209265893773,
-        49.35422904607297
-      ],
-      "preferredLayerId": "MunicipalLevelPolygons",
-      "preferredKind": "polygon",
-      "preferredScale": "municipal",
-      "features": [
-        {
-          "layerId": "MunicipalLevelPoints",
-          "kind": "point",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.00209265893773,
-              49.35422904607297
-            ],
-            [
-              -123.00209265893773,
-              49.35422904607297
-            ]
-          ],
-          "center": [
-            -123.00209265893773,
-            49.35422904607297
-          ]
-        },
-        {
-          "layerId": "MunicipalLevelPolygons",
-          "kind": "polygon",
-          "scale": "municipal",
-          "bounds": [
-            [
-              -123.12778231849595,
-              49.2946524687361
-            ],
-            [
-              -122.87640299937951,
-              49.413805623409836
-            ]
-          ],
-          "center": [
-            -123.00209265893773,
-            49.35422904607297
           ]
         }
       ]
@@ -3256,17 +2773,17 @@
           "scale": "municipal",
           "bounds": [
             [
-              -123.13862393474301,
-              49.75577651684571
+              -123.13862393474,
+              49.75577651685
             ],
             [
-              -123.13862393474301,
-              49.75577651684571
+              -123.13862393474,
+              49.75577651685
             ]
           ],
           "center": [
-            -123.13862393474301,
-            49.75577651684571
+            -123.13862393474,
+            49.75577651685
           ]
         },
         {
@@ -3290,21 +2807,21 @@
         }
       ]
     },
-    "Ladysmith": {
-      "name": "Ladysmith",
+    "North Vancouver - District": {
+      "name": "North Vancouver - District",
       "bounds": [
         [
-          -123.84711936387198,
-          48.9360988183443
+          -123.12778231849595,
+          49.2946524687361
         ],
         [
-          -123.77070218805326,
-          49.011652338597145
+          -122.87640299937951,
+          49.413805623409836
         ]
       ],
       "center": [
-        -123.80891077596263,
-        48.973875578470725
+        -123.00209265893773,
+        49.35422904607297
       ],
       "preferredLayerId": "MunicipalLevelPolygons",
       "preferredKind": "polygon",
@@ -3316,17 +2833,17 @@
           "scale": "municipal",
           "bounds": [
             [
-              -123.80891077596263,
-              48.973875578470725
+              -123.0865500564,
+              49.3376773634
             ],
             [
-              -123.80891077596263,
-              48.973875578470725
+              -123.0865500564,
+              49.3376773634
             ]
           ],
           "center": [
-            -123.80891077596263,
-            48.973875578470725
+            -123.0865500564,
+            49.3376773634
           ]
         },
         {
@@ -3335,36 +2852,36 @@
           "scale": "municipal",
           "bounds": [
             [
-              -123.84711936387198,
-              48.9360988183443
+              -123.12778231849595,
+              49.2946524687361
             ],
             [
-              -123.77070218805326,
-              49.011652338597145
+              -122.87640299937951,
+              49.413805623409836
             ]
           ],
           "center": [
-            -123.80891077596263,
-            48.973875578470725
+            -123.00209265893773,
+            49.35422904607297
           ]
         }
       ]
     },
-    "North Cowichan": {
-      "name": "North Cowichan",
+    "Sidney": {
+      "name": "Sidney",
       "bounds": [
         [
-          -123.78436305902171,
-          48.75303313353955
+          -123.41799936557169,
+          48.6340854964084
         ],
         [
-          -123.55383004169362,
-          48.936611619291206
+          -123.38833646488403,
+          48.672328596290285
         ]
       ],
       "center": [
-        -123.66909655035766,
-        48.84482237641538
+        -123.40316791522787,
+        48.653207046349344
       ],
       "preferredLayerId": "MunicipalLevelPolygons",
       "preferredKind": "polygon",
@@ -3376,17 +2893,17 @@
           "scale": "municipal",
           "bounds": [
             [
-              -123.66909655035766,
-              48.84482237641538
+              -123.39999989924,
+              48.64999999998
             ],
             [
-              -123.66909655035766,
-              48.84482237641538
+              -123.39999989924,
+              48.64999999998
             ]
           ],
           "center": [
-            -123.66909655035766,
-            48.84482237641538
+            -123.39999989924,
+            48.64999999998
           ]
         },
         {
@@ -3395,17 +2912,459 @@
           "scale": "municipal",
           "bounds": [
             [
-              -123.78436305902171,
-              48.75303313353955
+              -123.41799936557169,
+              48.6340854964084
             ],
             [
-              -123.55383004169362,
-              48.936611619291206
+              -123.38833646488403,
+              48.672328596290285
             ]
           ],
           "center": [
-            -123.66909655035766,
-            48.84482237641538
+            -123.40316791522787,
+            48.653207046349344
+          ]
+        }
+      ]
+    },
+    "Langford": {
+      "name": "Langford",
+      "bounds": [
+        [
+          -123.57538017889694,
+          48.402880346376975
+        ],
+        [
+          -123.46784199115739,
+          48.509325359927146
+        ]
+      ],
+      "center": [
+        -123.52161108502716,
+        48.45610285315206
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.49741875209,
+              48.45660201345
+            ],
+            [
+              -123.49741875209,
+              48.45660201345
+            ]
+          ],
+          "center": [
+            -123.49741875209,
+            48.45660201345
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.57538017889694,
+              48.402880346376975
+            ],
+            [
+              -123.46784199115739,
+              48.509325359927146
+            ]
+          ],
+          "center": [
+            -123.52161108502716,
+            48.45610285315206
+          ]
+        }
+      ]
+    },
+    "Nanaimo": {
+      "name": "Nanaimo",
+      "bounds": [
+        [
+          -124.06503688242269,
+          49.097297302163305
+        ],
+        [
+          -123.8007379776187,
+          49.251632654867954
+        ]
+      ],
+      "center": [
+        -123.93288743002068,
+        49.17446497851563
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.93914729916,
+              49.16592363739
+            ],
+            [
+              -123.93914729916,
+              49.16592363739
+            ]
+          ],
+          "center": [
+            -123.93914729916,
+            49.16592363739
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -124.06503688242269,
+              49.097297302163305
+            ],
+            [
+              -123.8007379776187,
+              49.251632654867954
+            ]
+          ],
+          "center": [
+            -123.93288743002068,
+            49.17446497851563
+          ]
+        }
+      ]
+    },
+    "Pitt Meadows": {
+      "name": "Pitt Meadows",
+      "bounds": [
+        [
+          -122.76812863687469,
+          49.19638066875257
+        ],
+        [
+          -122.5790093159905,
+          49.353261340833754
+        ]
+      ],
+      "center": [
+        -122.67356897643259,
+        49.27482100479316
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -122.68629553605,
+              49.21715227229
+            ],
+            [
+              -122.68629553605,
+              49.21715227229
+            ]
+          ],
+          "center": [
+            -122.68629553605,
+            49.21715227229
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -122.76812863687469,
+              49.19638066875257
+            ],
+            [
+              -122.5790093159905,
+              49.353261340833754
+            ]
+          ],
+          "center": [
+            -122.67356897643259,
+            49.27482100479316
+          ]
+        }
+      ]
+    },
+    "Chilliwack": {
+      "name": "Chilliwack",
+      "bounds": [
+        [
+          -122.12437029600085,
+          49.045917551030605
+        ],
+        [
+          -121.77709312985039,
+          49.22560710468275
+        ]
+      ],
+      "center": [
+        -121.95073171292562,
+        49.13576232785668
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -121.94162731154,
+              49.17499846135
+            ],
+            [
+              -121.94162731154,
+              49.17499846135
+            ]
+          ],
+          "center": [
+            -121.94162731154,
+            49.17499846135
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -122.12437029600085,
+              49.045917551030605
+            ],
+            [
+              -121.77709312985039,
+              49.22560710468275
+            ]
+          ],
+          "center": [
+            -121.95073171292562,
+            49.13576232785668
+          ]
+        }
+      ]
+    },
+    "Mission": {
+      "name": "Mission",
+      "bounds": [
+        [
+          -122.42463935276535,
+          49.11973309038717
+        ],
+        [
+          -122.22490206380047,
+          49.360076026974724
+        ]
+      ],
+      "center": [
+        -122.32477070828291,
+        49.23990455868095
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -122.30369532633,
+              49.13761079666
+            ],
+            [
+              -122.30369532633,
+              49.13761079666
+            ]
+          ],
+          "center": [
+            -122.30369532633,
+            49.13761079666
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -122.42463935276535,
+              49.11973309038717
+            ],
+            [
+              -122.22490206380047,
+              49.360076026974724
+            ]
+          ],
+          "center": [
+            -122.32477070828291,
+            49.23990455868095
+          ]
+        }
+      ]
+    },
+    "Saanichton - British Columbia": {
+      "name": "Saanichton - British Columbia",
+      "bounds": [
+        [
+          -123.41669990008,
+          48.59999999992
+        ],
+        [
+          -123.41669990008,
+          48.59999999992
+        ]
+      ],
+      "center": [
+        -123.41669990008,
+        48.59999999992
+      ],
+      "preferredLayerId": "MunicipalLevelPoints",
+      "preferredKind": "point",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.41669990008,
+              48.59999999992
+            ],
+            [
+              -123.41669990008,
+              48.59999999992
+            ]
+          ],
+          "center": [
+            -123.41669990008,
+            48.59999999992
+          ]
+        }
+      ]
+    },
+    "Yellowknife - Northwest Territories": {
+      "name": "Yellowknife - Northwest Territories",
+      "bounds": [
+        [
+          -114.36911062062,
+          62.45358486341
+        ],
+        [
+          -114.36911062062,
+          62.45358486341
+        ]
+      ],
+      "center": [
+        -114.36911062062,
+        62.45358486341
+      ],
+      "preferredLayerId": "MunicipalLevelPoints",
+      "preferredKind": "point",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -114.36911062062,
+              62.45358486341
+            ],
+            [
+              -114.36911062062,
+              62.45358486341
+            ]
+          ],
+          "center": [
+            -114.36911062062,
+            62.45358486341
+          ]
+        }
+      ]
+    },
+    "Tsawwassen": {
+      "name": "Tsawwassen",
+      "bounds": [
+        [
+          -123.13054486975994,
+          49.01786144130057
+        ],
+        [
+          -123.07968530186528,
+          49.05787526241299
+        ]
+      ],
+      "center": [
+        -123.10511508581261,
+        49.03786835185678
+      ],
+      "preferredLayerId": "MunicipalLevelPolygons",
+      "preferredKind": "polygon",
+      "preferredScale": "municipal",
+      "features": [
+        {
+          "layerId": "MunicipalLevelPoints",
+          "kind": "point",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.0936583144,
+              49.03571418621
+            ],
+            [
+              -123.0936583144,
+              49.03571418621
+            ]
+          ],
+          "center": [
+            -123.0936583144,
+            49.03571418621
+          ]
+        },
+        {
+          "layerId": "MunicipalLevelPolygons",
+          "kind": "polygon",
+          "scale": "municipal",
+          "bounds": [
+            [
+              -123.13054486975994,
+              49.01786144130057
+            ],
+            [
+              -123.07968530186528,
+              49.05787526241299
+            ]
+          ],
+          "center": [
+            -123.10511508581261,
+            49.03786835185678
           ]
         }
       ]
@@ -6053,7 +6012,7 @@
       "Ladysmith",
       "Langford",
       "Langley - City",
-      "Langley - District",
+      "Langley - Township",
       "Lantzville",
       "Lillooet 1 - British Columbia",
       "Maple Ridge",
@@ -6062,7 +6021,6 @@
       "New Westminster",
       "North Cowichan",
       "North Saanich",
-      "North Vancouver - British Columbia",
       "North Vancouver - City",
       "North Vancouver - District",
       "Okotoks - Alberta",
@@ -6110,7 +6068,7 @@
       "Ladysmith",
       "Langford",
       "Langley - City",
-      "Langley - District",
+      "Langley - Township",
       "Lantzville",
       "MVRD - EA A",
       "Maple Ridge",

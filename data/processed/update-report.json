@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T20:30:14.688074+00:00",
+  "generatedAt": "2026-06-08T20:49:08.418632+00:00",
   "sourceCsv": "data/source/projects.csv",
   "projectCount": 244,
   "suppressedProjectCount": 38,
@@ -42,10 +42,9 @@
     "layers": [
       {
         "layer": "MunicipalLevelPoints.geojson",
-        "featureCount": 60,
+        "featureCount": 59,
         "matchedFeatureCount": 54,
-        "output": "data/processed/geojson/MunicipalLevelPoints.geojson",
-        "generatedPointCount": 7
+        "output": "data/processed/geojson/MunicipalLevelPoints.geojson"
       },
       {
         "layer": "MunicipalLevelPolygons.geojson",
@@ -84,7 +83,7 @@
         "output": "data/processed/geojson/RegionalLevelPolygons.geojson"
       }
     ],
-    "geojsonKeyCount": 117,
+    "geojsonKeyCount": 116,
     "missingGeojsonKeys": [
       "Babbitt - Minnesota"
     ]
@@ -172,6 +171,16 @@
         "issue": "missing polygon key",
         "projectNumbers": [
           "17059"
+        ]
+      },
+      {
+        "polygonKey": "Langley - Township",
+        "displayName": "Langley - Township",
+        "missingFrom": "MunicipalLevelPolygons.geojson",
+        "issue": "polygon key not found",
+        "projectNumbers": [
+          "19019",
+          "22066"
         ]
       },
       {
