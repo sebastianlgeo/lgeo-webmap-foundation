@@ -7,11 +7,19 @@ window.WEBMAP_CONFIG = {
     // Dark mode: duplicate the Mapbox style, change its colours in Mapbox Studio,
     // publish it, then replace this URL with the duplicated style URL.
     darkStyleUrl: "mapbox://styles/lickergeospatial/cmpzy564w00ew01sy5ebt4274",
-    center: [-116.3, 52.2],
+    center: [-111.5, 43.4],
     zoom: 3.5,
     boundsPadding: 70,
+    hoverZoomBuffer: {
+      defaultEnter: 0.06,
+      defaultExit: 0.08,
+      regionalEnter: 0.04,
+      regionalExit: 0.08,
+      municipalEnter: 0.32,
+      continuationEnter: 0.08
+    },
     zoomTransition: 0.2,
-    startupBounds: [[-142, 7], [-47, 74]],
+    startupBounds: [[-139, 10], [-49, 64]],
     maxBounds: [[-142, 7], [-47, 74]],
     countryBounds: {
       Canada: [[-141, 41.5], [-52, 70]],
@@ -25,26 +33,69 @@ window.WEBMAP_CONFIG = {
     }
   },
   data: {
+    useLocalGeojson: true,
     projectsUrl: "../data/processed/projects.json",
     geographyIndexUrl: "../data/processed/geography-index.json",
+    geographyBoundsUrl: "../data/processed/geography-bounds.json",
     geojsonBaseUrl: "../data/processed/geojson/"
   },
   geographyAliases: {
     "Toronto - Ontario": ["City Of Toronto - Ontario"],
-    "City Of Toronto - Ontario": ["Toronto - Ontario"]
+    "City Of Toronto - Ontario": ["Toronto - Ontario"],
+    "Nanaimo Regional District - British Columbia": ["Regional District of Nanaimo - British Columbia"],
+    "Regional District of Nanaimo - British Columbia": ["Nanaimo Regional District - British Columbia"],
+    "Nanaimo - British Columbia": ["Nanaimo"],
+    "Nanaimo": ["Nanaimo - British Columbia"]
+  },
+  canonicalGeographies: {
+    "Toronto - Ontario": "City Of Toronto - Ontario",
+    "City Of Toronto - Ontario": "City Of Toronto - Ontario",
+    "Nanaimo Regional District - British Columbia": "Regional District of Nanaimo - British Columbia"
+  },
+  geographyDisplayNames: {
+    "Toronto - Ontario": "Toronto",
+    "City Of Toronto - Ontario": "Toronto",
+    "Regional District of Nanaimo - British Columbia": "Regional District of Nanaimo",
+    "Nanaimo Regional District - British Columbia": "Regional District of Nanaimo",
+    "Nanaimo - British Columbia": "Nanaimo"
+  },
+  hiddenPointGeographies: {
+    Municipal: ["Halifax - Nova Scotia"]
   },
   geographyBounds: {
+    "British Columbia": [[-139.2, 47.9], [-113.1, 60.1]],
+    "Alberta": [[-120.2, 48.8], [-109.7, 60.1]],
+    "Ontario": [[-95.3, 41.5], [-74.0, 56.9]],
+    "New Brunswick": [[-69.2, 44.4], [-63.7, 48.2]],
     "Nova Scotia": [[-66.6, 43.2], [-59.6, 47.2]],
     "Halifax - Nova Scotia": [[-64.6, 44.25], [-62.25, 45.35]],
     "Halifax Regional Municipality - Nova Scotia": [[-64.6, 44.25], [-62.25, 45.35]]
+  },
+  geographyMinZoom: {
+    "British Columbia": 3.75,
+    "Alberta": 3.75,
+    "Ontario": 3.75,
+    "New Brunswick": 3.75,
+    "Nova Scotia": 3.75,
+    "Halifax - Nova Scotia": 5.82,
+    "Halifax Regional Municipality - Nova Scotia": 5.82
+  },
+  geographyMaxZoom: {
+    "British Columbia": 5.76,
+    "Alberta": 5.76,
+    "Ontario": 5.76,
+    "New Brunswick": 5.76,
+    "Nova Scotia": 5.76,
+    "Halifax - Nova Scotia": 7.76,
+    "Halifax Regional Municipality - Nova Scotia": 7.76
   },
   theme: {
     unlinkedSymbolColor: "#e78f4c",
     linkedSymbolColor: "#19a7d8",
     symbolTextColor: "#ffffff",
     symbolStrokeColor: "#f8f5ee",
-    polygonFillColor: "#86b4b3",
-    polygonLineColor: "#517475",
+    polygonFillColor: "#6fa9ad",
+    polygonLineColor: "#3f6f74",
     labelColor: "#172026"
   },
   darkTheme: {
@@ -149,7 +200,7 @@ window.WEBMAP_CONFIG = {
     sourceType: "vector",
     tilesetUrl: "mapbox://lickergeospatial.v7hvdb6h9yz5",
     sourceLayer: "6fbaa6f70cad63ebb9a9",
-    color: "#064f56",
+    color: "#057184",
     minzoom: 7.8,
     maxzoom: 24,
     defaultVisible: true
@@ -166,7 +217,7 @@ window.WEBMAP_CONFIG = {
       { label: "MapTap", url: "https://maptap.gg/" },
       { label: "Worldle", url: "https://worldle.teuteuf.fr/" },
       { label: "Globle", url: "https://globle-game.com/" },
-      { label: "Travle 30", url: "https://t30.teuteuf.fr/" },
+      { label: "Thursday 30", url: "https://t30.teuteuf.fr/" },
       { label: "Geogrid", url: "https://www.geogridgame.com/" },
       { label: "Travle", url: "https://travle.earth/" }
     ]

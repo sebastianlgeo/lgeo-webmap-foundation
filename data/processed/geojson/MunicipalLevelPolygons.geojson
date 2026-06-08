@@ -466,7 +466,6 @@
       "properties": {
         "FID": 0,
         "NameKey": "Burnaby",
-        "Frequency": 5,
         "Shape_Leng": 62807.4627011,
         "Shape_Area": 226456306.327,
         "FREQUENCY": 5,
@@ -3794,7 +3793,6 @@
       "properties": {
         "FID": 1,
         "NameKey": "Delta",
-        "Frequency": 2,
         "Shape_Leng": 175833.322838,
         "Shape_Area": 902023747.341,
         "FREQUENCY": 2,
@@ -4290,7 +4288,6 @@
       "properties": {
         "FID": 2,
         "NameKey": "Langley - City",
-        "Frequency": 2,
         "Shape_Leng": 21811.9673771,
         "Shape_Area": 23887629.5648,
         "FREQUENCY": 2,
@@ -7614,7 +7611,6 @@
       "properties": {
         "FID": 3,
         "NameKey": "Maple Ridge",
-        "Frequency": 2,
         "Shape_Leng": 122731.937021,
         "Shape_Area": 673377436.865,
         "FREQUENCY": 2,
@@ -8278,7 +8274,6 @@
       "properties": {
         "FID": 4,
         "NameKey": "New Westminster",
-        "Frequency": 2,
         "Shape_Leng": 32481.3377776,
         "Shape_Area": 43316556.7556,
         "FREQUENCY": 2,
@@ -8598,7 +8593,6 @@
       "properties": {
         "FID": 5,
         "NameKey": "North Vancouver - City",
-        "Frequency": 1,
         "Shape_Leng": 29123.764509,
         "Shape_Area": 35117187.1584,
         "FREQUENCY": 1,
@@ -11734,7 +11728,6 @@
       "properties": {
         "FID": 6,
         "NameKey": "Pitt Meadows",
-        "Frequency": 1,
         "Shape_Leng": 87050.6922725,
         "Shape_Area": 225902371.905,
         "FREQUENCY": 1,
@@ -15792,7 +15785,6 @@
       "properties": {
         "FID": 7,
         "NameKey": "Port Moody",
-        "Frequency": 1,
         "Shape_Leng": 62835.3406797,
         "Shape_Area": 76921995.6594,
         "FREQUENCY": 1,
@@ -23792,7 +23784,6 @@
       "properties": {
         "FID": 8,
         "NameKey": "Richmond",
-        "Frequency": 3,
         "Shape_Leng": 126862.116853,
         "Shape_Area": 636413049.502,
         "FREQUENCY": 3,
@@ -27168,7 +27159,6 @@
       "properties": {
         "FID": 9,
         "NameKey": "West Kelowna",
-        "Frequency": 2,
         "Shape_Leng": 143559.540819,
         "Shape_Area": 370393384.208,
         "FREQUENCY": 2,
@@ -29216,7 +29206,6 @@
       "properties": {
         "FID": 10,
         "NameKey": "Abbotsford",
-        "Frequency": 3,
         "Shape_Leng": 168398.67342,
         "Shape_Area": 919997078.83,
         "FREQUENCY": 3,
@@ -30968,7 +30957,6 @@
       "properties": {
         "FID": 11,
         "NameKey": "Chilliwack",
-        "Frequency": 5,
         "Shape_Leng": 138099.127458,
         "Shape_Area": 684133324.763,
         "FREQUENCY": 5,
@@ -32880,7 +32868,6 @@
       "properties": {
         "FID": 12,
         "NameKey": "Mission",
-        "Frequency": 1,
         "Shape_Leng": 116296.106884,
         "Shape_Area": 603125734.898,
         "FREQUENCY": 1,
@@ -33272,7 +33259,6 @@
       "properties": {
         "FID": 13,
         "NameKey": "Whistler",
-        "Frequency": 2,
         "Shape_Leng": 114953.171247,
         "Shape_Area": 596595300.025,
         "FREQUENCY": 2,
@@ -102388,7 +102374,6 @@
       "properties": {
         "FID": 14,
         "NameKey": "SLRD - EA B",
-        "Frequency": 1,
         "Shape_Leng": 917211.137089,
         "Shape_Area": 9053819600.33,
         "FREQUENCY": 1,
@@ -104276,7 +104261,6 @@
       "properties": {
         "FID": 15,
         "NameKey": "Kamloops",
-        "Frequency": 6,
         "Shape_Leng": 225913.051633,
         "Shape_Area": 783754858.405,
         "FREQUENCY": 6,
@@ -105120,7 +105104,6 @@
       "properties": {
         "FID": 16,
         "NameKey": "Salmo",
-        "Frequency": 1,
         "Shape_Leng": 11419.0761077,
         "Shape_Area": 5256852.3642,
         "FREQUENCY": 1,
@@ -105756,7 +105739,6 @@
       "properties": {
         "FID": 17,
         "NameKey": "Surrey",
-        "Frequency": 10,
         "Shape_Leng": 145664.090697,
         "Shape_Area": 850291336.684,
         "FREQUENCY": 10,
@@ -113988,15 +113970,14 @@
       "properties": {
         "FID": 18,
         "NameKey": "Vancouver",
-        "Frequency": 27,
         "Shape_Leng": 87010.2081709,
         "Shape_Area": 320952352.359,
-        "FREQUENCY": 27,
-        "ProjectCount": 27,
-        "LinkedProjectCount": 4,
+        "FREQUENCY": 28,
+        "ProjectCount": 28,
+        "LinkedProjectCount": 5,
         "Interactive": false,
         "TopProjectType": "Urban Simulation",
-        "ProjectTypes": "Urban Simulation, Webmaps, Cartography & Visual Storytelling, Additional GIS Support Services, Site Selection, Logistics & Routing"
+        "ProjectTypes": "Urban Simulation, Webmaps, Cartography & Visual Storytelling, Carbon and Energy Modelling, Additional GIS Support Services"
       }
     },
     {
@@ -114056,7 +114037,6 @@
       "properties": {
         "FID": 19,
         "NameKey": "White Rock",
-        "Frequency": 1,
         "Shape_Leng": 24581.2590588,
         "Shape_Area": 33293404.3402,
         "FREQUENCY": 1,
@@ -115456,15 +115436,14 @@
       "properties": {
         "FID": 20,
         "NameKey": "Langley - District",
-        "Frequency": 1,
         "Shape_Leng": 126221.881165,
         "Shape_Area": 741215652.203,
-        "FREQUENCY": 1,
-        "ProjectCount": 1,
-        "LinkedProjectCount": 0,
+        "FREQUENCY": 2,
+        "ProjectCount": 2,
+        "LinkedProjectCount": 1,
         "Interactive": false,
         "TopProjectType": "Carbon and Energy Modelling",
-        "ProjectTypes": "Carbon and Energy Modelling"
+        "ProjectTypes": "Carbon and Energy Modelling, Uncategorized"
       }
     },
     {
@@ -116068,7 +116047,6 @@
       "properties": {
         "FID": 21,
         "NameKey": "North Vancouver - District",
-        "Frequency": 2,
         "Shape_Leng": 104297.177346,
         "Shape_Area": 418111674.848,
         "FREQUENCY": 2,
@@ -148650,7 +148628,6 @@
       "properties": {
         "FID": 22,
         "NameKey": "MVRD - EA A",
-        "Frequency": 5,
         "Shape_Leng": 631342.962365,
         "Shape_Area": 3391597803.31,
         "FREQUENCY": 5,
@@ -150418,7 +150395,6 @@
       "properties": {
         "FID": 23,
         "NameKey": "Squamish",
-        "Frequency": 1,
         "Shape_Leng": 164765.159708,
         "Shape_Area": 290197273.373,
         "FREQUENCY": 1,
@@ -154718,7 +154694,6 @@
       "properties": {
         "FID": 24,
         "NameKey": "Vernon",
-        "Frequency": 1,
         "Shape_Leng": 151594.258535,
         "Shape_Area": 280569150.87,
         "FREQUENCY": 1,
@@ -159482,7 +159457,6 @@
       "properties": {
         "FID": 25,
         "NameKey": "Central Saanich",
-        "Frequency": 2,
         "Shape_Leng": 50214.7700732,
         "Shape_Area": 118322465.702,
         "FREQUENCY": 2,
@@ -161606,7 +161580,6 @@
       "properties": {
         "FID": 26,
         "NameKey": "Colwood",
-        "Frequency": 1,
         "Shape_Leng": 33707.8143048,
         "Shape_Area": 48017685.3848,
         "FREQUENCY": 1,
@@ -168370,7 +168343,6 @@
       "properties": {
         "FID": 27,
         "NameKey": "Langford",
-        "Frequency": 1,
         "Shape_Leng": 66110.8280573,
         "Shape_Area": 94646485.1805,
         "FREQUENCY": 1,
@@ -180410,7 +180382,6 @@
       "properties": {
         "FID": 28,
         "NameKey": "North Saanich",
-        "Frequency": 1,
         "Shape_Leng": 82360.4801832,
         "Shape_Area": 107693373.261,
         "FREQUENCY": 1,
@@ -186610,7 +186581,6 @@
       "properties": {
         "FID": 29,
         "NameKey": "Saanich",
-        "Frequency": 1,
         "Shape_Leng": 98616.2112483,
         "Shape_Area": 259479348.058,
         "FREQUENCY": 1,
@@ -188222,7 +188192,6 @@
       "properties": {
         "FID": 30,
         "NameKey": "Sidney",
-        "Frequency": 1,
         "Shape_Leng": 17353.4927374,
         "Shape_Area": 16804477.052,
         "FREQUENCY": 1,
@@ -197614,7 +197583,6 @@
       "properties": {
         "FID": 31,
         "NameKey": "Sooke",
-        "Frequency": 1,
         "Shape_Leng": 119460.795489,
         "Shape_Area": 154391703.558,
         "FREQUENCY": 1,
@@ -205150,15 +205118,14 @@
       "properties": {
         "FID": 32,
         "NameKey": "Victoria",
-        "Frequency": 8,
         "Shape_Leng": 32864.3307355,
         "Shape_Area": 48061475.2301,
-        "FREQUENCY": 8,
-        "ProjectCount": 8,
-        "LinkedProjectCount": 1,
+        "FREQUENCY": 10,
+        "ProjectCount": 10,
+        "LinkedProjectCount": 2,
         "Interactive": false,
         "TopProjectType": "Urban Simulation",
-        "ProjectTypes": "Urban Simulation, Additional GIS Support Services"
+        "ProjectTypes": "Urban Simulation, Uncategorized, Additional GIS Support Services"
       }
     },
     {
@@ -210396,7 +210363,6 @@
       "properties": {
         "FID": 33,
         "NameKey": "Comox",
-        "Frequency": 2,
         "Shape_Leng": 74799.7333486,
         "Shape_Area": 51223305.1055,
         "FREQUENCY": 2,
@@ -214412,7 +214378,6 @@
       "properties": {
         "FID": 34,
         "NameKey": "Courtenay",
-        "Frequency": 1,
         "Shape_Leng": 80539.5304546,
         "Shape_Area": 80613661.7216,
         "FREQUENCY": 1,
@@ -215564,7 +215529,6 @@
       "properties": {
         "FID": 35,
         "NameKey": "Ladysmith",
-        "Frequency": 2,
         "Shape_Leng": 38673.8243321,
         "Shape_Area": 34755300.5202,
         "FREQUENCY": 2,
@@ -230434,7 +230398,6 @@
       "properties": {
         "FID": 36,
         "NameKey": "North Cowichan",
-        "Frequency": 2,
         "Shape_Leng": 169590.831576,
         "Shape_Area": 492690297.863,
         "FREQUENCY": 2,
@@ -232858,7 +232821,6 @@
       "properties": {
         "FID": 37,
         "NameKey": "Sicamous",
-        "Frequency": 1,
         "Shape_Leng": 42620.6994853,
         "Shape_Area": 41243101.3691,
         "FREQUENCY": 1,
@@ -237304,7 +237266,6 @@
       "properties": {
         "FID": 38,
         "NameKey": "Cranbrook",
-        "Frequency": 3,
         "Shape_Leng": 88677.1079605,
         "Shape_Area": 74964747.3197,
         "FREQUENCY": 3,
@@ -240520,7 +240481,6 @@
       "properties": {
         "FID": 39,
         "NameKey": "Lantzville",
-        "Frequency": 1,
         "Shape_Leng": 50925.2970389,
         "Shape_Area": 69905784.5371,
         "FREQUENCY": 1,
@@ -250978,12 +250938,11 @@
       "properties": {
         "FID": 40,
         "NameKey": "Nanaimo",
-        "Frequency": 4,
         "Shape_Leng": 120473.450285,
         "Shape_Area": 287207263.601,
         "FREQUENCY": 4,
         "ProjectCount": 4,
-        "LinkedProjectCount": 0,
+        "LinkedProjectCount": 1,
         "Interactive": false,
         "TopProjectType": "Urban Simulation",
         "ProjectTypes": "Urban Simulation"
@@ -252274,7 +252233,6 @@
       "properties": {
         "FID": 41,
         "NameKey": "Powell River",
-        "Frequency": 1,
         "Shape_Leng": 60790.4398063,
         "Shape_Area": 101370766.28,
         "FREQUENCY": 1,
@@ -274172,7 +274130,6 @@
       "properties": {
         "FID": 42,
         "NameKey": "Sechelt",
-        "Frequency": 1,
         "Shape_Leng": 103213.907709,
         "Shape_Area": 114726743.033,
         "FREQUENCY": 1,
@@ -283628,7 +283585,6 @@
       "properties": {
         "FID": 43,
         "NameKey": "Campbell River",
-        "Frequency": 1,
         "Shape_Leng": 169747.297903,
         "Shape_Area": 387798742.786,
         "FREQUENCY": 1,
@@ -325536,7 +325492,6 @@
       "properties": {
         "FID": 44,
         "NameKey": "City Of Toronto - Ontario",
-        "Frequency": 5,
         "Shape_Leng": 265238.175737,
         "Shape_Area": 1210686359.15,
         "FREQUENCY": 5,
@@ -328114,7 +328069,6 @@
       "properties": {
         "FID": 45,
         "NameKey": "Tsawwassen",
-        "Frequency": 1,
         "Shape_Leng": 33289.1217782,
         "Shape_Area": 15433382.3574,
         "FREQUENCY": 1,
@@ -328614,7 +328568,6 @@
       "properties": {
         "FID": 46,
         "NameKey": "Fredericton - New Brunswick",
-        "Frequency": 1,
         "Shape_Leng": 100902.126289,
         "Shape_Area": 306532735.251,
         "FREQUENCY": 1,

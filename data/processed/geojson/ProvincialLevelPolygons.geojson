@@ -5932,15 +5932,14 @@
       "properties": {
         "FID": 0,
         "NameKey": "British Columbia",
-        "Frequency": 157,
         "Shape_Leng": 26436788.9596,
         "Shape_Area": 2852768967760,
-        "FREQUENCY": 159,
-        "ProjectCount": 159,
-        "LinkedProjectCount": 10,
+        "FREQUENCY": 164,
+        "ProjectCount": 164,
+        "LinkedProjectCount": 15,
         "Interactive": false,
         "TopProjectType": "Urban Simulation",
-        "ProjectTypes": "Urban Simulation, Webmaps, Cartography & Visual Storytelling, Carbon and Energy Modelling, Additional GIS Support Services"
+        "ProjectTypes": "Urban Simulation, Carbon and Energy Modelling, Webmaps, Cartography & Visual Storytelling, Additional GIS Support Services"
       }
     },
     {
@@ -7590,7 +7589,6 @@
       "properties": {
         "FID": 1,
         "NameKey": "Nova Scotia",
-        "Frequency": 1,
         "Shape_Leng": 5287394.37367,
         "Shape_Area": 110407610984,
         "FREQUENCY": 1,
@@ -8114,7 +8112,6 @@
       "properties": {
         "FID": 2,
         "NameKey": "Alberta",
-        "Frequency": 4,
         "Shape_Leng": 6416530.38817,
         "Shape_Area": 2042186763400,
         "FREQUENCY": 4,
@@ -8892,7 +8889,6 @@
       "properties": {
         "FID": 3,
         "NameKey": "New Brunswick",
-        "Frequency": 1,
         "Shape_Leng": 2811015.06636,
         "Shape_Area": 153749953123,
         "FREQUENCY": 1,
@@ -10894,7 +10890,6 @@
       "properties": {
         "FID": 4,
         "NameKey": "Ontario",
-        "Frequency": 6,
         "Shape_Leng": 12816184.9163,
         "Shape_Area": 2444372212710,
         "FREQUENCY": 6,
@@ -17712,7 +17707,6 @@
       "properties": {
         "FID": 5,
         "NameKey": "Northwest Territories",
-        "Frequency": 1,
         "Shape_Leng": 51986717.852,
         "Shape_Area": 8762232453260,
         "FREQUENCY": 1,
@@ -182856,7 +182850,6 @@
       "properties": {
         "FID": 6,
         "NameKey": "Minnesota",
-        "Frequency": 2,
         "Shape_Leng": 4508433.93086,
         "Shape_Area": 473205660581,
         "FREQUENCY": 2,
@@ -212820,7 +212813,6 @@
       "properties": {
         "FID": 7,
         "NameKey": "Colorado",
-        "Frequency": 2,
         "Shape_Leng": 2708281.40882,
         "Shape_Area": 447310695890,
         "FREQUENCY": 2,

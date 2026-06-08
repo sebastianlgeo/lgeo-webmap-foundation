@@ -140,12 +140,12 @@
       "properties": {
         "FID": 6,
         "NameKey": "Metro Vancouver Regional District - British Columbia",
-        "FREQUENCY": 79,
-        "ProjectCount": 79,
-        "LinkedProjectCount": 5,
+        "FREQUENCY": 82,
+        "ProjectCount": 82,
+        "LinkedProjectCount": 8,
         "Interactive": false,
         "TopProjectType": "Urban Simulation",
-        "ProjectTypes": "Urban Simulation, Additional GIS Support Services, Carbon and Energy Modelling, Webmaps, Cartography & Visual Storytelling"
+        "ProjectTypes": "Urban Simulation, Carbon and Energy Modelling, Additional GIS Support Services, Webmaps, Cartography & Visual Storytelling"
       }
     },
     {
@@ -161,9 +161,9 @@
       "properties": {
         "FID": 7,
         "NameKey": "Thompson Nicola Regional District - British Columbia",
-        "FREQUENCY": 7,
-        "ProjectCount": 7,
-        "LinkedProjectCount": 1,
+        "FREQUENCY": 6,
+        "ProjectCount": 6,
+        "LinkedProjectCount": 0,
         "Interactive": false,
         "TopProjectType": "Carbon and Energy Modelling",
         "ProjectTypes": "Carbon and Energy Modelling, Webmaps, Cartography & Visual Storytelling, Urban Simulation, Additional GIS Support Services"
@@ -203,12 +203,12 @@
       "properties": {
         "FID": 9,
         "NameKey": "Squamish-Lillooet Regional District - British Columbia",
-        "FREQUENCY": 3,
-        "ProjectCount": 3,
+        "FREQUENCY": 4,
+        "ProjectCount": 4,
         "LinkedProjectCount": 0,
         "Interactive": false,
         "TopProjectType": "Remote Sensing",
-        "ProjectTypes": "Remote Sensing, Webmaps, Cartography & Visual Storytelling"
+        "ProjectTypes": "Remote Sensing, Webmaps, Cartography & Visual Storytelling, Urban Simulation"
       }
     },
     {
@@ -245,12 +245,12 @@
       "properties": {
         "FID": 11,
         "NameKey": "Capital Regional District - British Columbia",
-        "FREQUENCY": 17,
-        "ProjectCount": 17,
-        "LinkedProjectCount": 2,
+        "FREQUENCY": 21,
+        "ProjectCount": 21,
+        "LinkedProjectCount": 3,
         "Interactive": false,
         "TopProjectType": "Urban Simulation",
-        "ProjectTypes": "Urban Simulation, Additional GIS Support Services, Webmaps, Cartography & Visual Storytelling, Remote Sensing"
+        "ProjectTypes": "Urban Simulation, Uncategorized, Additional GIS Support Services, Webmaps, Cartography & Visual Storytelling"
       }
     },
     {
@@ -350,12 +350,12 @@
       "properties": {
         "FID": 16,
         "NameKey": "Regional District of Nanaimo - British Columbia",
-        "FREQUENCY": 1,
-        "ProjectCount": 1,
-        "LinkedProjectCount": 0,
+        "FREQUENCY": 5,
+        "ProjectCount": 5,
+        "LinkedProjectCount": 1,
         "Interactive": false,
-        "TopProjectType": "Additional GIS Support Services",
-        "ProjectTypes": "Additional GIS Support Services"
+        "TopProjectType": "Urban Simulation",
+        "ProjectTypes": "Urban Simulation, Additional GIS Support Services"
       }
     },
     {
@@ -582,11 +582,11 @@
         "FID": 27,
         "NameKey": "Mazatlan",
         "FREQUENCY": 1,
-        "ProjectCount": 0,
+        "ProjectCount": 1,
         "LinkedProjectCount": 0,
         "Interactive": false,
-        "TopProjectType": "",
-        "ProjectTypes": ""
+        "TopProjectType": "Remote Sensing",
+        "ProjectTypes": "Remote Sensing"
       }
     }
   ]

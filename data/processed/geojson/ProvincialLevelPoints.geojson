@@ -70,8 +70,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -114.50705457358754,
-          55.16361477524208
+          -114.6,
+          54.65
         ]
       },
       "properties": {
@@ -98,12 +98,12 @@
       "properties": {
         "FID": 4,
         "NameKey": "British Columbia",
-        "FREQUENCY": 159,
-        "ProjectCount": 159,
-        "LinkedProjectCount": 10,
+        "FREQUENCY": 164,
+        "ProjectCount": 164,
+        "LinkedProjectCount": 15,
         "Interactive": false,
         "TopProjectType": "Urban Simulation",
-        "ProjectTypes": "Urban Simulation, Webmaps, Cartography & Visual Storytelling, Carbon and Energy Modelling, Additional GIS Support Services"
+        "ProjectTypes": "Urban Simulation, Carbon and Energy Modelling, Webmaps, Cartography & Visual Storytelling, Additional GIS Support Services"
       }
     },
     {

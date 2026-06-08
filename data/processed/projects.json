@@ -13,14 +13,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Victoria - British Columbia",
+    "primaryGeography": "Victoria",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Capital Regional District - British Columbia",
-      "Municipal": "Victoria - British Columbia"
+      "Municipal": "Victoria"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -43,14 +43,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Sechelt - British Columbia",
+    "primaryGeography": "Sechelt",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Sunshine Coast Regional District - British Columbia",
-      "Municipal": "Sechelt - British Columbia"
+      "Municipal": "Sechelt"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -73,14 +73,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -103,14 +103,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "New Westminster - British Columbia",
+    "primaryGeography": "New Westminster",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "New Westminster - British Columbia"
+      "Municipal": "New Westminster"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -133,14 +133,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -163,14 +163,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Colwood - British Columbia",
+    "primaryGeography": "Colwood",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Capital Regional District - British Columbia",
-      "Municipal": "Colwood - British Columbia"
+      "Municipal": "Colwood"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -193,14 +193,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Burnaby - British Columbia",
+    "primaryGeography": "Burnaby",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Burnaby - British Columbia"
+      "Municipal": "Burnaby"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -223,14 +223,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Toronto - Ontario",
+    "primaryGeography": "City Of Toronto - Ontario",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "Ontario",
       "Regional": "City Of Toronto - Ontario",
-      "Municipal": "Toronto - Ontario"
+      "Municipal": "City Of Toronto - Ontario"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -253,14 +253,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "UBC - British Columbia",
+    "primaryGeography": "MVRD - EA A",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "UBC - British Columbia"
+      "Municipal": "MVRD - EA A"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -283,14 +283,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "North Vancouver - British Columbia",
+    "primaryGeography": "North Vancouver - District",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "North Vancouver - British Columbia"
+      "Municipal": "North Vancouver - District"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -313,14 +313,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Burnaby - British Columbia",
+    "primaryGeography": "Burnaby",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Burnaby - British Columbia"
+      "Municipal": "Burnaby"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -343,14 +343,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -373,14 +373,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Chilliwack - British Columbia",
+    "primaryGeography": "Chilliwack",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Fraser Valley Regional District - British Columbia",
-      "Municipal": "Chilliwack - British Columbia"
+      "Municipal": "Chilliwack"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -403,14 +403,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Surrey - British Columbia",
+    "primaryGeography": "Surrey",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Surrey - British Columbia"
+      "Municipal": "Surrey"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -433,14 +433,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -463,14 +463,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Cranbrook - British Columbia",
+    "primaryGeography": "Cranbrook",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Regional District of East Kootenay - British Columbia",
-      "Municipal": "Cranbrook - British Columbia"
+      "Municipal": "Cranbrook"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -521,14 +521,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -551,14 +551,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Maple Ridge - British Columbia",
+    "primaryGeography": "Maple Ridge",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Maple Ridge - British Columbia"
+      "Municipal": "Maple Ridge"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -639,14 +639,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Surrey - British Columbia",
+    "primaryGeography": "Surrey",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Surrey - British Columbia"
+      "Municipal": "Surrey"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -669,14 +669,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -699,14 +699,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Burnaby - British Columbia",
+    "primaryGeography": "Burnaby",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Burnaby - British Columbia"
+      "Municipal": "Burnaby"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -756,14 +756,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Chilliwack - British Columbia",
+    "primaryGeography": "Chilliwack",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Fraser Valley Regional District - British Columbia",
-      "Municipal": "Chilliwack - British Columbia"
+      "Municipal": "Chilliwack"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -786,14 +786,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Richmond - British Columbia",
+    "primaryGeography": "Richmond",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Richmond - British Columbia"
+      "Municipal": "Richmond"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -844,14 +844,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "New Westminster - British Columbia",
+    "primaryGeography": "New Westminster",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "New Westminster - British Columbia"
+      "Municipal": "New Westminster"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -874,14 +874,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Surrey - British Columbia",
+    "primaryGeography": "Surrey",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Surrey - British Columbia"
+      "Municipal": "Surrey"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -904,14 +904,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Lantzville - British Columbia",
+    "primaryGeography": "Lantzville",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Regional District of Nanaimo - British Columbia",
-      "Municipal": "Lantzville - British Columbia"
+      "Municipal": "Lantzville"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -940,7 +940,8 @@
     "geographies": {
       "National": "Canada",
       "Provincial": "Ontario",
-      "Regional": "City Of Toronto - Ontario"
+      "Regional": "City Of Toronto - Ontario",
+      "Municipal": "City Of Toronto - Ontario"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -963,14 +964,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Surrey - British Columbia",
+    "primaryGeography": "Surrey",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Surrey - British Columbia"
+      "Municipal": "Surrey"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1021,14 +1022,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1074,7 +1075,7 @@
     "description": "",
     "primeContact": "",
     "value": "",
-    "projectUrl": "https://www.lgeo.co/carbon-energy-modelling",
+    "projectUrl": "https://lgeo.co/additional-gis-support#koa",
     "projectPageSlug": "",
     "thumbnailUrl": "",
     "featured": true,
@@ -1103,19 +1104,19 @@
     "description": "",
     "primeContact": "",
     "value": "",
-    "projectUrl": "https://www.lgeo.co/carbon-energy-modelling",
+    "projectUrl": "https://lgeo.co/site-selection-logistics-routing#biketoronto",
     "projectPageSlug": "",
     "thumbnailUrl": "",
     "featured": true,
     "interactive": true,
-    "primaryGeography": "Toronto - Ontario",
+    "primaryGeography": "City Of Toronto - Ontario",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "Ontario",
       "Regional": "City Of Toronto - Ontario",
-      "Municipal": "Toronto - Ontario"
+      "Municipal": "City Of Toronto - Ontario"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1138,14 +1139,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1168,14 +1169,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Mission - British Columbia",
+    "primaryGeography": "Mission",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Fraser Valley Regional District - British Columbia",
-      "Municipal": "Mission - British Columbia"
+      "Municipal": "Mission"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1204,7 +1205,8 @@
     "geographies": {
       "National": "Canada",
       "Provincial": "Ontario",
-      "Regional": "City Of Toronto - Ontario"
+      "Regional": "City Of Toronto - Ontario",
+      "Municipal": "City Of Toronto - Ontario"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1227,14 +1229,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1257,14 +1259,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Kamloops - British Columbia",
+    "primaryGeography": "Kamloops",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Thompson Nicola Regional District - British Columbia",
-      "Municipal": "Kamloops - British Columbia"
+      "Municipal": "Kamloops"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1287,14 +1289,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1317,14 +1319,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1347,14 +1349,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Central Saanich - British Columbia",
+    "primaryGeography": "Central Saanich",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Capital Regional District - British Columbia",
-      "Municipal": "Central Saanich - British Columbia"
+      "Municipal": "Central Saanich"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1377,14 +1379,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Abbotsford - British Columbia",
+    "primaryGeography": "Abbotsford",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Fraser Valley Regional District - British Columbia",
-      "Municipal": "Abbotsford - British Columbia"
+      "Municipal": "Abbotsford"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1407,14 +1409,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Chilliwack - British Columbia",
+    "primaryGeography": "Chilliwack",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Fraser Valley Regional District - British Columbia",
-      "Municipal": "Chilliwack - British Columbia"
+      "Municipal": "Chilliwack"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1437,14 +1439,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Langley - City - British Columbia",
+    "primaryGeography": "Langley - City",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Langley - City - British Columbia"
+      "Municipal": "Langley - City"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1467,14 +1469,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Burnaby - British Columbia",
+    "primaryGeography": "Burnaby",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Burnaby - British Columbia"
+      "Municipal": "Burnaby"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1497,14 +1499,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1527,14 +1529,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Toronto - Ontario",
+    "primaryGeography": "City Of Toronto - Ontario",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "Ontario",
       "Regional": "City Of Toronto - Ontario",
-      "Municipal": "Toronto - Ontario"
+      "Municipal": "City Of Toronto - Ontario"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1557,14 +1559,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Pitt Meadows - British Columbia",
+    "primaryGeography": "Pitt Meadows",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Pitt Meadows - British Columbia"
+      "Municipal": "Pitt Meadows"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1598,7 +1600,8 @@
     },
     "polygonKeys": {
       "National": "United States",
-      "Provincial": "Minnesota"
+      "Provincial": "Minnesota",
+      "Regional": "St. Louis - Minnesota"
     }
   },
   {
@@ -1615,14 +1618,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Whistler - British Columbia",
+    "primaryGeography": "Whistler",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Squamish-Lillooet Regional District - British Columbia",
-      "Municipal": "Whistler - British Columbia"
+      "Municipal": "Whistler"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1645,14 +1648,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Comox - British Columbia",
+    "primaryGeography": "Comox",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Comox Valley Regional District - British Columbia",
-      "Municipal": "Comox - British Columbia"
+      "Municipal": "Comox"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1675,14 +1678,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Langley - District - British Columbia",
+    "primaryGeography": "Langley - District",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Langley - District - British Columbia"
+      "Municipal": "Langley - District"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1705,14 +1708,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Courtenay - British Columbia",
+    "primaryGeography": "Courtenay",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Comox Valley Regional District - British Columbia",
-      "Municipal": "Courtenay - British Columbia"
+      "Municipal": "Courtenay"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1735,14 +1738,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Richmond - British Columbia",
+    "primaryGeography": "Richmond",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Richmond - British Columbia"
+      "Municipal": "Richmond"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1765,14 +1768,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Powell River - British Columbia",
+    "primaryGeography": "Powell River",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Powell River Regional District - British Columbia",
-      "Municipal": "Powell River - British Columbia"
+      "Municipal": "Powell River"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1795,14 +1798,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1825,14 +1828,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vernon - British Columbia",
+    "primaryGeography": "Vernon",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Regional District of North Okanagan - British Columbia",
-      "Municipal": "Vernon - British Columbia"
+      "Municipal": "Vernon"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1855,14 +1858,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Victoria - British Columbia",
+    "primaryGeography": "Victoria",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Capital Regional District - British Columbia",
-      "Municipal": "Victoria - British Columbia"
+      "Municipal": "Victoria"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1885,14 +1888,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Cranbrook - British Columbia",
+    "primaryGeography": "Cranbrook",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Regional District of East Kootenay - British Columbia",
-      "Municipal": "Cranbrook - British Columbia"
+      "Municipal": "Cranbrook"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1915,14 +1918,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "UBC - British Columbia",
+    "primaryGeography": "MVRD - EA A",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "UBC - British Columbia"
+      "Municipal": "MVRD - EA A"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1945,14 +1948,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Kamloops - British Columbia",
+    "primaryGeography": "Kamloops",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Thompson Nicola Regional District - British Columbia",
-      "Municipal": "Kamloops - British Columbia"
+      "Municipal": "Kamloops"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -1975,14 +1978,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Langford - British Columbia",
+    "primaryGeography": "Langford",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Capital Regional District - British Columbia",
-      "Municipal": "Langford - British Columbia"
+      "Municipal": "Langford"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2000,7 +2003,7 @@
     "description": "",
     "primeContact": "",
     "value": "",
-    "projectUrl": "https://www.lgeo.co/carbon-energy-modelling",
+    "projectUrl": "https://lgeo.co/carbon-energy-modelling#metrovan",
     "projectPageSlug": "",
     "thumbnailUrl": "",
     "featured": true,
@@ -2062,14 +2065,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Tsawwassen - British Columbia",
+    "primaryGeography": "Tsawwassen",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Tsawwassen - British Columbia"
+      "Municipal": "Tsawwassen"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2092,14 +2095,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Nanaimo - British Columbia",
+    "primaryGeography": "Nanaimo",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
-      "Regional": "Nanaimo Regional District - British Columbia",
-      "Municipal": "Nanaimo - British Columbia"
+      "Regional": "Regional District of Nanaimo - British Columbia",
+      "Municipal": "Nanaimo"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2117,19 +2120,19 @@
     "description": "",
     "primeContact": "",
     "value": "",
-    "projectUrl": "https://www.lgeo.co/carbon-energy-modelling",
+    "projectUrl": "https://lgeo.co/urban-simulation#vichousing",
     "projectPageSlug": "",
     "thumbnailUrl": "",
     "featured": true,
     "interactive": true,
-    "primaryGeography": "Victoria - British Columbia",
+    "primaryGeography": "Victoria",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Capital Regional District - British Columbia",
-      "Municipal": "Victoria - British Columbia"
+      "Municipal": "Victoria"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2152,14 +2155,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2182,14 +2185,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Burnaby - British Columbia",
+    "primaryGeography": "Burnaby",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Burnaby - British Columbia"
+      "Municipal": "Burnaby"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2207,19 +2210,19 @@
     "description": "",
     "primeContact": "",
     "value": "",
-    "projectUrl": "https://www.lgeo.co/carbon-energy-modelling",
+    "projectUrl": "https://lgeo.co/visual-storytelling#vch",
     "projectPageSlug": "",
     "thumbnailUrl": "",
     "featured": true,
     "interactive": true,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2242,14 +2245,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Maple Ridge - British Columbia",
+    "primaryGeography": "Maple Ridge",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Maple Ridge - British Columbia"
+      "Municipal": "Maple Ridge"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2272,14 +2275,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Victoria - British Columbia",
+    "primaryGeography": "Victoria",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Capital Regional District - British Columbia",
-      "Municipal": "Victoria - British Columbia"
+      "Municipal": "Victoria"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2302,14 +2305,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Sidney - British Columbia",
+    "primaryGeography": "Sidney",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Capital Regional District - British Columbia",
-      "Municipal": "Sidney - British Columbia"
+      "Municipal": "Sidney"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2360,14 +2363,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Surrey - British Columbia",
+    "primaryGeography": "Surrey",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Surrey - British Columbia"
+      "Municipal": "Surrey"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2418,13 +2421,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Cowichan Valley Regional District - British Columbia",
+    "primaryGeography": "North Cowichan",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
-      "Regional": "Cowichan Valley Regional District - British Columbia"
+      "Regional": "Cowichan Valley Regional District - British Columbia",
+      "Municipal": "North Cowichan"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2447,14 +2451,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Sooke - British Columbia",
+    "primaryGeography": "Sooke",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Capital Regional District - British Columbia",
-      "Municipal": "Sooke - British Columbia"
+      "Municipal": "Sooke"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2501,14 +2505,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Victoria - British Columbia",
+    "primaryGeography": "Victoria",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Capital Regional District - British Columbia",
-      "Municipal": "Victoria - British Columbia"
+      "Municipal": "Victoria"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2531,14 +2535,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "North Saanich - British Columbia",
+    "primaryGeography": "North Saanich",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Capital Regional District - British Columbia",
-      "Municipal": "North Saanich - British Columbia"
+      "Municipal": "North Saanich"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2561,14 +2565,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Comox - British Columbia",
+    "primaryGeography": "Comox",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Comox Valley Regional District - British Columbia",
-      "Municipal": "Comox - British Columbia"
+      "Municipal": "Comox"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2591,14 +2595,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Westholme - British Columbia",
+    "primaryGeography": "North Cowichan",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Cowichan Valley Regional District - British Columbia",
-      "Municipal": "Westholme - British Columbia"
+      "Municipal": "North Cowichan"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2621,14 +2625,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Chilliwack - British Columbia",
+    "primaryGeography": "Chilliwack",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Fraser Valley Regional District - British Columbia",
-      "Municipal": "Chilliwack - British Columbia"
+      "Municipal": "Chilliwack"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2646,11 +2650,11 @@
     "description": "",
     "primeContact": "",
     "value": "",
-    "projectUrl": "",
+    "projectUrl": "https://lgeo.co/carbon-energy-modelling#provincial",
     "projectPageSlug": "",
     "thumbnailUrl": "",
-    "featured": false,
-    "interactive": false,
+    "featured": true,
+    "interactive": true,
     "primaryGeography": "British Columbia",
     "mapNotes": "",
     "symbologyOverride": "",
@@ -2672,19 +2676,19 @@
     "description": "",
     "primeContact": "",
     "value": "",
-    "projectUrl": "",
+    "projectUrl": "https://lgeo.co/urban-simulation#schooldistrict",
     "projectPageSlug": "",
     "thumbnailUrl": "",
-    "featured": false,
-    "interactive": false,
-    "primaryGeography": "Nanaimo - British Columbia",
+    "featured": true,
+    "interactive": true,
+    "primaryGeography": "Nanaimo",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
-      "Regional": "Nanaimo Regional District - British Columbia",
-      "Municipal": "Nanaimo - British Columbia"
+      "Regional": "Regional District of Nanaimo - British Columbia",
+      "Municipal": "Nanaimo"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2707,14 +2711,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Kamloops - British Columbia",
+    "primaryGeography": "Kamloops",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Thompson Nicola Regional District - British Columbia",
-      "Municipal": "Kamloops - British Columbia"
+      "Municipal": "Kamloops"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2737,14 +2741,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Surrey - British Columbia",
+    "primaryGeography": "Surrey",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Surrey - British Columbia"
+      "Municipal": "Surrey"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2767,14 +2771,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2797,14 +2801,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Kamloops - British Columbia",
+    "primaryGeography": "Kamloops",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Thompson Nicola Regional District - British Columbia",
-      "Municipal": "Kamloops - British Columbia"
+      "Municipal": "Kamloops"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2827,14 +2831,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Abbotsford - British Columbia",
+    "primaryGeography": "Abbotsford",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Fraser Valley Regional District - British Columbia",
-      "Municipal": "Abbotsford - British Columbia"
+      "Municipal": "Abbotsford"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2857,14 +2861,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Ladysmith - British Columbia",
+    "primaryGeography": "Ladysmith",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Cowichan Valley Regional District - British Columbia",
-      "Municipal": "Ladysmith - British Columbia"
+      "Municipal": "Ladysmith"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2887,14 +2891,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Salmo - British Columbia",
+    "primaryGeography": "Salmo",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Regional District of Central Kootenay - British Columbia",
-      "Municipal": "Salmo - British Columbia"
+      "Municipal": "Salmo"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2917,14 +2921,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Sicamous - British Columbia",
+    "primaryGeography": "Sicamous",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Regional District of Columbia-Shuswap - British Columbia",
-      "Municipal": "Sicamous - British Columbia"
+      "Municipal": "Sicamous"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -2947,18 +2951,17 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Mazatl?n",
+    "primaryGeography": "Mazatlan",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Mexico",
       "Provincial": "Sinaloa",
-      "Regional": "Mazatl?n"
+      "Regional": "Mazatlan"
     },
     "polygonKeys": {
       "National": "Mexico",
-      "Provincial": "Sinaloa",
-      "Municipal": "Mazatl?n"
+      "Provincial": "Sinaloa"
     }
   },
   {
@@ -2970,19 +2973,19 @@
     "description": "",
     "primeContact": "",
     "value": "",
-    "projectUrl": "https://www.lgeo.co/carbon-energy-modelling",
+    "projectUrl": "https://lgeo.co/urban-simulation#vanplan",
     "projectPageSlug": "",
     "thumbnailUrl": "",
     "featured": true,
     "interactive": true,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -3005,14 +3008,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Surrey - British Columbia",
+    "primaryGeography": "Surrey",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Surrey - British Columbia"
+      "Municipal": "Surrey"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -3035,14 +3038,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Lillooet 1 - British Columbia",
+    "primaryGeography": "SLRD - EA B",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Squamish-Lillooet Regional District - British Columbia",
-      "Municipal": "Lillooet 1 - British Columbia"
+      "Municipal": "SLRD - EA B"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -3075,7 +3078,8 @@
     },
     "polygonKeys": {
       "National": "Canada",
-      "Provincial": "British Columbia"
+      "Provincial": "British Columbia",
+      "Regional": "MVRD"
     }
   },
   {
@@ -3092,14 +3096,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Langley - City - British Columbia",
+    "primaryGeography": "Langley - City",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Langley - City - British Columbia"
+      "Municipal": "Langley - City"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -3150,14 +3154,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Whistler - British Columbia",
+    "primaryGeography": "Whistler",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Squamish-Lillooet Regional District - British Columbia",
-      "Municipal": "Whistler - British Columbia"
+      "Municipal": "Whistler"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -3180,14 +3184,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Surrey - British Columbia",
+    "primaryGeography": "Surrey",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Surrey - British Columbia"
+      "Municipal": "Surrey"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -3205,19 +3209,19 @@
     "description": "",
     "primeContact": "",
     "value": "",
-    "projectUrl": "https://www.lgeo.co/carbon-energy-modelling",
+    "projectUrl": "https://lgeo.co/additional-gis-support#esas",
     "projectPageSlug": "",
     "thumbnailUrl": "",
     "featured": true,
     "interactive": true,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -3240,14 +3244,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -3293,7 +3297,7 @@
     "description": "",
     "primeContact": "",
     "value": "",
-    "projectUrl": "https://www.lgeo.co/carbon-energy-modelling",
+    "projectUrl": "https://lgeo.co/site-selection-logistics-routing#calgaryhousing",
     "projectPageSlug": "",
     "thumbnailUrl": "",
     "featured": true,
@@ -3355,14 +3359,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -3385,14 +3389,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -3441,14 +3445,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Cranbrook - British Columbia",
+    "primaryGeography": "Cranbrook",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Regional District of East Kootenay - British Columbia",
-      "Municipal": "Cranbrook - British Columbia"
+      "Municipal": "Cranbrook"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -3497,14 +3501,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "UBC - British Columbia",
+    "primaryGeography": "MVRD - EA A",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "UBC - British Columbia"
+      "Municipal": "MVRD - EA A"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -3527,14 +3531,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Saanichton - British Columbia",
+    "primaryGeography": "Central Saanich",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Capital Regional District - British Columbia",
-      "Municipal": "Saanichton - British Columbia"
+      "Municipal": "Central Saanich"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -3557,14 +3561,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "UBC - British Columbia",
+    "primaryGeography": "MVRD - EA A",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "UBC - British Columbia"
+      "Municipal": "MVRD - EA A"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -3582,7 +3586,7 @@
     "description": "",
     "primeContact": "Russell",
     "value": "",
-    "projectUrl": "https://www.lgeo.co/carbon-energy-modelling",
+    "projectUrl": "https://lgeo.co/visual-storytelling#smarter-shift",
     "projectPageSlug": "",
     "thumbnailUrl": "",
     "featured": true,
@@ -3613,14 +3617,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Richmond - British Columbia",
+    "primaryGeography": "Richmond",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Richmond - British Columbia"
+      "Municipal": "Richmond"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -3643,14 +3647,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Kamloops - British Columbia",
+    "primaryGeography": "Kamloops",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Thompson Nicola Regional District - British Columbia",
-      "Municipal": "Kamloops - British Columbia"
+      "Municipal": "Kamloops"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -3673,14 +3677,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Ladner - British Columbia",
+    "primaryGeography": "Delta",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Ladner - British Columbia"
+      "Municipal": "Delta"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -3731,14 +3735,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "UBC - British Columbia",
+    "primaryGeography": "MVRD - EA A",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "UBC - British Columbia"
+      "Municipal": "MVRD - EA A"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -3787,14 +3791,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -3843,14 +3847,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Abbotsford - British Columbia",
+    "primaryGeography": "Abbotsford",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Fraser Valley Regional District - British Columbia",
-      "Municipal": "Abbotsford - British Columbia"
+      "Municipal": "Abbotsford"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -3873,14 +3877,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -3898,7 +3902,7 @@
     "description": "",
     "primeContact": "",
     "value": "",
-    "projectUrl": "https://www.lgeo.co/carbon-energy-modelling",
+    "projectUrl": "https://lgeo.co/visual-storytelling#cvrd",
     "projectPageSlug": "",
     "thumbnailUrl": "",
     "featured": true,
@@ -3985,14 +3989,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "North Vancouver - British Columbia",
+    "primaryGeography": "North Vancouver - District",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "North Vancouver - British Columbia"
+      "Municipal": "North Vancouver - District"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -4043,14 +4047,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Kamloops - British Columbia",
+    "primaryGeography": "Kamloops",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Thompson Nicola Regional District - British Columbia",
-      "Municipal": "Kamloops - British Columbia"
+      "Municipal": "Kamloops"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -4073,14 +4077,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Westbank - British Columbia",
+    "primaryGeography": "West Kelowna",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Regional District of Central Okanagan - British Columbia",
-      "Municipal": "Westbank - British Columbia"
+      "Municipal": "West Kelowna"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -4103,14 +4107,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Campbell River - British Columbia",
+    "primaryGeography": "Campbell River",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Strathcona Regional District - British Columbia",
-      "Municipal": "Campbell River - British Columbia"
+      "Municipal": "Campbell River"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -4187,14 +4191,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Nanaimo - British Columbia",
+    "primaryGeography": "Nanaimo",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
-      "Regional": "Nanaimo Regional District - British Columbia",
-      "Municipal": "Nanaimo - British Columbia"
+      "Regional": "Regional District of Nanaimo - British Columbia",
+      "Municipal": "Nanaimo"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -4245,14 +4249,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -4303,14 +4307,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Surrey - British Columbia",
+    "primaryGeography": "Surrey",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Surrey - British Columbia"
+      "Municipal": "Surrey"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -4333,14 +4337,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Saanich - British Columbia",
+    "primaryGeography": "Saanich",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Capital Regional District - British Columbia",
-      "Municipal": "Saanich - British Columbia"
+      "Municipal": "Saanich"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -4391,14 +4395,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Chilliwack - British Columbia",
+    "primaryGeography": "Chilliwack",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Fraser Valley Regional District - British Columbia",
-      "Municipal": "Chilliwack - British Columbia"
+      "Municipal": "Chilliwack"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -4421,14 +4425,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -4451,14 +4455,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Victoria - British Columbia",
+    "primaryGeography": "Victoria",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Capital Regional District - British Columbia",
-      "Municipal": "Victoria - British Columbia"
+      "Municipal": "Victoria"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -4507,14 +4511,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Nanaimo - British Columbia",
+    "primaryGeography": "Nanaimo",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
-      "Regional": "Nanaimo Regional District - British Columbia",
-      "Municipal": "Nanaimo - British Columbia"
+      "Regional": "Regional District of Nanaimo - British Columbia",
+      "Municipal": "Nanaimo"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -4537,14 +4541,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Ladner - British Columbia",
+    "primaryGeography": "Delta",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Ladner - British Columbia"
+      "Municipal": "Delta"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -4567,14 +4571,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Port Moody - British Columbia",
+    "primaryGeography": "Port Moody",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Port Moody - British Columbia"
+      "Municipal": "Port Moody"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -4621,14 +4625,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "North Vancouver - City - British Columbia",
+    "primaryGeography": "North Vancouver - City",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "North Vancouver - City - British Columbia"
+      "Municipal": "North Vancouver - City"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -4651,14 +4655,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Westbank - British Columbia",
+    "primaryGeography": "West Kelowna",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Regional District of Central Okanagan - British Columbia",
-      "Municipal": "Westbank - British Columbia"
+      "Municipal": "West Kelowna"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -4704,7 +4708,7 @@
     "description": "",
     "primeContact": "",
     "value": "",
-    "projectUrl": "https://www.lgeo.co/carbon-energy-modelling",
+    "projectUrl": "https://lgeo.co/remote-sensing#crd-heat-vulnerability",
     "projectPageSlug": "",
     "thumbnailUrl": "",
     "featured": true,
@@ -4818,14 +4822,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Ladysmith - British Columbia",
+    "primaryGeography": "Ladysmith",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Cowichan Valley Regional District - British Columbia",
-      "Municipal": "Ladysmith - British Columbia"
+      "Municipal": "Ladysmith"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -4838,58 +4842,30 @@
     "projectNumber": "23019",
     "projectYear": "2023",
     "projectName": "City of Vancouver Climeate Emergency Action Plan Gap Filling & Model Updates",
-    "projectType": "Carbon & Energy Modelling",
+    "projectType": "Carbon and Energy Modelling",
     "projectLevel": "",
     "description": "",
     "primeContact": "",
     "value": "",
-    "projectUrl": "https://www.lgeo.co/carbon-energy-modelling",
+    "projectUrl": "https://lgeo.co/carbon-energy-modelling#ceap",
     "projectPageSlug": "",
     "thumbnailUrl": "",
     "featured": true,
     "interactive": true,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "MVRD",
       "Municipal": "Vancouver"
-    }
-  },
-  {
-    "projectNumber": "23022",
-    "projectYear": "2023",
-    "projectName": "Forward Law",
-    "projectType": "Additional GIS Services",
-    "projectLevel": "",
-    "description": "",
-    "primeContact": "",
-    "value": "",
-    "projectUrl": "https://www.lgeo.co/carbon-energy-modelling",
-    "projectPageSlug": "",
-    "thumbnailUrl": "",
-    "featured": true,
-    "interactive": true,
-    "primaryGeography": "Thompson Nicola Regional District - British Columbia",
-    "mapNotes": "",
-    "symbologyOverride": "",
-    "geographies": {
-      "National": "Canada",
-      "Provincial": "British Columbia",
-      "Regional": "Thompson Nicola Regional District - British Columbia"
-    },
-    "polygonKeys": {
-      "National": "Canada",
-      "Provincial": "British Columbia",
-      "Regional": "TNRD"
     }
   },
   {
@@ -4906,14 +4882,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Victoria - British Columbia",
+    "primaryGeography": "Victoria",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Capital Regional District - British Columbia",
-      "Municipal": "Victoria - British Columbia"
+      "Municipal": "Victoria"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -4975,7 +4951,7 @@
     "polygonKeys": {
       "National": "Canada",
       "Provincial": "British Columbia",
-      "Regional": "CVRD"
+      "Regional": "CMXRD"
     }
   },
   {
@@ -5008,7 +4984,7 @@
     "projectNumber": "23042",
     "projectYear": "2023",
     "projectName": "Surrey 2013-2021 Energy and Emisions Inventory Update",
-    "projectType": "Carbon & Energy Modelling",
+    "projectType": "Carbon and Energy Modelling",
     "projectLevel": "",
     "description": "",
     "primeContact": "",
@@ -5018,14 +4994,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Surrey - British Columbia",
+    "primaryGeography": "Surrey",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Surrey - British Columbia"
+      "Municipal": "Surrey"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -5038,7 +5014,7 @@
     "projectNumber": "23044",
     "projectYear": "2023",
     "projectName": "CAS On-Road Inventory Update",
-    "projectType": "Carbon & Energy Modelling",
+    "projectType": "Carbon and Energy Modelling",
     "projectLevel": "",
     "description": "",
     "primeContact": "",
@@ -5127,14 +5103,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "White Rock - British Columbia",
+    "primaryGeography": "White Rock",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "White Rock - British Columbia"
+      "Municipal": "White Rock"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -5183,14 +5159,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Vancouver - British Columbia",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
       "Regional": "Metro Vancouver Regional District - British Columbia",
-      "Municipal": "Vancouver - British Columbia"
+      "Municipal": "Vancouver"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -5213,13 +5189,14 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Squamish Lillouet Regional District",
+    "primaryGeography": "Squamish",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
-      "Regional": "Squamish Lillouet Regional District"
+      "Regional": "Squamish-Lillooet Regional District - British Columbia",
+      "Municipal": "Squamish"
     },
     "polygonKeys": {
       "National": "Canada",
@@ -5242,18 +5219,19 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "Victoria - British Columnbia",
+    "primaryGeography": "Victoria",
     "mapNotes": "",
     "symbologyOverride": "",
     "geographies": {
       "National": "Canada",
       "Provincial": "British Columbia",
-      "Regional": "Capital Regional District",
-      "Municipal": "Victoria - British Columnbia"
+      "Regional": "Capital Regional District - British Columbia",
+      "Municipal": "Victoria"
     },
     "polygonKeys": {
       "National": "Canada",
       "Provincial": "British Columbia",
+      "Regional": "CAPRD",
       "Municipal": "Victoria"
     }
   },
@@ -5286,16 +5264,26 @@
     "description": "",
     "primeContact": "",
     "value": "",
-    "projectUrl": "",
+    "projectUrl": "https://lgeo.co/remote-sensing#langley-urban-tree-canopy",
     "projectPageSlug": "",
     "thumbnailUrl": "",
-    "featured": false,
-    "interactive": false,
-    "primaryGeography": "",
+    "featured": true,
+    "interactive": true,
+    "primaryGeography": "Langley - District",
     "mapNotes": "",
     "symbologyOverride": "",
-    "geographies": {},
-    "polygonKeys": {}
+    "geographies": {
+      "National": "Canada",
+      "Provincial": "British Columbia",
+      "Regional": "Metro Vancouver Regional District - British Columbia",
+      "Municipal": "Langley - District"
+    },
+    "polygonKeys": {
+      "National": "Canada",
+      "Provincial": "British Columbia",
+      "Regional": "MVRD",
+      "Municipal": "Langley - District"
+    }
   },
   {
     "projectNumber": "23040",
@@ -5306,16 +5294,26 @@
     "description": "",
     "primeContact": "",
     "value": "",
-    "projectUrl": "https://www.lgeo.co/carbon-energy-modelling",
+    "projectUrl": "https://lgeo.co/remote-sensing#cov-rtu",
     "projectPageSlug": "",
     "thumbnailUrl": "",
     "featured": true,
     "interactive": true,
-    "primaryGeography": "",
+    "primaryGeography": "Vancouver",
     "mapNotes": "",
     "symbologyOverride": "",
-    "geographies": {},
-    "polygonKeys": {}
+    "geographies": {
+      "National": "Canada",
+      "Provincial": "British Columbia",
+      "Regional": "Metro Vancouver Regional District - British Columbia",
+      "Municipal": "Vancouver"
+    },
+    "polygonKeys": {
+      "National": "Canada",
+      "Provincial": "British Columbia",
+      "Regional": "MVRD",
+      "Municipal": "Vancouver"
+    }
   },
   {
     "projectNumber": "23049",
@@ -6051,11 +6049,21 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "",
+    "primaryGeography": "Victoria",
     "mapNotes": "",
     "symbologyOverride": "",
-    "geographies": {},
-    "polygonKeys": {}
+    "geographies": {
+      "National": "Canada",
+      "Provincial": "British Columbia",
+      "Regional": "Capital Regional District - British Columbia",
+      "Municipal": "Victoria"
+    },
+    "polygonKeys": {
+      "National": "Canada",
+      "Provincial": "British Columbia",
+      "Regional": "CAPRD",
+      "Municipal": "Victoria"
+    }
   },
   {
     "projectNumber": "24039",
@@ -6451,11 +6459,19 @@
     "thumbnailUrl": "",
     "featured": false,
     "interactive": false,
-    "primaryGeography": "",
+    "primaryGeography": "Capital Regional District - British Columbia",
     "mapNotes": "",
     "symbologyOverride": "",
-    "geographies": {},
-    "polygonKeys": {}
+    "geographies": {
+      "National": "Canada",
+      "Provincial": "British Columbia",
+      "Regional": "Capital Regional District - British Columbia"
+    },
+    "polygonKeys": {
+      "National": "Canada",
+      "Provincial": "British Columbia",
+      "Regional": "CAPRD"
+    }
   },
   {
     "projectNumber": "24081",
@@ -6486,16 +6502,26 @@
     "description": "",
     "primeContact": "",
     "value": "",
-    "projectUrl": "https://www.lgeo.co/carbon-energy-modelling",
+    "projectUrl": "https://lgeo.co/site-selection-logistics-routing#aryze",
     "projectPageSlug": "",
     "thumbnailUrl": "",
     "featured": true,
     "interactive": true,
-    "primaryGeography": "",
+    "primaryGeography": "Victoria",
     "mapNotes": "",
     "symbologyOverride": "",
-    "geographies": {},
-    "polygonKeys": {}
+    "geographies": {
+      "National": "Canada",
+      "Provincial": "British Columbia",
+      "Regional": "Capital Regional District - British Columbia",
+      "Municipal": "Victoria"
+    },
+    "polygonKeys": {
+      "National": "Canada",
+      "Provincial": "British Columbia",
+      "Regional": "CAPRD",
+      "Municipal": "Victoria"
+    }
   },
   {
     "projectNumber": "24087",
@@ -6526,16 +6552,24 @@
     "description": "",
     "primeContact": "",
     "value": "",
-    "projectUrl": "https://www.lgeo.co/carbon-energy-modelling",
+    "projectUrl": "https://lgeo.co/additional-gis-support#hart",
     "projectPageSlug": "",
     "thumbnailUrl": "",
     "featured": true,
     "interactive": true,
-    "primaryGeography": "",
+    "primaryGeography": "Metro Vancouver Regional District - British Columbia",
     "mapNotes": "",
     "symbologyOverride": "",
-    "geographies": {},
-    "polygonKeys": {}
+    "geographies": {
+      "National": "Canada",
+      "Provincial": "British Columbia",
+      "Regional": "Metro Vancouver Regional District - British Columbia"
+    },
+    "polygonKeys": {
+      "National": "Canada",
+      "Provincial": "British Columbia",
+      "Regional": "MVRD"
+    }
   },
   {
     "projectNumber": "24096",

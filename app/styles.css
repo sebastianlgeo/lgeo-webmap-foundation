@@ -56,7 +56,7 @@ input {
   z-index: 3;
   left: 22px;
   bottom: 40px;
-  width: 106px;
+  width: 86px;
   height: auto;
   padding: 8px;
   background: rgba(250, 248, 244, 0.88);
@@ -336,7 +336,7 @@ input {
 }
 
 .mapboxgl-popup-content {
-  max-width: 340px;
+  max-width: min(320px, calc(100vw - 36px));
   padding: 12px;
   color: var(--ink);
   background: var(--paper-soft);
@@ -493,7 +493,7 @@ input {
   .brand-logo {
     left: 12px;
     bottom: 36px;
-    width: 74px;
+    width: 62px;
   }
 
   .region-search {

@@ -3,3 +3,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 *.log
+
+# Private source tables can include suppressed/non-public projects.
+data/source/

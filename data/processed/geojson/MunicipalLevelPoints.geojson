@@ -76,13 +76,13 @@
       },
       "properties": {
         "FID": 3,
-        "NameKey": "Toronto - Ontario",
-        "FREQUENCY": 3,
-        "ProjectCount": 3,
+        "NameKey": "City Of Toronto - Ontario",
+        "FREQUENCY": 5,
+        "ProjectCount": 5,
         "LinkedProjectCount": 1,
         "Interactive": false,
         "TopProjectType": "Webmaps, Cartography & Visual Storytelling",
-        "ProjectTypes": "Webmaps, Cartography & Visual Storytelling, Site Selection, Logistics & Routing, Urban Simulation"
+        "ProjectTypes": "Webmaps, Cartography & Visual Storytelling, Urban Simulation, Site Selection, Logistics & Routing"
       }
     },
     {
@@ -139,7 +139,7 @@
       },
       "properties": {
         "FID": 6,
-        "NameKey": "Cranbrook - British Columbia",
+        "NameKey": "Cranbrook",
         "FREQUENCY": 3,
         "ProjectCount": 3,
         "LinkedProjectCount": 0,
@@ -160,7 +160,7 @@
       },
       "properties": {
         "FID": 7,
-        "NameKey": "Salmo - British Columbia",
+        "NameKey": "Salmo",
         "FREQUENCY": 1,
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
@@ -202,13 +202,13 @@
       },
       "properties": {
         "FID": 9,
-        "NameKey": "Victoria - British Columbia",
-        "FREQUENCY": 7,
-        "ProjectCount": 7,
-        "LinkedProjectCount": 1,
+        "NameKey": "Victoria",
+        "FREQUENCY": 10,
+        "ProjectCount": 10,
+        "LinkedProjectCount": 2,
         "Interactive": false,
         "TopProjectType": "Urban Simulation",
-        "ProjectTypes": "Urban Simulation, Additional GIS Support Services"
+        "ProjectTypes": "Urban Simulation, Uncategorized, Additional GIS Support Services"
       }
     },
     {
@@ -223,7 +223,7 @@
       },
       "properties": {
         "FID": 10,
-        "NameKey": "Colwood - British Columbia",
+        "NameKey": "Colwood",
         "FREQUENCY": 1,
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
@@ -244,7 +244,7 @@
       },
       "properties": {
         "FID": 11,
-        "NameKey": "Saanich - British Columbia",
+        "NameKey": "Saanich",
         "FREQUENCY": 1,
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
@@ -265,7 +265,7 @@
       },
       "properties": {
         "FID": 12,
-        "NameKey": "Sooke - British Columbia",
+        "NameKey": "Sooke",
         "FREQUENCY": 1,
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
@@ -286,7 +286,7 @@
       },
       "properties": {
         "FID": 13,
-        "NameKey": "Langford - British Columbia",
+        "NameKey": "Langford",
         "FREQUENCY": 1,
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
@@ -307,13 +307,13 @@
       },
       "properties": {
         "FID": 14,
-        "NameKey": "Central Saanich - British Columbia",
-        "FREQUENCY": 1,
-        "ProjectCount": 1,
+        "NameKey": "Central Saanich",
+        "FREQUENCY": 2,
+        "ProjectCount": 2,
         "LinkedProjectCount": 0,
         "Interactive": false,
         "TopProjectType": "Urban Simulation",
-        "ProjectTypes": "Urban Simulation"
+        "ProjectTypes": "Urban Simulation, Webmaps, Cartography & Visual Storytelling"
       }
     },
     {
@@ -330,11 +330,11 @@
         "FID": 15,
         "NameKey": "Saanichton - British Columbia",
         "FREQUENCY": 1,
-        "ProjectCount": 1,
+        "ProjectCount": 0,
         "LinkedProjectCount": 0,
         "Interactive": false,
-        "TopProjectType": "Webmaps, Cartography & Visual Storytelling",
-        "ProjectTypes": "Webmaps, Cartography & Visual Storytelling"
+        "TopProjectType": "",
+        "ProjectTypes": ""
       }
     },
     {
@@ -349,7 +349,7 @@
       },
       "properties": {
         "FID": 16,
-        "NameKey": "North Saanich - British Columbia",
+        "NameKey": "North Saanich",
         "FREQUENCY": 1,
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
@@ -370,7 +370,7 @@
       },
       "properties": {
         "FID": 17,
-        "NameKey": "Sidney - British Columbia",
+        "NameKey": "Sidney",
         "FREQUENCY": 1,
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
@@ -412,7 +412,7 @@
       },
       "properties": {
         "FID": 19,
-        "NameKey": "Abbotsford - British Columbia",
+        "NameKey": "Abbotsford",
         "FREQUENCY": 3,
         "ProjectCount": 3,
         "LinkedProjectCount": 0,
@@ -433,7 +433,7 @@
       },
       "properties": {
         "FID": 20,
-        "NameKey": "Chilliwack - British Columbia",
+        "NameKey": "Chilliwack",
         "FREQUENCY": 5,
         "ProjectCount": 5,
         "LinkedProjectCount": 0,
@@ -456,11 +456,11 @@
         "FID": 21,
         "NameKey": "Westbank - British Columbia",
         "FREQUENCY": 2,
-        "ProjectCount": 2,
+        "ProjectCount": 0,
         "LinkedProjectCount": 0,
         "Interactive": false,
-        "TopProjectType": "Webmaps, Cartography & Visual Storytelling",
-        "ProjectTypes": "Webmaps, Cartography & Visual Storytelling, Urban Simulation"
+        "TopProjectType": "",
+        "ProjectTypes": ""
       }
     },
     {
@@ -475,7 +475,7 @@
       },
       "properties": {
         "FID": 22,
-        "NameKey": "Mission - British Columbia",
+        "NameKey": "Mission",
         "FREQUENCY": 1,
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
@@ -496,7 +496,7 @@
       },
       "properties": {
         "FID": 23,
-        "NameKey": "White Rock - British Columbia",
+        "NameKey": "White Rock",
         "FREQUENCY": 1,
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
@@ -517,7 +517,7 @@
       },
       "properties": {
         "FID": 24,
-        "NameKey": "Langley - City - British Columbia",
+        "NameKey": "Langley - City",
         "FREQUENCY": 2,
         "ProjectCount": 2,
         "LinkedProjectCount": 0,
@@ -538,7 +538,7 @@
       },
       "properties": {
         "FID": 25,
-        "NameKey": "Tsawwassen - British Columbia",
+        "NameKey": "Tsawwassen",
         "FREQUENCY": 1,
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
@@ -561,11 +561,11 @@
         "FID": 26,
         "NameKey": "Westholme - British Columbia",
         "FREQUENCY": 1,
-        "ProjectCount": 1,
+        "ProjectCount": 0,
         "LinkedProjectCount": 0,
         "Interactive": false,
-        "TopProjectType": "Additional GIS Support Services",
-        "ProjectTypes": "Additional GIS Support Services"
+        "TopProjectType": "",
+        "ProjectTypes": ""
       }
     },
     {
@@ -580,7 +580,7 @@
       },
       "properties": {
         "FID": 27,
-        "NameKey": "Maple Ridge - British Columbia",
+        "NameKey": "Maple Ridge",
         "FREQUENCY": 2,
         "ProjectCount": 2,
         "LinkedProjectCount": 0,
@@ -603,11 +603,11 @@
         "FID": 28,
         "NameKey": "Ladner - British Columbia",
         "FREQUENCY": 2,
-        "ProjectCount": 2,
+        "ProjectCount": 0,
         "LinkedProjectCount": 0,
         "Interactive": false,
-        "TopProjectType": "Remote Sensing",
-        "ProjectTypes": "Remote Sensing"
+        "TopProjectType": "",
+        "ProjectTypes": ""
       }
     },
     {
@@ -622,7 +622,7 @@
       },
       "properties": {
         "FID": 29,
-        "NameKey": "Pitt Meadows - British Columbia",
+        "NameKey": "Pitt Meadows",
         "FREQUENCY": 1,
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
@@ -643,7 +643,7 @@
       },
       "properties": {
         "FID": 30,
-        "NameKey": "Surrey - British Columbia",
+        "NameKey": "Surrey",
         "FREQUENCY": 10,
         "ProjectCount": 10,
         "LinkedProjectCount": 0,
@@ -664,7 +664,7 @@
       },
       "properties": {
         "FID": 31,
-        "NameKey": "New Westminster - British Columbia",
+        "NameKey": "New Westminster",
         "FREQUENCY": 2,
         "ProjectCount": 2,
         "LinkedProjectCount": 0,
@@ -685,7 +685,7 @@
       },
       "properties": {
         "FID": 32,
-        "NameKey": "Richmond - British Columbia",
+        "NameKey": "Richmond",
         "FREQUENCY": 3,
         "ProjectCount": 3,
         "LinkedProjectCount": 0,
@@ -706,7 +706,7 @@
       },
       "properties": {
         "FID": 33,
-        "NameKey": "Vernon - British Columbia",
+        "NameKey": "Vernon",
         "FREQUENCY": 1,
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
@@ -727,7 +727,7 @@
       },
       "properties": {
         "FID": 34,
-        "NameKey": "Port Moody - British Columbia",
+        "NameKey": "Port Moody",
         "FREQUENCY": 1,
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
@@ -748,7 +748,7 @@
       },
       "properties": {
         "FID": 35,
-        "NameKey": "Burnaby - British Columbia",
+        "NameKey": "Burnaby",
         "FREQUENCY": 5,
         "ProjectCount": 5,
         "LinkedProjectCount": 0,
@@ -769,13 +769,13 @@
       },
       "properties": {
         "FID": 36,
-        "NameKey": "Vancouver - British Columbia",
-        "FREQUENCY": 27,
-        "ProjectCount": 27,
-        "LinkedProjectCount": 4,
+        "NameKey": "Vancouver",
+        "FREQUENCY": 28,
+        "ProjectCount": 28,
+        "LinkedProjectCount": 5,
         "Interactive": false,
         "TopProjectType": "Urban Simulation",
-        "ProjectTypes": "Urban Simulation, Webmaps, Cartography & Visual Storytelling, Additional GIS Support Services, Site Selection, Logistics & Routing"
+        "ProjectTypes": "Urban Simulation, Webmaps, Cartography & Visual Storytelling, Carbon and Energy Modelling, Additional GIS Support Services"
       }
     },
     {
@@ -790,10 +790,10 @@
       },
       "properties": {
         "FID": 37,
-        "NameKey": "Nanaimo - British Columbia",
+        "NameKey": "Nanaimo",
         "FREQUENCY": 4,
         "ProjectCount": 4,
-        "LinkedProjectCount": 0,
+        "LinkedProjectCount": 1,
         "Interactive": false,
         "TopProjectType": "Urban Simulation",
         "ProjectTypes": "Urban Simulation"
@@ -811,7 +811,7 @@
       },
       "properties": {
         "FID": 38,
-        "NameKey": "Sechelt - British Columbia",
+        "NameKey": "Sechelt",
         "FREQUENCY": 1,
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
@@ -832,7 +832,7 @@
       },
       "properties": {
         "FID": 39,
-        "NameKey": "Sicamous - British Columbia",
+        "NameKey": "Sicamous",
         "FREQUENCY": 1,
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
@@ -853,7 +853,7 @@
       },
       "properties": {
         "FID": 40,
-        "NameKey": "Kamloops - British Columbia",
+        "NameKey": "Kamloops",
         "FREQUENCY": 6,
         "ProjectCount": 6,
         "LinkedProjectCount": 0,
@@ -874,7 +874,7 @@
       },
       "properties": {
         "FID": 41,
-        "NameKey": "Whistler - British Columbia",
+        "NameKey": "Whistler",
         "FREQUENCY": 2,
         "ProjectCount": 2,
         "LinkedProjectCount": 0,
@@ -895,7 +895,7 @@
       },
       "properties": {
         "FID": 42,
-        "NameKey": "Comox - British Columbia",
+        "NameKey": "Comox",
         "FREQUENCY": 2,
         "ProjectCount": 2,
         "LinkedProjectCount": 0,
@@ -916,7 +916,7 @@
       },
       "properties": {
         "FID": 43,
-        "NameKey": "Courtenay - British Columbia",
+        "NameKey": "Courtenay",
         "FREQUENCY": 1,
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
@@ -937,7 +937,7 @@
       },
       "properties": {
         "FID": 44,
-        "NameKey": "Powell River - British Columbia",
+        "NameKey": "Powell River",
         "FREQUENCY": 1,
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
@@ -960,11 +960,11 @@
         "FID": 45,
         "NameKey": "Lillooet 1 - British Columbia",
         "FREQUENCY": 1,
-        "ProjectCount": 1,
+        "ProjectCount": 0,
         "LinkedProjectCount": 0,
         "Interactive": false,
-        "TopProjectType": "Webmaps, Cartography & Visual Storytelling",
-        "ProjectTypes": "Webmaps, Cartography & Visual Storytelling"
+        "TopProjectType": "",
+        "ProjectTypes": ""
       }
     },
     {
@@ -979,7 +979,7 @@
       },
       "properties": {
         "FID": 46,
-        "NameKey": "Campbell River - British Columbia",
+        "NameKey": "Campbell River",
         "FREQUENCY": 1,
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
@@ -1023,11 +1023,11 @@
         "FID": 48,
         "NameKey": "North Vancouver - British Columbia",
         "FREQUENCY": 2,
-        "ProjectCount": 2,
+        "ProjectCount": 0,
         "LinkedProjectCount": 0,
         "Interactive": false,
-        "TopProjectType": "Carbon and Energy Modelling",
-        "ProjectTypes": "Carbon and Energy Modelling, Additional GIS Support Services"
+        "TopProjectType": "",
+        "ProjectTypes": ""
       }
     },
     {
@@ -1042,13 +1042,13 @@
       },
       "properties": {
         "FID": 49,
-        "NameKey": "Langley - District - British Columbia",
-        "FREQUENCY": 1,
-        "ProjectCount": 1,
-        "LinkedProjectCount": 0,
+        "NameKey": "Langley - District",
+        "FREQUENCY": 2,
+        "ProjectCount": 2,
+        "LinkedProjectCount": 1,
         "Interactive": false,
         "TopProjectType": "Carbon and Energy Modelling",
-        "ProjectTypes": "Carbon and Energy Modelling"
+        "ProjectTypes": "Carbon and Energy Modelling, Uncategorized"
       }
     },
     {
@@ -1065,11 +1065,11 @@
         "FID": 50,
         "NameKey": "UBC - British Columbia",
         "FREQUENCY": 5,
-        "ProjectCount": 5,
+        "ProjectCount": 0,
         "LinkedProjectCount": 0,
         "Interactive": false,
-        "TopProjectType": "Additional GIS Support Services",
-        "ProjectTypes": "Additional GIS Support Services, Webmaps, Cartography & Visual Storytelling"
+        "TopProjectType": "",
+        "ProjectTypes": ""
       }
     },
     {
@@ -1084,7 +1084,7 @@
       },
       "properties": {
         "FID": 51,
-        "NameKey": "North Vancouver - City - British Columbia",
+        "NameKey": "North Vancouver - City",
         "FREQUENCY": 1,
         "ProjectCount": 1,
         "LinkedProjectCount": 0,
@@ -1105,7 +1105,7 @@
       },
       "properties": {
         "FID": 52,
-        "NameKey": "Lantzville - British Columbia",
+        "NameKey": "Lantzville",
         "FREQUENCY": 1,
         "ProjectCount": 1,
         "LinkedProjectCount": 0,

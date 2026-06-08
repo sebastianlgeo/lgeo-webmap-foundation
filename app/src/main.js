@@ -7,11 +7,15 @@
     activePopup: null,
     officeOverlayMarker: null,
     lastPopupClick: "",
+    activePopupMeta: null,
     theme: "day",
     projects: [],
     projectsByNumber: new Map(),
     geographyIndex: {},
     geographyLookup: new Map(),
+    geographyBoundsIndex: {},
+    featureNameSets: new Map(),
+    featureLookup: new Map(),
     activeTypes: new Set(),
     projectTypeCounts: {},
     geographyMetrics: new Map(),
@@ -133,9 +137,10 @@
   }
 
   async function loadData() {
-    const [projects, geographyIndex] = await Promise.all([
+    const [projects, geographyIndex, geographyBoundsIndex] = await Promise.all([
       fetchData(config.data.projectsUrl, "projects"),
-      fetchData(config.data.geographyIndexUrl, "geographyIndex")
+      fetchData(config.data.geographyIndexUrl, "geographyIndex"),
+      fetchOptionalData(config.data.geographyBoundsUrl, "geographyBounds")
     ]);
 
     state.projects = projects;
@@ -144,9 +149,11 @@
     );
 
     state.geographyIndex = geographyIndex;
+    state.geographyBoundsIndex = geographyBoundsIndex || {};
     state.geographyLookup = new Map(
       Object.keys(geographyIndex).map((name) => [normalizeGeography(name), geographyIndex[name]])
     );
+    buildFeatureNameSets();
   }
 
   async function fetchData(url, fallbackKey) {
@@ -170,9 +177,35 @@
     }
   }
 
+  async function fetchOptionalData(url, fallbackKey) {
+    if (!url) return null;
+    try {
+      return await fetchData(url, fallbackKey);
+    } catch (_error) {
+      return null;
+    }
+  }
+
   function structuredCloneSafe(value) {
     if (typeof structuredClone === "function") return structuredClone(value);
     return JSON.parse(JSON.stringify(value));
+  }
+
+  function buildFeatureNameSets() {
+    const boundsIndex = state.geographyBoundsIndex || {};
+    const featureNamesByLayer = boundsIndex.featureNamesByLayer || {};
+    const entries = boundsIndex.entries || {};
+    state.featureNameSets = new Map();
+    state.featureLookup = new Map();
+
+    config.layers.forEach((layer) => {
+      const names = new Set((featureNamesByLayer[layer.id] || []).map(normalizeGeography));
+      state.featureNameSets.set(layer.id, names);
+    });
+
+    Object.entries(entries).forEach(([name, entry]) => {
+      state.featureLookup.set(normalizeGeography(name), entry);
+    });
   }
 
   function getMapboxToken() {
@@ -191,6 +224,16 @@
     return config.mapbox.dayStyleUrl || config.mapbox.styleUrl;
   }
 
+  function lockMapOrientation() {
+    if (!state.map) return;
+    if (state.map.dragRotate && state.map.dragRotate.disable) state.map.dragRotate.disable();
+    if (state.map.touchZoomRotate && state.map.touchZoomRotate.disableRotation) {
+      state.map.touchZoomRotate.disableRotation();
+    }
+    if (state.map.getBearing && Math.abs(state.map.getBearing()) > 0.01) state.map.setBearing(0);
+    if (state.map.getPitch && Math.abs(state.map.getPitch()) > 0.01) state.map.setPitch(0);
+  }
+
   function startMap(token) {
     mapboxgl.accessToken = token;
 
@@ -199,6 +242,11 @@
       style: getStyleUrl(),
       center: config.mapbox.center,
       zoom: config.mapbox.zoom,
+      bearing: 0,
+      pitch: 0,
+      dragRotate: false,
+      pitchWithRotate: false,
+      maxPitch: 0,
       maxBounds: config.mapbox.maxBounds,
       attributionControl: true
     });
@@ -206,6 +254,7 @@
     window.__lgeoMap = state.map;
     window.__lgeoState = state;
 
+    lockMapOrientation();
     state.map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), "bottom-right");
 
     state.map.on("load", () => {
@@ -221,6 +270,15 @@
     state.map.on("idle", () => {
       addOfficeMarker();
     });
+
+    state.map.on("mousemove", (event) => {
+      if (!hasRenderedHoverCircle(event.point)) hideHoverLabel();
+    });
+    state.map.on("rotate", lockMapOrientation);
+    state.map.on("pitch", lockMapOrientation);
+    state.map.on("movestart", hideHoverLabel);
+    state.map.on("zoomstart", hideHoverLabel);
+    state.map.on("zoomend", closePopupOutsideZoomRange);
 
     state.map.on("style.load", () => {
       if (!state.mapReady) return;
@@ -251,7 +309,7 @@
   }
 
   function addLayerSet(layer) {
-    addVectorSource(layer);
+    addMapSource(layer);
 
     if (layer.kind === "polygon") {
       addPolygonLayers(layer);
@@ -260,8 +318,16 @@
     }
   }
 
-  function addVectorSource(layer) {
+  function addMapSource(layer) {
     if (state.map.getSource(layer.id)) return;
+
+    if (usesLocalGeojson(layer)) {
+      state.map.addSource(layer.id, {
+        type: "geojson",
+        data: `${config.data.geojsonBaseUrl}${layer.id}.geojson`
+      });
+      return;
+    }
 
     state.map.addSource(layer.id, {
       type: "vector",
@@ -269,8 +335,13 @@
     });
   }
 
-  function sourceLayer(layer) {
-    return layer.sourceLayer;
+  function usesLocalGeojson(layer) {
+    return Boolean(config.data.useLocalGeojson) || layer.sourceType === "geojson";
+  }
+
+  function addMapLayer(layer, spec) {
+    if (!usesLocalGeojson(layer)) spec["source-layer"] = layer.sourceLayer;
+    state.map.addLayer(spec);
   }
 
   function metricMatchExpression(metricName, fallbackValue) {
@@ -288,21 +359,45 @@
     return [">", metricMatchExpression("projectCount", 0), 0];
   }
 
-  function lowerScaleReplacementFilter(value) {
-    return ["==", metricMatchExpression("hasLowerScaleReplacement", true), value];
+  function visibleFeatureFilter(layer) {
+    const hiddenNames = hiddenPointNamesForLayer(layer);
+    if (!hiddenNames.length) return hasProjectsFilter();
+    return [
+      "all",
+      hasProjectsFilter(),
+      ["!", ["in", ["get", "NameKey"], ["literal", hiddenNames]]]
+    ];
   }
 
-  function promoteFromProvinceFilter(value) {
-    return ["==", metricMatchExpression("promoteFromProvince", false), value];
+  function hiddenPointNamesForLayer(layer) {
+    if (!layer || layer.kind !== "point") return [];
+    const hidden = config.hiddenPointGeographies || {};
+    const byScale = hidden[capitalize(layer.scale)] || hidden[layer.scale] || [];
+    return Array.isArray(byScale) ? byScale : [];
+  }
+
+  function lowerScaleReplacementFilter(layer, value) {
+    return ["==", metricMatchExpression(replacementMetricName(layer), true), value];
+  }
+
+  function promoteFromProvinceFilter(layer, value) {
+    return ["==", metricMatchExpression(promotionMetricName(layer), false), value];
+  }
+
+  function replacementMetricName(layer) {
+    return layer && layer.kind === "polygon" ? "hasLowerPolygonReplacement" : "hasLowerPointReplacement";
+  }
+
+  function promotionMetricName(layer) {
+    return layer && layer.kind === "polygon" ? "promotePolygonFromProvince" : "promotePointFromProvince";
   }
 
   function addPolygonLayers(layer) {
     if (!state.map.getLayer(layer.id)) {
-      state.map.addLayer({
+      addMapLayer(layer, {
         id: layer.id,
         type: "fill",
         source: layer.id,
-        "source-layer": sourceLayer(layer),
         minzoom: layer.minzoom,
         maxzoom: layer.maxzoom,
         paint: {
@@ -314,29 +409,28 @@
             0,
             0,
             1,
-            0.14,
-            8,
             0.24,
+            8,
+            0.38,
             25,
-            0.34
+            0.5
           ]
         },
-        filter: hasProjectsFilter()
+        filter: visibleFeatureFilter(layer)
       });
     }
 
     const lineId = `${layer.id}-line`;
     if (!state.map.getLayer(lineId)) {
-      state.map.addLayer({
+      addMapLayer(layer, {
         id: lineId,
         type: "line",
         source: layer.id,
-        "source-layer": sourceLayer(layer),
         minzoom: layer.minzoom,
         maxzoom: layer.maxzoom,
         paint: {
           "line-color": polygonLineColor(),
-          "line-opacity": 0.58,
+          "line-opacity": 0.72,
           "line-width": [
             "interpolate",
             ["linear"],
@@ -347,7 +441,7 @@
             1.8
           ]
         },
-        filter: hasProjectsFilter()
+        filter: visibleFeatureFilter(layer)
       });
     }
 
@@ -376,42 +470,40 @@
     const lineId = `${layer.id}-continuation-line`;
 
     if (!state.map.getLayer(fillId)) {
-      state.map.addLayer({
+      addMapLayer(layer, {
         id: fillId,
         type: "fill",
         source: layer.id,
-        "source-layer": sourceLayer(layer),
         minzoom: layer.maxzoom,
         maxzoom: 24,
         paint: {
           "fill-color": polygonFillColor(layer),
-          "fill-opacity": 0.16
+          "fill-opacity": 0.24
         },
         filter: [
           "all",
-          hasProjectsFilter(),
-          lowerScaleReplacementFilter(false)
+          visibleFeatureFilter(layer),
+          lowerScaleReplacementFilter(layer, false)
         ]
       });
     }
 
     if (!state.map.getLayer(lineId)) {
-      state.map.addLayer({
+      addMapLayer(layer, {
         id: lineId,
         type: "line",
         source: layer.id,
-        "source-layer": sourceLayer(layer),
         minzoom: layer.maxzoom,
         maxzoom: 24,
         paint: {
           "line-color": polygonLineColor(),
-          "line-opacity": 0.62,
+          "line-opacity": 0.72,
           "line-width": 1.35
         },
         filter: [
           "all",
-          hasProjectsFilter(),
-          lowerScaleReplacementFilter(false)
+          visibleFeatureFilter(layer),
+          lowerScaleReplacementFilter(layer, false)
         ]
       });
     }
@@ -425,42 +517,40 @@
     const minzoom = promotedMunicipalMinzoom();
 
     if (!state.map.getLayer(fillId)) {
-      state.map.addLayer({
+      addMapLayer(layer, {
         id: fillId,
         type: "fill",
         source: layer.id,
-        "source-layer": sourceLayer(layer),
         minzoom,
         maxzoom: layer.minzoom,
         paint: {
           "fill-color": polygonFillColor(layer),
-          "fill-opacity": 0.2
+          "fill-opacity": 0.34
         },
         filter: [
           "all",
-          hasProjectsFilter(),
-          promoteFromProvinceFilter(true)
+          visibleFeatureFilter(layer),
+          promoteFromProvinceFilter(layer, true)
         ]
       });
     }
 
     if (!state.map.getLayer(lineId)) {
-      state.map.addLayer({
+      addMapLayer(layer, {
         id: lineId,
         type: "line",
         source: layer.id,
-        "source-layer": sourceLayer(layer),
         minzoom,
         maxzoom: layer.minzoom,
         paint: {
           "line-color": polygonLineColor(),
-          "line-opacity": 0.62,
+          "line-opacity": 0.72,
           "line-width": 1.25
         },
         filter: [
           "all",
-          hasProjectsFilter(),
-          promoteFromProvinceFilter(true)
+          visibleFeatureFilter(layer),
+          promoteFromProvinceFilter(layer, true)
         ]
       });
     }
@@ -469,16 +559,14 @@
   function addPointLayers(layer) {
     const circleId = `${layer.id}-circle`;
     const labelId = `${layer.id}-circle-label`;
-    const zoomTransition = config.mapbox.zoomTransition || 0;
-    const displayMinzoom = Math.max(0, layer.minzoom - zoomTransition);
-    const displayMaxzoom = Math.min(24, layer.maxzoom + zoomTransition);
+    const displayMinzoom = layer.minzoom;
+    const displayMaxzoom = layer.maxzoom;
 
     if (!state.map.getLayer(circleId)) {
-      state.map.addLayer({
+      addMapLayer(layer, {
         id: circleId,
         type: "circle",
         source: layer.id,
-        "source-layer": sourceLayer(layer),
         minzoom: displayMinzoom,
         maxzoom: displayMaxzoom,
         paint: {
@@ -489,7 +577,7 @@
           "circle-stroke-opacity": pointOpacityExpression(layer, 0.94),
           "circle-opacity": pointOpacityExpression(layer, 0.94)
         },
-        filter: hasProjectsFilter()
+        filter: visibleFeatureFilter(layer)
       });
     }
 
@@ -512,20 +600,19 @@
     });
 
     if (!state.map.getLayer(labelId)) {
-      state.map.addLayer({
+      addMapLayer(layer, {
         id: labelId,
         type: "symbol",
         source: layer.id,
-        "source-layer": sourceLayer(layer),
         minzoom: displayMinzoom,
         maxzoom: displayMaxzoom,
         layout: countLabelLayout(),
         paint: countLabelPaint(layer),
-        filter: hasProjectsFilter()
+        filter: visibleFeatureFilter(layer)
       });
     }
 
-    [circleId, labelId].forEach((id) => bindClick(layer, id));
+    bindClick(layer, circleId);
   }
 
   function addPointContinuationLayers(layer, circlePaint) {
@@ -535,41 +622,39 @@
     const labelId = `${layer.id}-continuation-circle-label`;
 
     if (!state.map.getLayer(circleId)) {
-      state.map.addLayer({
+      addMapLayer(layer, {
         id: circleId,
         type: "circle",
         source: layer.id,
-        "source-layer": sourceLayer(layer),
         minzoom: layer.maxzoom,
         maxzoom: 24,
         paint: circlePaint,
         filter: [
           "all",
-          hasProjectsFilter(),
-          lowerScaleReplacementFilter(false)
+          visibleFeatureFilter(layer),
+          lowerScaleReplacementFilter(layer, false)
         ]
       });
     }
 
     if (!state.map.getLayer(labelId)) {
-      state.map.addLayer({
+      addMapLayer(layer, {
         id: labelId,
         type: "symbol",
         source: layer.id,
-        "source-layer": sourceLayer(layer),
         minzoom: layer.maxzoom,
         maxzoom: 24,
         layout: countLabelLayout(),
         paint: countLabelPaint(),
         filter: [
           "all",
-          hasProjectsFilter(),
-          lowerScaleReplacementFilter(false)
+          visibleFeatureFilter(layer),
+          lowerScaleReplacementFilter(layer, false)
         ]
       });
     }
 
-    [circleId, labelId].forEach((id) => bindClick(layer, id));
+    bindClick(layer, circleId);
   }
 
   function addPromotedMunicipalPointLayers(layer, circlePaint) {
@@ -580,41 +665,39 @@
     const minzoom = promotedMunicipalMinzoom();
 
     if (!state.map.getLayer(circleId)) {
-      state.map.addLayer({
+      addMapLayer(layer, {
         id: circleId,
         type: "circle",
         source: layer.id,
-        "source-layer": sourceLayer(layer),
         minzoom,
         maxzoom: layer.minzoom,
         paint: circlePaint,
         filter: [
           "all",
-          hasProjectsFilter(),
-          promoteFromProvinceFilter(true)
+          visibleFeatureFilter(layer),
+          promoteFromProvinceFilter(layer, true)
         ]
       });
     }
 
     if (!state.map.getLayer(labelId)) {
-      state.map.addLayer({
+      addMapLayer(layer, {
         id: labelId,
         type: "symbol",
         source: layer.id,
-        "source-layer": sourceLayer(layer),
         minzoom,
         maxzoom: layer.minzoom,
         layout: countLabelLayout(),
         paint: countLabelPaint(),
         filter: [
           "all",
-          hasProjectsFilter(),
-          promoteFromProvinceFilter(true)
+          visibleFeatureFilter(layer),
+          promoteFromProvinceFilter(layer, true)
         ]
       });
     }
 
-    [circleId, labelId].forEach((id) => bindClick(layer, id));
+    bindClick(layer, circleId, { hover: false });
   }
 
   function symbolRadiusExpression() {
@@ -634,25 +717,7 @@
   }
 
   function pointOpacityExpression(layer, baseOpacity) {
-    const transition = config.mapbox.zoomTransition || 0;
-    const minzoom = layer.minzoom || 0;
-    const maxzoom = layer.maxzoom || 24;
-    if (!transition) return baseOpacity;
-
-    const stops = [];
-    if (minzoom > 0) stops.push([Math.max(0, minzoom - transition), 0]);
-    stops.push([minzoom, baseOpacity]);
-
-    const fadeOutStart = Math.max(minzoom, maxzoom - transition);
-    if (fadeOutStart > minzoom) stops.push([fadeOutStart, baseOpacity]);
-    if (maxzoom > fadeOutStart) stops.push([maxzoom, 0]);
-
-    return [
-      "interpolate",
-      ["linear"],
-      ["zoom"],
-      ...stops.flat()
-    ];
+    return baseOpacity;
   }
 
   function countLabelLayout() {
@@ -712,13 +777,14 @@
 
     layerIds.forEach((id) => {
       if (!state.map.getLayer(id)) return;
+      const configLayer = findConfigLayerFromMapLayerId(id);
 
       if (id.includes("continuation")) {
-        state.map.setFilter(id, ["all", hasProjectsFilter(), lowerScaleReplacementFilter(false)]);
+        state.map.setFilter(id, ["all", visibleFeatureFilter(configLayer), lowerScaleReplacementFilter(configLayer, false)]);
       } else if (id.includes("promoted")) {
-        state.map.setFilter(id, ["all", hasProjectsFilter(), promoteFromProvinceFilter(true)]);
+        state.map.setFilter(id, ["all", visibleFeatureFilter(configLayer), promoteFromProvinceFilter(configLayer, true)]);
       } else {
-        state.map.setFilter(id, hasProjectsFilter());
+        state.map.setFilter(id, visibleFeatureFilter(configLayer));
       }
     });
 
@@ -745,7 +811,7 @@
   }
 
   function findConfigLayerFromMapLayerId(mapLayerId) {
-    return config.layers.find((layer) => mapLayerId.startsWith(layer.id)) || {};
+    return config.layers.find((layer) => String(mapLayerId || "").startsWith(layer.id)) || {};
   }
 
   function recomputeGeographyMetrics() {
@@ -760,14 +826,22 @@
         projectCount: filteredProjects.length,
         linkedProjectCount: linkedCount,
         interactive: linkedCount > 0,
-        hasLowerScaleReplacement: hasLowerScaleReplacementFromIndex(nameKey, filteredProjects),
-        promoteFromProvince: shouldPromoteFromProvinceFromIndex(nameKey, filteredProjects)
+        hasLowerPointReplacement: hasLowerScaleReplacementFromIndex(nameKey, filteredProjects, "point"),
+        hasLowerPolygonReplacement: hasLowerScaleReplacementFromIndex(nameKey, filteredProjects, "polygon"),
+        promotePointFromProvince: shouldPromoteFromProvinceFromIndex(nameKey, filteredProjects, "point"),
+        promotePolygonFromProvince: shouldPromoteFromProvinceFromIndex(nameKey, filteredProjects, "polygon")
       });
     });
   }
 
   function getFilteredProjectsForGeography(nameKey) {
-    const geographyNames = [nameKey, ...getGeographyAliases(nameKey)];
+    const canonicalName = canonicalGeographyName(nameKey);
+    const geographyNames = uniqueNames([
+      canonicalName,
+      nameKey,
+      ...getGeographyAliases(canonicalName),
+      ...getGeographyAliases(nameKey)
+    ]);
     const projectsByNumber = new Map();
 
     geographyNames.forEach((geographyName) => {
@@ -786,11 +860,74 @@
     return Array.from(projectsByNumber.values());
   }
 
-  function hasLowerScaleReplacementFromIndex(nameKey, filteredProjects) {
+  function hasLowerScaleReplacementFromIndex(nameKey, filteredProjects, kind) {
+    const scales = featureScalesForName(nameKey, kind);
+
+    const lowerScales = scales.includes("Provincial")
+      ? ["Regional", "Municipal"]
+      : scales.includes("Regional")
+        ? ["Municipal"]
+        : [];
+    if (!lowerScales.length) return true;
+
+    return filteredProjects.some((projectSummary) => {
+      const project = state.projectsByNumber.get(String(projectSummary.projectNumber || ""));
+      return project && hasFeatureForProjectAtAnyLayerScale(project, lowerScales, lowerScales, kind);
+    });
+  }
+
+  function shouldPromoteFromProvinceFromIndex(nameKey, filteredProjects, kind) {
+    const scales = featureScalesForName(nameKey, kind);
+    if (!scales.includes("Municipal") || !filteredProjects.length) return false;
+
+    return filteredProjects.some((projectSummary) => {
+      const project = state.projectsByNumber.get(String(projectSummary.projectNumber || ""));
+      if (!project || !getProjectScaleNames(project, "Provincial").length) return false;
+      return !hasFeatureForProjectNamesAtLayerScale(project, ["Regional", "Municipal"], "Regional", kind);
+    });
+  }
+
+  function featureScalesForName(nameKey, kind) {
+    const normalizedName = normalizeGeography(nameKey);
+    return config.layers
+      .filter((layer) => layer.kind === kind)
+      .filter((layer) => (state.featureNameSets.get(layer.id) || new Set()).has(normalizedName))
+      .map((layer) => capitalize(layer.scale));
+  }
+
+  function hasFeatureForProjectScale(project, scale, kind) {
+    return hasFeatureForProjectNamesAtLayerScale(project, [scale], scale, kind);
+  }
+
+  function hasFeatureForProjectAtAnyLayerScale(project, nameScales, layerScales, kind) {
+    return layerScales.some((layerScale) =>
+      hasFeatureForProjectNamesAtLayerScale(project, nameScales, layerScale, kind)
+    );
+  }
+
+  function hasFeatureForProjectNamesAtLayerScale(project, nameScales, layerScale, kind) {
+    const matchingLayers = config.layers
+      .filter((layer) => layer.kind === kind && capitalize(layer.scale) === layerScale);
+    const layerIds = matchingLayers.map((layer) => layer.id);
+
+    if (!layerIds.length) return false;
+
+    const featureNames = new Set(
+      matchingLayers.flatMap((layer) => {
+        const hiddenNames = new Set(hiddenPointNamesForLayer(layer).map(normalizeGeography));
+        return Array.from(state.featureNameSets.get(layer.id) || [])
+          .filter((name) => !hiddenNames.has(normalizeGeography(name)));
+      })
+    );
+
+    return nameScales.flatMap((scale) => getProjectScaleNames(project, scale))
+      .map(normalizeGeography)
+      .some((name) => featureNames.has(name));
+  }
+
+  function legacyHasLowerScaleReplacementFromIndex(nameKey, filteredProjects) {
     const entry = getGeographyIndexEntry(nameKey);
     const scales = entry && entry.scales ? entry.scales.map(String) : [];
-
-    if (scales.includes("Municipal")) return true;
 
     if (scales.includes("Provincial")) {
       return filteredProjects.some((projectSummary) => {
@@ -814,19 +951,7 @@
     return true;
   }
 
-  function shouldPromoteFromProvinceFromIndex(nameKey, filteredProjects) {
-    const entry = getGeographyIndexEntry(nameKey);
-    const scales = entry && entry.scales ? entry.scales.map(String) : [];
-    if (!scales.includes("Municipal") || !filteredProjects.length) return false;
-
-    return filteredProjects.some((projectSummary) => {
-      const project = state.projectsByNumber.get(String(projectSummary.projectNumber || ""));
-      if (!project || !getProjectScaleNames(project, "Provincial").length) return false;
-      return !getProjectScaleNames(project, "Regional").length;
-    });
-  }
-
-  function bindClick(layer, mapLayerId) {
+  function bindClick(layer, mapLayerId, options = {}) {
     if (state.map.__lgeoBoundLayers && state.map.__lgeoBoundLayers.has(mapLayerId)) return;
 
     state.map.__lgeoBoundLayers = state.map.__lgeoBoundLayers || new Set();
@@ -835,8 +960,10 @@
     state.map.on("click", mapLayerId, (event) => {
       if (isDuplicatePopupClick(event)) return;
       const feature = event.features && event.features[0];
-      if (feature) showPopup(feature, event.lngLat);
+      if (feature) showPopup(feature, event.lngLat, layer, mapLayerId);
     });
+
+    if (options.hover === false) return;
 
     state.map.on("mouseenter", mapLayerId, (event) => {
       state.map.getCanvas().style.cursor = "pointer";
@@ -857,6 +984,15 @@
     const feature = event.features && event.features[0];
     const name = feature && feature.properties && feature.properties.NameKey;
     if (!name) return;
+    const mapLayerId = event.features && event.features[0] && event.features[0].layer && event.features[0].layer.id;
+    const layer = findConfigLayerFromMapLayerId(mapLayerId);
+    if (!layer || layer.kind !== "point" || String(mapLayerId || "").includes("promoted")) return;
+    if (!hoverLayerStableAtCurrentZoom(mapLayerId, layer)) {
+      hideHoverLabel();
+      return;
+    }
+    if (!hasRenderedHoverCircle(event.point, mapLayerId, name)) return;
+    const anchor = pointAnchorForFeature(name, feature, layer) || event.lngLat;
 
     if (!state.hoverPopup) {
       state.hoverPopup = new mapboxgl.Popup({
@@ -868,9 +1004,71 @@
     }
 
     state.hoverPopup
-      .setLngLat(event.lngLat)
+      .setLngLat(anchor)
       .setHTML(`<span>${escapeHtml(displayGeographyName(name))}</span>`)
       .addTo(state.map);
+  }
+
+  function hasRenderedHoverCircle(point, mapLayerId, name) {
+    if (!state.map || !point) return false;
+    const hoverLayers = hoverablePointCircleLayers();
+    if (!hoverLayers.length) return false;
+
+    const layers = mapLayerId ? [mapLayerId].filter((id) => hoverLayers.includes(id)) : hoverLayers;
+    if (!layers.length) return false;
+
+    return state.map.queryRenderedFeatures(point, { layers }).some((feature) => {
+      const featureLayerId = feature.layer && feature.layer.id;
+      const featureLayer = findConfigLayerFromMapLayerId(featureLayerId);
+      if (!hoverLayerStableAtCurrentZoom(featureLayerId, featureLayer)) return false;
+      if (name && !sameGeography(feature.properties && feature.properties.NameKey, name)) return false;
+      return true;
+    });
+  }
+
+  function hoverablePointCircleLayers() {
+    if (!state.map) return [];
+    return config.layers
+      .filter((layer) => layer.kind === "point")
+      .flatMap((layer) => [`${layer.id}-circle`, `${layer.id}-continuation-circle`])
+      .filter((id) => state.map.getLayer(id));
+  }
+
+  function hoverLayerStableAtCurrentZoom(mapLayerId, layer) {
+    if (!state.map || !mapLayerId || !layer || layer.kind !== "point") return false;
+    if (String(mapLayerId).includes("promoted")) return false;
+
+    const zoom = state.map.getZoom();
+    const enterBuffer = hoverZoomBufferFor(layer, "enter");
+    const exitBuffer = hoverZoomBufferFor(layer, "exit");
+
+    if (String(mapLayerId).includes("continuation")) {
+      return zoom >= Number(layer.maxzoom || 24) + hoverZoomBufferFor(layer, "continuationEnter");
+    }
+
+    const minZoom = Number(layer.minzoom || 0);
+    const maxZoom = Number(layer.maxzoom || 24);
+    const stableMin = minZoom > 0 ? minZoom + enterBuffer : minZoom;
+    const stableMax = maxZoom >= 24 ? maxZoom : maxZoom - exitBuffer;
+    return zoom >= stableMin && zoom < stableMax;
+  }
+
+  function hoverZoomBufferFor(layer, mode) {
+    const configValue = config.mapbox.hoverZoomBuffer;
+    if (typeof configValue === "number") return configValue;
+
+    const buffers = configValue || {};
+    const scale = String(layer && layer.scale || "").toLowerCase();
+    const scaleKey = `${scale}${mode.charAt(0).toUpperCase()}${mode.slice(1)}`;
+
+    if (Number.isFinite(Number(buffers[scaleKey]))) return Number(buffers[scaleKey]);
+    if (Number.isFinite(Number(buffers[mode]))) return Number(buffers[mode]);
+    if (mode === "enter" && Number.isFinite(Number(buffers.defaultEnter))) return Number(buffers.defaultEnter);
+    if (mode === "exit" && Number.isFinite(Number(buffers.defaultExit))) return Number(buffers.defaultExit);
+    if (mode === "continuationEnter" && Number.isFinite(Number(buffers.continuationEnter))) {
+      return Number(buffers.continuationEnter);
+    }
+    return 0;
   }
 
   function hideHoverLabel() {
@@ -897,42 +1095,46 @@
     return false;
   }
 
-  function replaceActivePopup(lngLat, html) {
-  hideHoverLabel();
-  closeActivePopup();
+  function replaceActivePopup(lngLat, html, meta) {
+    hideHoverLabel();
+    closeActivePopup();
 
-  const popup = new mapboxgl.Popup({
-    anchor: "bottom",
-    closeButton: true,
-    maxWidth: "360px",
-    offset: 18
-  })
-    .setLngLat(lngLat)
-    .setHTML(html)
-    .addTo(state.map);
+    const popup = new mapboxgl.Popup({
+      anchor: "bottom",
+      closeButton: true,
+      maxWidth: "320px",
+      offset: 18
+    })
+      .setLngLat(lngLat)
+      .setHTML(html)
+      .addTo(state.map);
 
-  const closeButton = popup.getElement().querySelector(".mapboxgl-popup-close-button");
-  if (closeButton) {
-    closeButton.removeAttribute("aria-hidden");
+    const closeButton = popup.getElement().querySelector(".mapboxgl-popup-close-button");
+    if (closeButton) {
+      closeButton.removeAttribute("aria-hidden");
 
-    closeButton.addEventListener("mousedown", () => {
-      closeButton.blur();
-    });
+      closeButton.addEventListener("mousedown", () => {
+        closeButton.blur();
+      });
 
-    closeButton.addEventListener("click", () => {
-      closeButton.blur();
-    });
-  }
-
-  state.activePopup = popup;
-  popup.on("close", () => {
-    if (document.activeElement === closeButton) {
-      closeButton.blur();
+      closeButton.addEventListener("click", () => {
+        closeButton.blur();
+      });
     }
 
-    if (state.activePopup === popup) state.activePopup = null;
-  });
-}
+    state.activePopup = popup;
+    state.activePopupMeta = meta || null;
+    popup.on("close", () => {
+      if (document.activeElement === closeButton) {
+        closeButton.blur();
+      }
+
+      if (state.activePopup === popup) {
+        state.activePopup = null;
+        state.activePopupMeta = null;
+      }
+    });
+  }
 
   function closeActivePopup() {
     if (state.activePopup) {
@@ -946,41 +1148,69 @@
 
       const popup = state.activePopup;
       state.activePopup = null;
+      state.activePopupMeta = null;
       popup.remove();
     }
   }
 
-  function showPopup(feature, lngLat) {
+  function closePopupOutsideZoomRange() {
+    if (!state.activePopup || !state.activePopupMeta) return;
+    if (state.activePopupMeta.ignoreNextZoomEnd) {
+      state.activePopupMeta.ignoreNextZoomEnd = false;
+      return;
+    }
+
+    const zoom = state.map.getZoom();
+    const minZoom = Number(state.activePopupMeta.minZoom || 0);
+    const maxZoom = Number(state.activePopupMeta.maxZoom || 24);
+    if (zoom < minZoom || zoom >= maxZoom) closeActivePopup();
+  }
+
+  function showPopup(feature, lngLat, layer, mapLayerId) {
     hideHoverLabel();
 
-    const name = feature.properties.NameKey;
+    const name = canonicalGeographyName(feature.properties.NameKey);
     const projects = getFilteredProjectsForGeography(name);
     const linkedCount = projects.filter((project) => project.projectUrl).length;
+    const zoomTarget = findGeographyBoundsEntry(name) || feature;
+    const popupAnchor = pointAnchorForFeature(name, feature, layer) || lngLat;
+    const scale = capitalize(layer && layer.scale) || scaleForGeography(name);
 
-    zoomToGeography(name, feature.geometry);
+    zoomToGeography(name, zoomTarget, { scale, revealNext: isNationalGeography(name) });
 
     if (!projects.length || !shouldOpenPopupForGeography(name)) {
       closeActivePopup();
       return;
     }
 
-    replaceActivePopup(lngLat, popupHtml(name, projects, linkedCount));
+    replaceActivePopup(popupAnchor, popupHtml(name, projects, linkedCount), popupMetaForLayer(layer, mapLayerId));
+    keepPopupThroughAutomatedZoom();
   }
 
   function showPopupForGeography(name) {
     if (!state.map) return;
+    name = canonicalGeographyName(name);
 
     const projects = getFilteredProjectsForGeography(name);
     const linkedCount = projects.filter((project) => project.projectUrl).length;
+    const zoomTarget = findGeographyBoundsEntry(name);
+    const scale = scaleForGeography(name);
+    const popupAnchor = pointAnchorForGeography(name, scale);
 
-    zoomToGeography(name, null);
+    const fallbackPoint = zoomToGeography(name, zoomTarget, { scale, revealNext: isNationalGeography(name) }) || state.map.getCenter();
 
     if (!projects.length || !shouldOpenPopupForGeography(name)) {
       closeActivePopup();
       return;
     }
 
-    replaceActivePopup(state.map.getCenter(), popupHtml(name, projects, linkedCount));
+    replaceActivePopup(popupAnchor || fallbackPoint, popupHtml(name, projects, linkedCount), popupMetaForScale(scale));
+    keepPopupThroughAutomatedZoom();
+  }
+
+  function keepPopupThroughAutomatedZoom() {
+    if (!state.activePopupMeta || !state.map || !state.map.isMoving()) return;
+    state.activePopupMeta.ignoreNextZoomEnd = true;
   }
 
   function popupHtml(name, projects, linkedCount) {
@@ -1002,7 +1232,7 @@
 
         if (project.projectUrl) {
           return `
-            <a class="${rowClass} popup-project-card-link" href="${escapeAttribute(project.projectUrl)}" target="_blank" rel="noopener">
+            <a class="${rowClass} popup-project-card-link" href="${escapeAttribute(project.projectUrl)}" target="_top">
               ${content}
             </a>
           `;
@@ -1017,7 +1247,7 @@
       .join("");
 
     return `
-      <h3 class="popup-title">${escapeHtml(name)}</h3>
+      <h3 class="popup-title">${escapeHtml(displayGeographyName(name))}</h3>
       <p class="popup-meta">${formatProjectCount(projects.length)}</p>
       <div class="popup-list">${projectList}</div>
     `;
@@ -1117,16 +1347,31 @@
   }
 
   function getSearchableGeographies() {
-    return Object.values(state.geographyIndex).map((entry) => {
-      const metrics = state.geographyMetrics.get(entry.geographyName) || {};
-      return {
-        name: entry.geographyName,
-        displayName: displayGeographyName(entry.geographyName),
+    const merged = new Map();
+
+    Object.values(state.geographyIndex).forEach((entry) => {
+      const canonicalName = canonicalGeographyName(entry.geographyName);
+      const metrics = state.geographyMetrics.get(canonicalName) || state.geographyMetrics.get(entry.geographyName) || {};
+      const displayName = displayGeographyName(canonicalName);
+      const dedupeKey = normalizeGeography(displayName);
+      const candidate = {
+        name: canonicalName,
+        displayName,
         projectCount: metrics.projectCount || 0,
-        directCount: getDirectProjectsForGeography(entry.geographyName).length,
-        scales: entry.scales || []
+        directCount: getDirectProjectsForGeography(canonicalName).length,
+        scales: Array.from(new Set([
+          ...(getGeographyIndexEntry(canonicalName)?.scales || []),
+          ...(entry.scales || [])
+        ]))
       };
+
+      const existing = merged.get(dedupeKey);
+      if (!existing || scoreSearchEntry(candidate) > scoreSearchEntry(existing)) {
+        merged.set(dedupeKey, candidate);
+      }
     });
+
+    return Array.from(merged.values());
   }
 
   function getDirectProjectsForGeography(nameKey) {
@@ -1182,17 +1427,132 @@
     return names.flatMap((name) => [name, ...getGeographyAliases(name)]);
   }
 
+  function uniqueNames(names) {
+    const seen = new Set();
+    return names.filter((name) => {
+      const key = normalizeGeography(name);
+      if (!key || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }
+
   function getGeographyIndexEntry(nameKey) {
-    return state.geographyIndex[nameKey] || state.geographyLookup.get(normalizeGeography(nameKey));
+    const canonicalName = canonicalGeographyName(nameKey);
+    return state.geographyIndex[canonicalName] ||
+      state.geographyIndex[nameKey] ||
+      state.geographyLookup.get(normalizeGeography(canonicalName)) ||
+      state.geographyLookup.get(normalizeGeography(nameKey));
   }
 
   function getGeographyAliases(nameKey) {
     const aliases = config.geographyAliases || {};
-    const directAliases = aliases[nameKey];
+    const canonicalName = canonicalGeographyName(nameKey);
+    const directAliases = aliases[canonicalName] || aliases[nameKey];
     if (directAliases) return directAliases;
 
-    const matchedName = Object.keys(aliases).find((name) => sameGeography(name, nameKey));
+    const matchedName = Object.keys(aliases).find((name) => sameGeography(name, canonicalName));
     return matchedName ? aliases[matchedName] : [];
+  }
+
+  function canonicalGeographyName(nameKey) {
+    const canonical = config.canonicalGeographies || {};
+    const matchedName = Object.keys(canonical).find((name) => sameGeography(name, nameKey));
+    return matchedName ? canonical[matchedName] : nameKey;
+  }
+
+  function findGeographyBoundsEntry(nameKey) {
+    const canonicalName = canonicalGeographyName(nameKey);
+    const names = [canonicalName, nameKey, ...getGeographyAliases(canonicalName)].map(normalizeGeography);
+    for (const name of names) {
+      const entry = state.featureLookup.get(name);
+      if (entry) return entry;
+    }
+    return null;
+  }
+
+  function pointAnchorForFeature(nameKey, feature, layer) {
+    if (feature && feature.geometry && feature.geometry.type === "Point") {
+      return centerForCoordinates(feature.geometry.coordinates);
+    }
+    return pointAnchorForGeography(nameKey, capitalize(layer && layer.scale));
+  }
+
+  function pointAnchorForGeography(nameKey, scale) {
+    const entry = findGeographyBoundsEntry(nameKey);
+    if (!entry || !Array.isArray(entry.features)) return null;
+
+    const requestedScale = scale || scaleForGeography(nameKey);
+    const pointFeature = entry.features.find((feature) =>
+      feature.kind === "point" && capitalize(feature.scale) === requestedScale
+    ) || entry.features.find((feature) => feature.kind === "point");
+
+    return pointFeature && pointFeature.center ? pointFeature.center : null;
+  }
+
+  function scaleForGeography(nameKey) {
+    if (isNationalGeography(nameKey)) return "National";
+
+    const entry = findGeographyBoundsEntry(nameKey);
+    const pointScale = broadestPointScale(entry);
+    if (pointScale) return pointScale;
+    if (entry && entry.preferredScale) return capitalize(entry.preferredScale);
+
+    const indexEntry = getGeographyIndexEntry(nameKey);
+    const scales = indexEntry && indexEntry.scales ? indexEntry.scales : [];
+    return ["Municipal", "Regional", "Provincial", "National"].find((scale) => scales.includes(scale)) || "";
+  }
+
+  function broadestPointScale(entry) {
+    if (!entry || !Array.isArray(entry.features)) return "";
+    const pointScales = new Set(
+      entry.features
+        .filter((feature) => feature.kind === "point")
+        .map((feature) => capitalize(feature.scale))
+        .filter(Boolean)
+    );
+    return ["National", "Provincial", "Regional", "Municipal"].find((scale) => pointScales.has(scale)) || "";
+  }
+
+  function popupMetaForScale(scale) {
+    const range = zoomRangeForScale(scale);
+    if (!range) return null;
+    const nationalLinger = scale === "National" ? 0.55 : 0.02;
+    return {
+      minZoom: range.min,
+      maxZoom: range.max + nationalLinger
+    };
+  }
+
+  function popupMetaForLayer(layer, mapLayerId) {
+    const scale = capitalize(layer && layer.scale);
+    if (!layer || !scale) return popupMetaForScale(scale);
+
+    const id = String(mapLayerId || "");
+    const nationalLinger = scale === "National" ? 0.55 : 0.02;
+    const minZoom = id.includes("continuation")
+      ? layer.maxzoom
+      : id.includes("promoted")
+        ? promotedMunicipalMinzoom()
+        : layer.minzoom;
+    const maxZoom = id.includes("continuation")
+      ? 24
+      : id.includes("promoted")
+        ? layer.minzoom
+        : layer.maxzoom;
+
+    return {
+      minZoom: Number(minZoom || 0),
+      maxZoom: Number(maxZoom || 24) + nationalLinger
+    };
+  }
+
+  function zoomRangeForScale(scale) {
+    const normalizedScale = capitalize(scale);
+    const layer = config.layers.find((item) => capitalize(item.scale) === normalizedScale && item.kind === "point")
+      || config.layers.find((item) => capitalize(item.scale) === normalizedScale);
+    if (!layer) return null;
+    return { min: layer.minzoom || 0, max: layer.maxzoom || 24 };
   }
 
   function sameGeography(left, right) {
@@ -1205,6 +1565,11 @@
       .replace(/[\u0300-\u036f]/g, "")
       .trim()
       .toLowerCase();
+  }
+
+  function capitalize(value) {
+    const text = String(value || "");
+    return text ? text.charAt(0).toUpperCase() + text.slice(1) : "";
   }
 
   function isExternalProjectLevel(projectLevel) {
@@ -1229,7 +1594,8 @@
     return regionalLayer ? regionalLayer.minzoom : 5.8;
   }
 
-  function zoomToGeography(name, geometry) {
+  function zoomToGeography(name, target, options = {}) {
+    const scale = options.scale || scaleForGeography(name);
     const namedBounds = boundsForNamedGeography(name);
     if (namedBounds) {
       state.map.stop();
@@ -1239,48 +1605,100 @@
       if (!camera) {
         state.map.fitBounds(namedBounds.bounds, {
           padding,
-          maxZoom: 5.1,
+          maxZoom: targetMaxZoomForScale(scale, options),
           duration: 500,
           essential: true
         });
-        return;
+        return namedBounds.bounds.getCenter();
       }
 
-      const zoom = Math.max(camera.zoom || state.map.getZoom(), namedBounds.minZoom || 0);
+      const zoom = clampZoomToScale(camera.zoom || state.map.getZoom(), scale, options, namedBounds);
       state.map.easeTo({
         center: camera.center,
         zoom,
         duration: 500,
         essential: true
       });
-      return;
+      return camera.center;
     }
 
-    if (geometry) zoomToGeometry(geometry);
+    const boundsInfo = boundsInfoForTarget(target);
+    if (boundsInfo) return zoomToBoundsInfo(boundsInfo, scale, options);
+    return null;
   }
 
-  function zoomToGeometry(geometry) {
-    const boundsInfo = boundsForGeometry(geometry);
-    if (!boundsInfo) return;
-
+  function zoomToBoundsInfo(boundsInfo, scale, options = {}) {
     if (boundsInfo.isPoint) {
       state.map.stop();
       state.map.easeTo({
         center: boundsInfo.center,
-        zoom: Math.max(state.map.getZoom(), 6.6),
+        zoom: targetMinZoomForScale(scale, options),
         duration: 450,
         essential: true
       });
-      return;
+      return boundsInfo.center;
     }
 
     state.map.stop();
     state.map.fitBounds(boundsInfo.bounds, {
       padding: config.mapbox.boundsPadding,
-      maxZoom: 9.5,
+      maxZoom: targetMaxZoomForScale(scale, options),
       duration: 500,
       essential: true
     });
+    return boundsInfo.bounds.getCenter();
+  }
+
+  function clampZoomToScale(zoom, scale, options, namedBounds) {
+    const minZoom = namedBounds && namedBounds.minZoom
+      ? namedBounds.minZoom
+      : targetMinZoomForScale(scale, options);
+    const maxZoom = namedBounds && namedBounds.maxZoom
+      ? namedBounds.maxZoom
+      : targetMaxZoomForScale(scale, options);
+    return Math.min(Math.max(zoom, minZoom), maxZoom);
+  }
+
+  function targetMinZoomForScale(scale, options = {}) {
+    if (options.revealNext && scale === "National") {
+      return zoomRangeForScale("Provincial").min + 0.02;
+    }
+    const range = zoomRangeForScale(scale);
+    return range ? range.min + 0.02 : state.map.getZoom();
+  }
+
+  function targetMaxZoomForScale(scale, options = {}) {
+    if (options.revealNext && scale === "National") {
+      return zoomRangeForScale("Provincial").min + 0.35;
+    }
+    const range = zoomRangeForScale(scale);
+    if (!range) return 9.5;
+    if (scale === "Municipal") return 10.9;
+    return range.max >= 24 ? 12 : range.max - 0.04;
+  }
+
+  function boundsInfoForTarget(target) {
+    if (!target) return null;
+    if (target.geometry) return boundsForGeometry(target.geometry);
+    if (target.bounds) {
+      return {
+        isPoint: false,
+        bounds: new mapboxgl.LngLatBounds(target.bounds[0], target.bounds[1])
+      };
+    }
+    if (Array.isArray(target) && target.length >= 2) {
+      return { isPoint: true, center: target };
+    }
+    return null;
+  }
+
+  function centerForCoordinates(coordinates) {
+    if (!coordinates) return null;
+    if (Array.isArray(coordinates)) return coordinates;
+    if (typeof coordinates.lng === "number" && typeof coordinates.lat === "number") {
+      return [coordinates.lng, coordinates.lat];
+    }
+    return null;
   }
 
   function boundsForNamedGeography(name) {
@@ -1293,12 +1711,17 @@
     if (!matchedName) return null;
 
     const bounds = namedBounds[matchedName];
-    const minZooms = config.mapbox.countryMinZoom || {};
+    const minZooms = {
+      ...(config.mapbox.countryMinZoom || {}),
+      ...(config.geographyMinZoom || {})
+    };
+    const maxZooms = config.geographyMaxZoom || {};
 
     return {
       isPoint: false,
       bounds: new mapboxgl.LngLatBounds(bounds[0], bounds[1]),
-      minZoom: minZooms[matchedName] || 0
+      minZoom: minZooms[matchedName] || 0,
+      maxZoom: maxZooms[matchedName] || 24
     };
   }
 
@@ -1389,10 +1812,12 @@
     if (!state.map || !config.office || !config.office.enabled || !config.office.coordinates) return;
 
     state.map.stop();
-    state.map.easeTo({
+    state.map.flyTo({
       center: config.office.coordinates,
       zoom: Math.max(state.map.getZoom(), 13.5),
-      duration: 700,
+      speed: 0.75,
+      curve: 1.35,
+      duration: 1800,
       essential: true
     });
   }
@@ -1442,7 +1867,13 @@
   }
 
   function displayGeographyName(name) {
-    return String(name || "")
+    const displayNames = config.geographyDisplayNames || {};
+    const canonicalName = canonicalGeographyName(name);
+    const matchedName = Object.keys(displayNames).find((displayName) => sameGeography(displayName, canonicalName));
+    if (matchedName) return displayNames[matchedName];
+
+    return String(canonicalName || "")
+      .replace(/^City Of Toronto\s+-\s+Ontario$/i, "Toronto")
       .replace(/\s+-\s+British Columbia$/i, "")
       .replace(/\s+-\s+Alberta$/i, "")
       .replace(/\s+-\s+Ontario$/i, "")

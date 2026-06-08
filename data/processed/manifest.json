@@ -1,14 +1,6 @@
 {
-  "generatedAt": "2026-06-04T23:00:57.667928+00:00",
-  "sourceFiles": [
-    "data/source/README.md",
-    "data/source/all_geography_legacy.csv",
-    "data/source/contractsList_legacy_20221002.js",
-    "data/source/projectListOnly_20250125.csv",
-    "data/source/project_links.csv",
-    "data/source/projects.csv",
-    "data/source/projects_legacy_20250123.csv"
-  ],
+  "generatedAt": "2026-06-08T01:48:13.142418+00:00",
+  "sourceFilesPrivate": true,
   "rawGeojsonFiles": [
     "data/geojson/raw/MunicipalLevelPoints.geojson",
     "data/geojson/raw/MunicipalLevelPolygons.geojson",
@@ -21,6 +13,7 @@
   "processedFiles": [
     "data/processed/app-data.generated.js",
     "data/processed/contractsList.generated.js",
+    "data/processed/geography-bounds.json",
     "data/processed/geography-index.json",
     "data/processed/geojson/MunicipalLevelPoints.geojson",
     "data/processed/geojson/MunicipalLevelPolygons.geojson",
@@ -34,6 +27,6 @@
     "data/processed/update-report.json",
     "data/processed/update-report.md"
   ],
-  "projectCount": 245,
-  "geographyLookupCount": 159
+  "projectCount": 244,
+  "geographyLookupCount": 109
 }

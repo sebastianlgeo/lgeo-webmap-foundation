@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-04T23:00:57.667928+00:00",
+  "generatedAt": "2026-06-08T01:48:13.142418+00:00",
   "sourceCsv": "data/source/projects.csv",
-  "projectCount": 245,
-  "suppressedProjectCount": 37,
-  "geographyLookupCount": 159,
+  "projectCount": 244,
+  "suppressedProjectCount": 38,
+  "geographyLookupCount": 109,
   "projectTypes": [
     [
       "Urban Simulation",
@@ -18,12 +18,12 @@
       29
     ],
     [
-      "Additional GIS Support Services",
-      23
+      "Carbon and Energy Modelling",
+      25
     ],
     [
-      "Carbon and Energy Modelling",
-      22
+      "Additional GIS Support Services",
+      23
     ],
     [
       "Site Selection, Logistics & Routing",
@@ -35,11 +35,7 @@
     ],
     [
       "Additional GIS Services",
-      5
-    ],
-    [
-      "Carbon & Energy Modelling",
-      3
+      4
     ]
   ],
   "geojson": {
@@ -47,7 +43,7 @@
       {
         "layer": "MunicipalLevelPoints.geojson",
         "featureCount": 53,
-        "matchedFeatureCount": 53,
+        "matchedFeatureCount": 46,
         "output": "data/processed/geojson/MunicipalLevelPoints.geojson"
       },
       {
@@ -77,7 +73,7 @@
       {
         "layer": "RegionalLevelPoints.geojson",
         "featureCount": 28,
-        "matchedFeatureCount": 26,
+        "matchedFeatureCount": 27,
         "output": "data/processed/geojson/RegionalLevelPoints.geojson"
       },
       {
@@ -87,28 +83,13 @@
         "output": "data/processed/geojson/RegionalLevelPolygons.geojson"
       }
     ],
-    "geojsonKeyCount": 155,
+    "geojsonKeyCount": 117,
     "missingGeojsonKeys": [
-      "Babbitt - Minnesota",
-      "Capital Regional District",
-      "Ladysmith - British Columbia",
-      "Mazatl?n",
-      "Nanaimo Regional District - British Columbia",
-      "Squamish Lillouet Regional District",
-      "Victoria - British Columnbia"
+      "Babbitt - Minnesota"
     ]
   },
   "missingPolygons": {
     "Regional": [
-      {
-        "polygonKey": "",
-        "displayName": "Capital Regional District",
-        "missingFrom": "RegionalLevelPolygons.geojson",
-        "issue": "missing polygon key",
-        "projectNumbers": [
-          "23047"
-        ]
-      },
       {
         "polygonKey": "",
         "displayName": "Ciudad de Mexico",
@@ -120,20 +101,11 @@
       },
       {
         "polygonKey": "",
-        "displayName": "Mazatl?n",
+        "displayName": "Mazatlan",
         "missingFrom": "RegionalLevelPolygons.geojson",
         "issue": "missing polygon key",
         "projectNumbers": [
           "21002"
-        ]
-      },
-      {
-        "polygonKey": "",
-        "displayName": "Metro Vancouver Regional District - British Columbia",
-        "missingFrom": "RegionalLevelPolygons.geojson",
-        "issue": "missing polygon key",
-        "projectNumbers": [
-          "21009"
         ]
       },
       {
@@ -143,15 +115,6 @@
         "issue": "missing polygon key",
         "projectNumbers": [
           "18030"
-        ]
-      },
-      {
-        "polygonKey": "",
-        "displayName": "St. Louis - Minnesota",
-        "missingFrom": "RegionalLevelPolygons.geojson",
-        "issue": "missing polygon key",
-        "projectNumbers": [
-          "19013"
         ]
       }
     ],
@@ -208,15 +171,6 @@
         "issue": "missing polygon key",
         "projectNumbers": [
           "17059"
-        ]
-      },
-      {
-        "polygonKey": "Mazatl?n",
-        "displayName": "Mazatl?n",
-        "missingFrom": "MunicipalLevelPolygons.geojson",
-        "issue": "polygon key not found",
-        "projectNumbers": [
-          "21002"
         ]
       },
       {
