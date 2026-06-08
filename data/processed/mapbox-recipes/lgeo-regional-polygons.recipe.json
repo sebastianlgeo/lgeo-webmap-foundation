@@ -1,0 +1,10 @@
+{
+    "version":  1,
+    "layers":  {
+                   "RegionalLevelPolygons":  {
+                                                 "source":  "mapbox://tileset-source/lickergeospatial/lgeo-regional-polygons-src",
+                                                 "minzoom":  0,
+                                                 "maxzoom":  10
+                                             }
+               }
+}

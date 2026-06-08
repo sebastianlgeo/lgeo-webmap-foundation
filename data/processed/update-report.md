@@ -1,6 +1,6 @@
 # Webmap Data Update Report
 
-Generated: 2026-06-08T18:21:46.082004+00:00
+Generated: 2026-06-08T18:36:00.134398+00:00
 Public projects: 244
 Suppressed projects skipped: 38
 Geography lookup keys: 109
@@ -12,7 +12,7 @@ Geography lookup keys: 109
 - NationalLevelPoints.geojson: 3 matched / 3 features
 - ProvincialLevelPoints.geojson: 10 matched / 10 features
 - ProvincialLevelPolygons.geojson: 8 matched / 8 features
-- RegionalLevelPoints.geojson: 43 matched / 44 features
+- RegionalLevelPoints.geojson: 27 matched / 28 features
 - RegionalLevelPolygons.geojson: 26 matched / 39 features
 
 ## Geography Keys Missing From GeoJSON

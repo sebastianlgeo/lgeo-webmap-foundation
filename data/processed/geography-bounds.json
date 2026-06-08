@@ -5413,25 +5413,6 @@
       "preferredScale": "regional",
       "features": [
         {
-          "layerId": "RegionalLevelPoints",
-          "kind": "point",
-          "scale": "regional",
-          "bounds": [
-            [
-              -119.42862567202229,
-              49.95292836294242
-            ],
-            [
-              -119.42862567202229,
-              49.95292836294242
-            ]
-          ],
-          "center": [
-            -119.42862567202229,
-            49.95292836294242
-          ]
-        },
-        {
           "layerId": "RegionalLevelPolygons",
           "kind": "polygon",
           "scale": "regional",
@@ -5472,25 +5453,6 @@
       "preferredKind": "polygon",
       "preferredScale": "regional",
       "features": [
-        {
-          "layerId": "RegionalLevelPoints",
-          "kind": "point",
-          "scale": "regional",
-          "bounds": [
-            [
-              -121.90772242258589,
-              49.57390766818862
-            ],
-            [
-              -121.90772242258589,
-              49.57390766818862
-            ]
-          ],
-          "center": [
-            -121.90772242258589,
-            49.57390766818862
-          ]
-        },
         {
           "layerId": "RegionalLevelPolygons",
           "kind": "polygon",
@@ -5533,25 +5495,6 @@
       "preferredScale": "regional",
       "features": [
         {
-          "layerId": "RegionalLevelPoints",
-          "kind": "point",
-          "scale": "regional",
-          "bounds": [
-            [
-              -123.06143133092522,
-              49.28601329104162
-            ],
-            [
-              -123.06143133092522,
-              49.28601329104162
-            ]
-          ],
-          "center": [
-            -123.06143133092522,
-            49.28601329104162
-          ]
-        },
-        {
           "layerId": "RegionalLevelPolygons",
           "kind": "polygon",
           "scale": "regional",
@@ -5592,25 +5535,6 @@
       "preferredKind": "polygon",
       "preferredScale": "regional",
       "features": [
-        {
-          "layerId": "RegionalLevelPoints",
-          "kind": "point",
-          "scale": "regional",
-          "bounds": [
-            [
-              -120.73256576252771,
-              51.24341046562145
-            ],
-            [
-              -120.73256576252771,
-              51.24341046562145
-            ]
-          ],
-          "center": [
-            -120.73256576252771,
-            51.24341046562145
-          ]
-        },
         {
           "layerId": "RegionalLevelPolygons",
           "kind": "polygon",
@@ -5653,25 +5577,6 @@
       "preferredScale": "regional",
       "features": [
         {
-          "layerId": "RegionalLevelPoints",
-          "kind": "point",
-          "scale": "regional",
-          "bounds": [
-            [
-              -122.818677333333,
-              50.346608107692994
-            ],
-            [
-              -122.818677333333,
-              50.346608107692994
-            ]
-          ],
-          "center": [
-            -122.818677333333,
-            50.346608107692994
-          ]
-        },
-        {
           "layerId": "RegionalLevelPolygons",
           "kind": "polygon",
           "scale": "regional",
@@ -5712,25 +5617,6 @@
       "preferredKind": "polygon",
       "preferredScale": "regional",
       "features": [
-        {
-          "layerId": "RegionalLevelPoints",
-          "kind": "point",
-          "scale": "regional",
-          "bounds": [
-            [
-              -118.96327671937391,
-              50.374626662626554
-            ],
-            [
-              -118.96327671937391,
-              50.374626662626554
-            ]
-          ],
-          "center": [
-            -118.96327671937391,
-            50.374626662626554
-          ]
-        },
         {
           "layerId": "RegionalLevelPolygons",
           "kind": "polygon",
@@ -5773,25 +5659,6 @@
       "preferredScale": "regional",
       "features": [
         {
-          "layerId": "RegionalLevelPoints",
-          "kind": "point",
-          "scale": "regional",
-          "bounds": [
-            [
-              -123.75592094005908,
-              48.62093071666462
-            ],
-            [
-              -123.75592094005908,
-              48.62093071666462
-            ]
-          ],
-          "center": [
-            -123.75592094005908,
-            48.62093071666462
-          ]
-        },
-        {
           "layerId": "RegionalLevelPolygons",
           "kind": "polygon",
           "scale": "regional",
@@ -5832,25 +5699,6 @@
       "preferredKind": "polygon",
       "preferredScale": "regional",
       "features": [
-        {
-          "layerId": "RegionalLevelPoints",
-          "kind": "point",
-          "scale": "regional",
-          "bounds": [
-            [
-              -125.0161927716158,
-              49.6632732392951
-            ],
-            [
-              -125.0161927716158,
-              49.6632732392951
-            ]
-          ],
-          "center": [
-            -125.0161927716158,
-            49.6632732392951
-          ]
-        },
         {
           "layerId": "RegionalLevelPolygons",
           "kind": "polygon",
@@ -5893,25 +5741,6 @@
       "preferredScale": "regional",
       "features": [
         {
-          "layerId": "RegionalLevelPoints",
-          "kind": "point",
-          "scale": "regional",
-          "bounds": [
-            [
-              -124.0961949732052,
-              48.79322288744662
-            ],
-            [
-              -124.0961949732052,
-              48.79322288744662
-            ]
-          ],
-          "center": [
-            -124.0961949732052,
-            48.79322288744662
-          ]
-        },
-        {
           "layerId": "RegionalLevelPolygons",
           "kind": "polygon",
           "scale": "regional",
@@ -5952,25 +5781,6 @@
       "preferredKind": "polygon",
       "preferredScale": "regional",
       "features": [
-        {
-          "layerId": "RegionalLevelPoints",
-          "kind": "point",
-          "scale": "regional",
-          "bounds": [
-            [
-              -117.98267517940894,
-              51.44935533736209
-            ],
-            [
-              -117.98267517940894,
-              51.44935533736209
-            ]
-          ],
-          "center": [
-            -117.98267517940894,
-            51.44935533736209
-          ]
-        },
         {
           "layerId": "RegionalLevelPolygons",
           "kind": "polygon",
@@ -6013,25 +5823,6 @@
       "preferredScale": "regional",
       "features": [
         {
-          "layerId": "RegionalLevelPoints",
-          "kind": "point",
-          "scale": "regional",
-          "bounds": [
-            [
-              -115.42556864019002,
-              50.1665576534442
-            ],
-            [
-              -115.42556864019002,
-              50.1665576534442
-            ]
-          ],
-          "center": [
-            -115.42556864019002,
-            50.1665576534442
-          ]
-        },
-        {
           "layerId": "RegionalLevelPolygons",
           "kind": "polygon",
           "scale": "regional",
@@ -6072,25 +5863,6 @@
       "preferredKind": "polygon",
       "preferredScale": "regional",
       "features": [
-        {
-          "layerId": "RegionalLevelPoints",
-          "kind": "point",
-          "scale": "regional",
-          "bounds": [
-            [
-              -124.19876985581229,
-              49.22799894755026
-            ],
-            [
-              -124.19876985581229,
-              49.22799894755026
-            ]
-          ],
-          "center": [
-            -124.19876985581229,
-            49.22799894755026
-          ]
-        },
         {
           "layerId": "RegionalLevelPolygons",
           "kind": "polygon",
@@ -6133,25 +5905,6 @@
       "preferredScale": "regional",
       "features": [
         {
-          "layerId": "RegionalLevelPoints",
-          "kind": "point",
-          "scale": "regional",
-          "bounds": [
-            [
-              -124.36071220904745,
-              50.113359973068626
-            ],
-            [
-              -124.36071220904745,
-              50.113359973068626
-            ]
-          ],
-          "center": [
-            -124.36071220904745,
-            50.113359973068626
-          ]
-        },
-        {
           "layerId": "RegionalLevelPolygons",
           "kind": "polygon",
           "scale": "regional",
@@ -6192,25 +5945,6 @@
       "preferredKind": "polygon",
       "preferredScale": "regional",
       "features": [
-        {
-          "layerId": "RegionalLevelPoints",
-          "kind": "point",
-          "scale": "regional",
-          "bounds": [
-            [
-              -123.76550649504497,
-              49.83207496789551
-            ],
-            [
-              -123.76550649504497,
-              49.83207496789551
-            ]
-          ],
-          "center": [
-            -123.76550649504497,
-            49.83207496789551
-          ]
-        },
         {
           "layerId": "RegionalLevelPolygons",
           "kind": "polygon",
@@ -6253,25 +5987,6 @@
       "preferredScale": "regional",
       "features": [
         {
-          "layerId": "RegionalLevelPoints",
-          "kind": "point",
-          "scale": "regional",
-          "bounds": [
-            [
-              -125.83748608510916,
-              50.40259638689831
-            ],
-            [
-              -125.83748608510916,
-              50.40259638689831
-            ]
-          ],
-          "center": [
-            -125.83748608510916,
-            50.40259638689831
-          ]
-        },
-        {
           "layerId": "RegionalLevelPolygons",
           "kind": "polygon",
           "scale": "regional",
@@ -6312,25 +6027,6 @@
       "preferredKind": "polygon",
       "preferredScale": "regional",
       "features": [
-        {
-          "layerId": "RegionalLevelPoints",
-          "kind": "point",
-          "scale": "regional",
-          "bounds": [
-            [
-              -117.26199557354383,
-              50.03263905728241
-            ],
-            [
-              -117.26199557354383,
-              50.03263905728241
-            ]
-          ],
-          "center": [
-            -117.26199557354383,
-            50.03263905728241
-          ]
-        },
         {
           "layerId": "RegionalLevelPolygons",
           "kind": "polygon",
@@ -6495,9 +6191,6 @@
     ],
     "RegionalLevelPoints": [
       "Boulder - Colorado",
-      "CAPRD",
-      "CMXRD",
-      "CVRD",
       "Capital Regional District - British Columbia",
       "City Of Calgary - Alberta",
       "City Of Toronto - Ontario",
@@ -6505,22 +6198,13 @@
       "Clear Creek - Colorado",
       "Comox Valley Regional District - British Columbia",
       "Cowichan Valley Regional District - British Columbia",
-      "FVRD",
       "Foothills County - Alberta",
       "Fraser Valley Regional District - British Columbia",
       "Halifax - Nova Scotia",
-      "MVRD",
       "Mazatlan",
       "Metro Vancouver Regional District - British Columbia",
       "North Slave Region - Northwest Territories",
-      "PORRD",
       "Powell River Regional District - British Columbia",
-      "RDCK",
-      "RDCO",
-      "RDCSH",
-      "RDEK",
-      "RDN",
-      "RDNO",
       "Regional District of Central Kootenay - British Columbia",
       "Regional District of Central Okanagan - British Columbia",
       "Regional District of Columbia-Shuswap - British Columbia",
@@ -6528,14 +6212,10 @@
       "Regional District of Nanaimo - British Columbia",
       "Regional District of North Okanagan - British Columbia",
       "Regional Municipality Of York - Ontario",
-      "SCRD",
-      "SLRD",
-      "STRD",
       "Squamish-Lillooet Regional District - British Columbia",
       "St. Louis - Minnesota",
       "Strathcona Regional District - British Columbia",
       "Sunshine Coast Regional District - British Columbia",
-      "TNRD",
       "Thompson Nicola Regional District - British Columbia",
       "York - New Brunswick"
     ],

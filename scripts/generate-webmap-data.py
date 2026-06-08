@@ -432,7 +432,7 @@ def update_geojson_layers(lookup: dict[str, dict[str, object]]) -> dict[str, obj
             }
         )
 
-    synthesize_missing_point_features(report_layers, geojson_keys)
+    synthesize_missing_point_features(report_layers, geojson_keys, lookup)
 
     missing_geojson_keys = sorted(key for key in lookup if key and key not in geojson_keys)
     return {
@@ -442,7 +442,11 @@ def update_geojson_layers(lookup: dict[str, dict[str, object]]) -> dict[str, obj
     }
 
 
-def synthesize_missing_point_features(report_layers: list[dict[str, object]], geojson_keys: set[str]) -> None:
+def synthesize_missing_point_features(
+    report_layers: list[dict[str, object]],
+    geojson_keys: set[str],
+    lookup: dict[str, dict[str, object]],
+) -> None:
     for point_layer_name, polygon_layer_name in POINT_POLYGON_LAYER_PAIRS:
         point_path = PROCESSED_GEOJSON_DIR / point_layer_name
         polygon_path = PROCESSED_GEOJSON_DIR / polygon_layer_name
@@ -459,6 +463,11 @@ def synthesize_missing_point_features(report_layers: list[dict[str, object]], ge
             for feature in point_features
             if clean(feature.get("properties", {}).get("NameKey"))
         }
+        existing_project_sets = {
+            project_number_set(lookup.get(name_key))
+            for name_key in existing_point_keys
+        }
+        existing_project_sets.discard(frozenset())
         max_fid = max(
             [int(feature.get("properties", {}).get("FID") or 0) for feature in point_features]
             or [0]
@@ -470,6 +479,8 @@ def synthesize_missing_point_features(report_layers: list[dict[str, object]], ge
             name_key = clean(properties.get("NameKey"))
             project_count = int(properties.get("ProjectCount") or 0)
             if not name_key or project_count <= 0 or name_key in existing_point_keys:
+                continue
+            if project_number_set(lookup.get(name_key)) in existing_project_sets:
                 continue
 
             bounds = bounds_for_geometry(polygon_feature.get("geometry", {}))
@@ -512,6 +523,19 @@ def synthesize_missing_point_features(report_layers: list[dict[str, object]], ge
                 layer_report["matchedFeatureCount"] = int(layer_report["matchedFeatureCount"]) + generated_count
                 layer_report["generatedPointCount"] = generated_count
                 break
+
+
+def project_number_set(entry: dict[str, object] | None) -> frozenset[str]:
+    if not entry:
+        return frozenset()
+    projects = entry.get("projects", [])
+    if not isinstance(projects, list):
+        return frozenset()
+    return frozenset(
+        clean(project.get("projectNumber"))
+        for project in projects
+        if isinstance(project, dict) and clean(project.get("projectNumber"))
+    )
 
 
 def collect_geometry_coordinates(value: object, output: list[list[float]]) -> None:

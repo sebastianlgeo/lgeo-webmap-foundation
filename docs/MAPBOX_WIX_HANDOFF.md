@@ -99,10 +99,28 @@ secrets/mapbox.env
 That file is ignored by Git. Use `secrets/mapbox.env.example` as the template. In PowerShell, load it into the current session with:
 
 ```powershell
-.\scripts\load-mapbox-env.ps1
+powershell -ExecutionPolicy Bypass -File .\scripts\load-mapbox-env.ps1
 ```
 
 The loader sets both `MAPBOX_SECRET_TOKEN` and `MAPBOX_ACCESS_TOKEN` for tools that expect the standard Mapbox environment variable.
+
+To upload all generated point and polygon layers to stable Mapbox tilesets, run:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\upload-mapbox-tilesets.ps1
+```
+
+The script publishes these tilesets:
+
+- `lickergeospatial.lgeo-national-points`
+- `lickergeospatial.lgeo-provincial-points`
+- `lickergeospatial.lgeo-regional-points`
+- `lickergeospatial.lgeo-municipal-points`
+- `lickergeospatial.lgeo-provincial-polygons`
+- `lickergeospatial.lgeo-regional-polygons`
+- `lickergeospatial.lgeo-municipal-polygons`
+
+The source layer names are the app layer IDs, such as `RegionalLevelPoints` and `MunicipalLevelPolygons`.
 
 Recommended tileset candidates:
 

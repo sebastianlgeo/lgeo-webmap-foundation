@@ -1,0 +1,10 @@
+{
+    "version":  1,
+    "layers":  {
+                   "NationalLevelPoints":  {
+                                               "source":  "mapbox://tileset-source/lickergeospatial/lgeo-national-points-src",
+                                               "minzoom":  0,
+                                               "maxzoom":  6
+                                           }
+               }
+}

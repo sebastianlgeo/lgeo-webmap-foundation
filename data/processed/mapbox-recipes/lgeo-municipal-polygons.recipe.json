@@ -1,0 +1,10 @@
+{
+    "version":  1,
+    "layers":  {
+                   "MunicipalLevelPolygons":  {
+                                                  "source":  "mapbox://tileset-source/lickergeospatial/lgeo-municipal-polygons-src",
+                                                  "minzoom":  0,
+                                                  "maxzoom":  14
+                                              }
+               }
+}

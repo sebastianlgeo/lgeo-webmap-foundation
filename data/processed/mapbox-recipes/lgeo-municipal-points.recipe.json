@@ -1,0 +1,10 @@
+{
+    "version":  1,
+    "layers":  {
+                   "MunicipalLevelPoints":  {
+                                                "source":  "mapbox://tileset-source/lickergeospatial/lgeo-municipal-points-src",
+                                                "minzoom":  0,
+                                                "maxzoom":  14
+                                            }
+               }
+}

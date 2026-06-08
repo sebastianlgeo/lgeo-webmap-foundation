@@ -1,0 +1,10 @@
+{
+    "version":  1,
+    "layers":  {
+                   "ProvincialLevelPolygons":  {
+                                                   "source":  "mapbox://tileset-source/lickergeospatial/lgeo-provincial-polygons-src",
+                                                   "minzoom":  0,
+                                                   "maxzoom":  8
+                                               }
+               }
+}

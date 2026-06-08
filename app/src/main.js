@@ -865,10 +865,50 @@
         : [];
     if (!lowerScales.length) return true;
 
-    return filteredProjects.some((projectSummary) => {
+    const hasNamedLowerReplacement = filteredProjects.some((projectSummary) => {
       const project = state.projectsByNumber.get(String(projectSummary.projectNumber || ""));
       return project && hasFeatureForProjectAtAnyLayerScale(project, lowerScales, lowerScales, kind);
     });
+    if (hasNamedLowerReplacement) return true;
+
+    return hasEquivalentLowerScaleFeature(filteredProjects, lowerScales, kind);
+  }
+
+  function hasEquivalentLowerScaleFeature(filteredProjects, lowerScales, kind) {
+    const targetProjects = projectNumberSet(filteredProjects);
+    if (!targetProjects.size) return false;
+
+    return Object.values(state.geographyIndex).some((entry) => {
+      if (!entry || !Array.isArray(entry.scales) || !Array.isArray(entry.projects)) return false;
+      if (!entry.scales.some((scale) => lowerScales.includes(scale))) return false;
+
+      const entryName = entry.geographyName;
+      if (!hasFeatureAtAnyLayerScale(entryName, lowerScales, kind)) return false;
+      return sameProjectNumberSet(targetProjects, projectNumberSet(entry.projects));
+    });
+  }
+
+  function hasFeatureAtAnyLayerScale(nameKey, layerScales, kind) {
+    const normalizedName = normalizeGeography(nameKey);
+    return config.layers
+      .filter((layer) => layer.kind === kind && layerScales.includes(capitalize(layer.scale)))
+      .some((layer) => (state.featureNameSets.get(layer.id) || new Set()).has(normalizedName));
+  }
+
+  function projectNumberSet(projects) {
+    return new Set(
+      (projects || [])
+        .map((project) => String(project.projectNumber || ""))
+        .filter(Boolean)
+    );
+  }
+
+  function sameProjectNumberSet(left, right) {
+    if (left.size !== right.size) return false;
+    for (const value of left) {
+      if (!right.has(value)) return false;
+    }
+    return true;
   }
 
   function shouldPromoteFromProvinceFromIndex(nameKey, filteredProjects, kind) {
@@ -1791,25 +1831,22 @@
     }
 
     if (!state.map.getLayer(layerId)) {
-      state.map.addLayer(
-        {
-          id: layerId,
-          type: "symbol",
-          source: sourceId,
-          minzoom: Number(config.office.minzoom || 9),
-          layout: {
-            "icon-image": imageId,
-            "icon-size": Number(config.office.iconSize || 0.26),
-            "icon-anchor": "bottom",
-            "icon-allow-overlap": true,
-            "icon-ignore-placement": true
-          },
-          paint: {
-            "icon-opacity": Number(config.office.iconOpacity || 0.78)
-          }
+      state.map.addLayer({
+        id: layerId,
+        type: "symbol",
+        source: sourceId,
+        minzoom: Number(config.office.minzoom || 9),
+        layout: {
+          "icon-image": imageId,
+          "icon-size": Number(config.office.iconSize || 0.26),
+          "icon-anchor": "bottom",
+          "icon-allow-overlap": true,
+          "icon-ignore-placement": true
         },
-        firstMapLabelLayerId()
-      );
+        paint: {
+          "icon-opacity": Number(config.office.iconOpacity || 0.78)
+        }
+      });
     }
 
     bindOfficeLayerEvents(layerId);
@@ -1831,15 +1868,6 @@
         }
       ]
     };
-  }
-
-  function firstMapLabelLayerId() {
-    const layers = state.map.getStyle().layers || [];
-    const labelLayer = layers.find((layer) => {
-      const layout = layer.layout || {};
-      return layer.type === "symbol" && layout["text-field"];
-    });
-    return labelLayer && labelLayer.id;
   }
 
   function bindOfficeLayerEvents(layerId) {

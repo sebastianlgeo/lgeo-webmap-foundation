@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T18:21:46.082004+00:00",
+  "generatedAt": "2026-06-08T18:36:00.134398+00:00",
   "sourceCsv": "data/source/projects.csv",
   "projectCount": 244,
   "suppressedProjectCount": 38,
@@ -73,10 +73,9 @@
       },
       {
         "layer": "RegionalLevelPoints.geojson",
-        "featureCount": 44,
-        "matchedFeatureCount": 43,
-        "output": "data/processed/geojson/RegionalLevelPoints.geojson",
-        "generatedPointCount": 16
+        "featureCount": 28,
+        "matchedFeatureCount": 27,
+        "output": "data/processed/geojson/RegionalLevelPoints.geojson"
       },
       {
         "layer": "RegionalLevelPolygons.geojson",
