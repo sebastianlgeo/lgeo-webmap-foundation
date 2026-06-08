@@ -1849,7 +1849,7 @@
     return `
       <div class="office-popup">
         <h3 class="popup-title">Oh, hi there!</h3>
-        <p class="office-popup-copy">You found our office! As a reward, here are our favorite geography games:</p>
+        <p class="office-popup-copy">You found our office! As a reward, here are our favourite geography games:</p>
         <div class="office-game-list">${gameLinks}</div>
       </div>
     `;
