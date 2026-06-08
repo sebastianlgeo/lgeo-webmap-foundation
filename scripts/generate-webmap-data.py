@@ -668,9 +668,9 @@ def polygon_feature_keys(layer_name: str) -> set[str]:
         return set()
     data = json.loads(path.read_text(encoding="utf-8"))
     return {
-        clean(feature.get("properties", {}).get("NameKey"))
+        normalize_geography_key(feature.get("properties", {}).get("NameKey"))
         for feature in data.get("features", [])
-        if clean(feature.get("properties", {}).get("NameKey"))
+        if normalize_geography_key(feature.get("properties", {}).get("NameKey"))
     }
 
 
@@ -698,9 +698,13 @@ def build_missing_polygon_report(projects: list[dict[str, object]]) -> dict[str,
             geography_name = clean(geographies.get(scale))
             if not key and not geography_name:
                 continue
-            if key and key in layers[scale]["keys"]:
+            normalized_key = normalize_geography_key(key)
+            normalized_geography_name = normalize_geography_key(geography_name)
+            if normalized_key and normalized_key in layers[scale]["keys"]:
                 continue
-            report_key = key or geography_name
+            if not normalized_key and normalized_geography_name in layers[scale]["keys"]:
+                continue
+            report_key = normalized_key or normalized_geography_name
             entry = missing[scale].setdefault(
                 report_key,
                 {

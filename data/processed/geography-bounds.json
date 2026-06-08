@@ -3537,20 +3537,20 @@
       "name": "Distrito Federal",
       "bounds": [
         [
-          -99.08794199173241,
-          19.238319585788474
+          -99.36492420399998,
+          19.048236664000058
         ],
         [
-          -99.08794199173241,
-          19.238319585788474
+          -98.94030281199997,
+          19.592757280000058
         ]
       ],
       "center": [
-        -99.08794199173241,
-        19.238319585788474
+        -99.15261350799997,
+        19.320496972000058
       ],
-      "preferredLayerId": "ProvincialLevelPoints",
-      "preferredKind": "point",
+      "preferredLayerId": "ProvincialLevelPolygons",
+      "preferredKind": "polygon",
       "preferredScale": "provincial",
       "features": [
         {
@@ -3571,6 +3571,25 @@
             -99.08794199173241,
             19.238319585788474
           ]
+        },
+        {
+          "layerId": "ProvincialLevelPolygons",
+          "kind": "polygon",
+          "scale": "provincial",
+          "bounds": [
+            [
+              -99.36492420399998,
+              19.048236664000058
+            ],
+            [
+              -98.94030281199997,
+              19.592757280000058
+            ]
+          ],
+          "center": [
+            -99.15261350799997,
+            19.320496972000058
+          ]
         }
       ]
     },
@@ -3578,20 +3597,20 @@
       "name": "Sinaloa",
       "bounds": [
         [
-          -107.49266323316726,
-          24.992551510180135
+          -109.44769260199996,
+          22.472333965000075
         ],
         [
-          -107.49266323316726,
-          24.992551510180135
+          -105.39224538999997,
+          27.04204799400003
         ]
       ],
       "center": [
-        -107.49266323316726,
-        24.992551510180135
+        -107.41996899599997,
+        24.757190979500052
       ],
-      "preferredLayerId": "ProvincialLevelPoints",
-      "preferredKind": "point",
+      "preferredLayerId": "ProvincialLevelPolygons",
+      "preferredKind": "polygon",
       "preferredScale": "provincial",
       "features": [
         {
@@ -3611,6 +3630,25 @@
           "center": [
             -107.49266323316726,
             24.992551510180135
+          ]
+        },
+        {
+          "layerId": "ProvincialLevelPolygons",
+          "kind": "polygon",
+          "scale": "provincial",
+          "bounds": [
+            [
+              -109.44769260199996,
+              22.472333965000075
+            ],
+            [
+              -105.39224538999997,
+              27.04204799400003
+            ]
+          ],
+          "center": [
+            -107.41996899599997,
+            24.757190979500052
           ]
         }
       ]
@@ -5153,20 +5191,20 @@
       "name": "Ciudad de Mexico",
       "bounds": [
         [
-          -99.10371891336797,
-          19.451089278590302
+          -99.36492420399998,
+          19.048236664000058
         ],
         [
-          -99.10371891336797,
-          19.451089278590302
+          -98.94030281199997,
+          19.592757280000058
         ]
       ],
       "center": [
-        -99.10371891336797,
-        19.451089278590302
+        -99.15261350799997,
+        19.320496972000058
       ],
-      "preferredLayerId": "RegionalLevelPoints",
-      "preferredKind": "point",
+      "preferredLayerId": "RegionalLevelPolygons",
+      "preferredKind": "polygon",
       "preferredScale": "regional",
       "features": [
         {
@@ -5186,6 +5224,25 @@
           "center": [
             -99.10371891336797,
             19.451089278590302
+          ]
+        },
+        {
+          "layerId": "RegionalLevelPolygons",
+          "kind": "polygon",
+          "scale": "regional",
+          "bounds": [
+            [
+              -99.36492420399998,
+              19.048236664000058
+            ],
+            [
+              -98.94030281199997,
+              19.592757280000058
+            ]
+          ],
+          "center": [
+            -99.15261350799997,
+            19.320496972000058
           ]
         }
       ]
@@ -5295,20 +5352,20 @@
       "name": "Mazatlan",
       "bounds": [
         [
-          -106.41318581117979,
-          23.258369763785172
+          -106.61836928582298,
+          23.068443206418575
         ],
         [
-          -106.41318581117979,
-          23.258369763785172
+          -105.92493651234867,
+          23.891156966302884
         ]
       ],
       "center": [
-        -106.41318581117979,
-        23.258369763785172
+        -106.27165289908582,
+        23.47980008636073
       ],
-      "preferredLayerId": "RegionalLevelPoints",
-      "preferredKind": "point",
+      "preferredLayerId": "RegionalLevelPolygons",
+      "preferredKind": "polygon",
       "preferredScale": "regional",
       "features": [
         {
@@ -5328,6 +5385,25 @@
           "center": [
             -106.41318581117979,
             23.258369763785172
+          ]
+        },
+        {
+          "layerId": "RegionalLevelPolygons",
+          "kind": "polygon",
+          "scale": "regional",
+          "bounds": [
+            [
+              -106.61836928582298,
+              23.068443206418575
+            ],
+            [
+              -105.92493651234867,
+              23.891156966302884
+            ]
+          ],
+          "center": [
+            -106.27165289908582,
+            23.47980008636073
           ]
         }
       ]
@@ -6121,11 +6197,13 @@
       "Alberta",
       "British Columbia",
       "Colorado",
+      "Distrito Federal",
       "Minnesota",
       "New Brunswick",
       "Northwest Territories",
       "Nova Scotia",
-      "Ontario"
+      "Ontario",
+      "Sinaloa"
     ],
     "RegionalLevelPoints": [
       "Boulder - Colorado",
@@ -6164,11 +6242,13 @@
       "CVRD",
       "City Of Calgary - Alberta",
       "City Of Toronto - Ontario",
+      "Ciudad de Mexico",
       "Clear Creek - Colorado",
       "FVRD",
       "Foothills County - Alberta",
       "Halifax - Nova Scotia",
       "MVRD",
+      "Mazatlan",
       "PORRD",
       "RDCK",
       "RDCO",

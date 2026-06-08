@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T20:49:08.418632+00:00",
+  "generatedAt": "2026-06-08T23:17:58.462611+00:00",
   "sourceCsv": "data/source/projects.csv",
   "projectCount": 244,
   "suppressedProjectCount": 38,
@@ -66,8 +66,8 @@
       },
       {
         "layer": "ProvincialLevelPolygons.geojson",
-        "featureCount": 8,
-        "matchedFeatureCount": 8,
+        "featureCount": 10,
+        "matchedFeatureCount": 10,
         "output": "data/processed/geojson/ProvincialLevelPolygons.geojson"
       },
       {
@@ -78,8 +78,8 @@
       },
       {
         "layer": "RegionalLevelPolygons.geojson",
-        "featureCount": 39,
-        "matchedFeatureCount": 26,
+        "featureCount": 41,
+        "matchedFeatureCount": 28,
         "output": "data/processed/geojson/RegionalLevelPolygons.geojson"
       }
     ],
@@ -90,24 +90,6 @@
   },
   "missingPolygons": {
     "Regional": [
-      {
-        "polygonKey": "",
-        "displayName": "Ciudad de Mexico",
-        "missingFrom": "RegionalLevelPolygons.geojson",
-        "issue": "missing polygon key",
-        "projectNumbers": [
-          "18014"
-        ]
-      },
-      {
-        "polygonKey": "",
-        "displayName": "Mazatlan",
-        "missingFrom": "RegionalLevelPolygons.geojson",
-        "issue": "missing polygon key",
-        "projectNumbers": [
-          "21002"
-        ]
-      },
       {
         "polygonKey": "",
         "displayName": "North Slave Region - Northwest Territories",
@@ -148,15 +130,6 @@
       },
       {
         "polygonKey": "",
-        "displayName": "Fredericton - New Brunswick",
-        "missingFrom": "MunicipalLevelPolygons.geojson",
-        "issue": "missing polygon key",
-        "projectNumbers": [
-          "23045"
-        ]
-      },
-      {
-        "polygonKey": "",
         "displayName": "Halifax - Nova Scotia",
         "missingFrom": "MunicipalLevelPolygons.geojson",
         "issue": "missing polygon key",
@@ -171,16 +144,6 @@
         "issue": "missing polygon key",
         "projectNumbers": [
           "17059"
-        ]
-      },
-      {
-        "polygonKey": "Langley - Township",
-        "displayName": "Langley - Township",
-        "missingFrom": "MunicipalLevelPolygons.geojson",
-        "issue": "polygon key not found",
-        "projectNumbers": [
-          "19019",
-          "22066"
         ]
       },
       {

@@ -10,6 +10,7 @@
 - `data/geojson/raw/` - local-only editable GeoJSON exports for point/polygon geometry.
 - `data/processed/` - generated files used by the preview app and future website.
 - `scripts/generate-webmap-data.py` - project/data generator.
+- `scripts/import-missing-boundaries.py` - repeatable importer for selected missing admin polygons.
 - `docs/` - update workflow, data model, Mapbox/Wix notes, and roadmap.
 
 ## Daily Update Loop
@@ -29,13 +30,15 @@
    powershell -ExecutionPolicy Bypass -File .\scripts\upload-mapbox-tilesets.ps1
    ```
 
-6. Preview locally:
+6. If a needed admin polygon is missing, update `scripts/import-missing-boundaries.py`, run it, then repeat steps 3-5.
+
+7. Preview locally:
 
    ```powershell
    C:\Users\sebas\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe -m http.server 5173
    ```
 
-7. Open `http://localhost:5173/app/`.
+8. Open `http://localhost:5173/app/`.
 
 ## Current State
 
