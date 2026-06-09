@@ -1,7 +1,9 @@
 param(
   [string]$EnvPath = (Join-Path (Split-Path -Parent $PSScriptRoot) 'secrets/mapbox.env'),
   [string]$TilesetsExe = 'C:\Users\sebas\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Scripts\tilesets.exe',
-  [string[]]$LayerIds = @()
+  [string[]]$LayerIds = @(),
+  [switch]$WaitForCompletion,
+  [int]$WaitTimeoutSeconds = 600
 )
 
 $ErrorActionPreference = 'Stop'
@@ -27,10 +29,20 @@ $layers = @(
 if ($LayerIds.Count) {
   $requested = [System.Collections.Generic.HashSet[string]]::new([StringComparer]::OrdinalIgnoreCase)
   foreach ($layerId in $LayerIds) {
-    [void]$requested.Add($layerId)
+    foreach ($item in ($layerId -split ',')) {
+      $trimmed = $item.Trim()
+      if ($trimmed) {
+        [void]$requested.Add($trimmed)
+      }
+    }
   }
   $layers = @($layers | Where-Object { $requested.Contains($_.id) -or $requested.Contains($_.handle) })
+  if (-not $layers.Count) {
+    throw "No Mapbox layers matched -LayerIds: $($requested -join ', ')"
+  }
 }
+
+Write-Host "Selected Mapbox layers: $($layers.id -join ', ')"
 
 $recipeDir = Join-Path $root 'data/processed/mapbox-recipes'
 New-Item -ItemType Directory -Force -Path $recipeDir | Out-Null
@@ -48,13 +60,63 @@ function Publish-TilesetWithRetry {
       Start-Sleep -Seconds $delaySeconds
     }
 
-    & $TilesetsExe publish $TilesetId
+    $publishOutput = & $TilesetsExe publish $TilesetId 2>&1
+    $publishOutput | Write-Host
     if ($LASTEXITCODE -eq 0) {
-      return
+      $jobId = Extract-JobId -Output $publishOutput
+      return $jobId
     }
   }
 
   throw "publish failed for $TilesetId"
+}
+
+function Extract-JobId {
+  param([object[]]$Output)
+
+  foreach ($line in $Output) {
+    try {
+      $payload = $line | ConvertFrom-Json -ErrorAction Stop
+      if ($payload.jobId) {
+        return [string]$payload.jobId
+      }
+    } catch {
+      continue
+    }
+  }
+
+  return ""
+}
+
+function Wait-TilesetJob {
+  param(
+    [string]$TilesetId,
+    [string]$JobId,
+    [int]$TimeoutSeconds
+  )
+
+  if (-not $JobId) {
+    Write-Warning "Could not read a job id for $TilesetId; skipping wait."
+    return
+  }
+
+  $deadline = (Get-Date).AddSeconds($TimeoutSeconds)
+  do {
+    Start-Sleep -Seconds 12
+    $jobOutput = & $TilesetsExe job $TilesetId $JobId
+    $job = $jobOutput | ConvertFrom-Json
+    Write-Host "Job $JobId for $TilesetId is $($job.stage)"
+
+    if ($job.stage -eq "success") {
+      return
+    }
+
+    if ($job.stage -eq "failed") {
+      throw "Mapbox job $JobId for $TilesetId failed: $jobOutput"
+    }
+  } while ((Get-Date) -lt $deadline)
+
+  throw "Timed out waiting for Mapbox job $JobId for $TilesetId"
 }
 
 foreach ($layer in $layers) {
@@ -103,8 +165,18 @@ foreach ($layer in $layers) {
   }
 
   Write-Host "Publishing $tilesetId"
-  Publish-TilesetWithRetry -TilesetId $tilesetId
+  $jobId = Publish-TilesetWithRetry -TilesetId $tilesetId
+  if ($jobId) {
+    Write-Host "Queued job $jobId for $tilesetId"
+  }
+  if ($WaitForCompletion) {
+    Wait-TilesetJob -TilesetId $tilesetId -JobId $jobId -TimeoutSeconds $WaitTimeoutSeconds
+  }
   Start-Sleep -Seconds 12
 }
 
-Write-Host "All Mapbox tileset publishes have been queued."
+if ($WaitForCompletion) {
+  Write-Host "All Mapbox tileset publishes completed successfully."
+} else {
+  Write-Host "All Mapbox tileset publishes have been queued."
+}

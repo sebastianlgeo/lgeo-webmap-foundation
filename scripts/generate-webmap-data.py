@@ -90,13 +90,8 @@ PROVINCE_SUFFIXES = [
 
 GEOGRAPHY_NORMALIZATIONS: dict[str, str] = {}
 
-POINT_COORDINATE_OVERRIDES = {
-    "Alberta": [-114.25, 51.85],
-    "British Columbia": [-122.85, 49.7],
-    "Northwest Territories": [-114.38, 62.45],
-    "Ontario": [-79.65, 44.05],
-    "North Vancouver - District": [-123.0865500564, 49.3376773634],
-}
+POINT_COORDINATE_OVERRIDES_PATH = ROOT / "data/config/point-coordinate-overrides.json"
+POINT_COORDINATE_OVERRIDES: dict[str, list[float]] | None = None
 
 DISPLAY_NAME_OVERRIDES = {
     "Langley - Township": "Langley - Township",
@@ -126,6 +121,22 @@ def write_csv(path: Path, rows: list[dict[str, str]], fieldnames: list[str]) -> 
 def write_json(path: Path, payload: object) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def load_point_coordinate_overrides() -> dict[str, list[float]]:
+    if not POINT_COORDINATE_OVERRIDES_PATH.exists():
+        return {}
+
+    payload = json.loads(POINT_COORDINATE_OVERRIDES_PATH.read_text(encoding="utf-8"))
+    overrides: dict[str, list[float]] = {}
+    for name_key, coordinates in payload.items():
+        if (
+            isinstance(name_key, str)
+            and isinstance(coordinates, list)
+            and len(coordinates) == 2
+        ):
+            overrides[normalize_geography_key(name_key)] = [float(coordinates[0]), float(coordinates[1])]
+    return overrides
 
 
 def clean(value: object) -> str:
@@ -539,6 +550,9 @@ def synthesize_missing_point_features(
 
 
 def point_coordinates_for_name(name_key: str, fallback: list[float]) -> list[float]:
+    global POINT_COORDINATE_OVERRIDES
+    if POINT_COORDINATE_OVERRIDES is None:
+        POINT_COORDINATE_OVERRIDES = load_point_coordinate_overrides()
     return POINT_COORDINATE_OVERRIDES.get(name_key, fallback)
 
 

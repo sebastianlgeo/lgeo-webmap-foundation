@@ -188,7 +188,29 @@ Steps:
 
 9. Keep the original GeoJSON exports in `data/geojson/raw/` and generated outputs in `data/processed/geojson/` locally. They are ignored by Git, so back them up in a private/internal location if they become authoritative geometry edits. Mapbox tilesets should be treated as deployment artifacts, not the only source of truth.
 
-Count icon placement comes from the point layers, not the polygon layers. For production, adjust awkward count locations such as British Columbia or Alberta by moving the corresponding point features in the point source data before uploading the Mapbox tilesets. Avoid runtime pixel offsets unless they are absolutely necessary, because offsets can be harder to keep consistent across zoom levels and devices.
+Count icon placement comes from the point layers, not the polygon layers. To pin a count icon to one coordinate for every zoom tile, edit:
+
+```text
+data/config/point-coordinate-overrides.json
+```
+
+Use exact `NameKey` labels and `[longitude, latitude]` order:
+
+```json
+{
+  "British Columbia": [-122.85, 49.7],
+  "North Vancouver - District": [-123.0865500564, 49.3376773634]
+}
+```
+
+After changing that file, regenerate and publish the point tilesets:
+
+```powershell
+& 'C:\Users\sebas\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' .\scripts\generate-webmap-data.py
+powershell -ExecutionPolicy Bypass -File .\scripts\upload-mapbox-tilesets.ps1 -LayerIds ProvincialLevelPoints,RegionalLevelPoints,MunicipalLevelPoints
+```
+
+The app marks vector sources as volatile so the browser is less likely to reuse stale Mapbox tiles while you are tuning point locations. Still hard-refresh after publishing when checking small coordinate edits.
 
 ## 11. Embed The App In A Wix Test Page
 

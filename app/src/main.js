@@ -333,7 +333,8 @@
 
     state.map.addSource(layer.id, {
       type: "vector",
-      url: layer.tilesetUrl
+      url: layer.tilesetUrl,
+      volatile: true
     });
   }
 
