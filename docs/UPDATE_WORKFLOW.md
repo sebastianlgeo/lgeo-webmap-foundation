@@ -1,5 +1,7 @@
 # Update Workflow
 
+For day-to-day project entry, use `docs/ADD_PROJECTS_GUIDE.md`. This file remains as a shorter technical reference.
+
 Before publishing to GitHub, read `docs/PUBLIC_DEPLOYMENT_WORKFLOW.md`. The editable source CSVs can include suppressed/private projects and should stay local.
 
 ## Source Of Truth
@@ -109,7 +111,7 @@ Any row with a `Project URL` is treated as interactive. The popup item will beha
 Run the generator from the foundation folder:
 
 ```powershell
-C:\Users\sebas\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe .\scripts\generate-webmap-data.py
+powershell -ExecutionPolicy Bypass -File .\scripts\update-webmap.ps1
 ```
 
 It writes:
@@ -147,4 +149,9 @@ If the geography key is new or mismatched:
 2. Export new GeoJSON into `data/geojson/raw/`.
 3. Run the generator again.
 4. Check the report.
-5. For production, upload the regenerated `data/processed/geojson/*.geojson` layer to the matching Mapbox tileset.
+5. For production, upload the regenerated layer to the matching Mapbox tileset:
+
+   ```powershell
+   powershell -ExecutionPolicy Bypass -File .\scripts\update-webmap.ps1 -Upload Points -WaitForCompletion
+   powershell -ExecutionPolicy Bypass -File .\scripts\update-webmap.ps1 -Upload Polygons -WaitForCompletion
+   ```
